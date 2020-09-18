@@ -2,7 +2,7 @@
 
 This repo is for storing and curating Murmurations **fields** and **schemas**.
 
-Additins or modifications to library fields occur through pull requests to this repo. Issues can be used to discuss and propose updates or changes. 
+Additions or modifications to library fields occur through pull requests to this repo. Issues can be used to discuss and propose updates or changes. 
 
 Schemas are created by specific networks or interest groups, and added to this repo by pull request.
 
