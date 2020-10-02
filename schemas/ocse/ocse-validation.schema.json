@@ -19,7 +19,7 @@
             "type": "string"
         },
         "mission": {
-            "$ref": "fields/mission.js"
+            "$ref": "fields/mission-v1.json"
         },
         "nodeTypes": {
             "description": "Types of organization or project",

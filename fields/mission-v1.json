@@ -1,0 +1,7 @@
+{
+  "title": "Mission Statement",
+  "description": "The mission, purpose or objective of this entity",
+  "type": "string",
+  "maxLength": 1000,
+  "context": "http://purl.org/essglobal/vocab/mission"
+}
