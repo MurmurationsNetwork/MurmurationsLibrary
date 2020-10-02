@@ -1,5 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$schema": "https://json-schema.org/draft-04/schema#",
     "$id": "http://murmurations.network/ocse-schema.json",
     "title": "Open Co-op Solidarity Economy Schema",
     "description": "The OCSE Schema defines a structure for categorizing organizations and projects operating within the Solidarity Economy.",
