@@ -32,5 +32,11 @@
         "linkedSchemas",
         "name",
         "url"
-    ]
+    ],
+    "metadata": {
+        "owner": {
+            "name": "Murmurations Network",
+            "url": "https://murmurations.network"
+        }
+    }
 }
