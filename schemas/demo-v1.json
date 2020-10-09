@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/",
+    "title": "Demo Schema",
+    "description": "A demo schema that is to be used only for testing purposes.",
+    "type": "object",
+    "properties": {
+        "profileUrl": {
+            "$ref": "fields/profileurl-v1.json"
+        },
+        "linkedSchemas": {
+            "$ref": "fields/linkedschemas-v1.json"
+        },
+        "name": {
+            "$ref": "fields/name-v1.json"
+        },
+        "url": {
+            "$ref": "fields/url-v1.json"
+        },
+        "mission": {
+            "$ref": "fields/mission-v1.json"
+        },
+        "geolocation": {
+            "$ref": "fields/geolocation-v1.json"
+        },
+        "tags": {
+            "$ref": "fields/tags-v1.json"
+        }
+    },
+    "required": [
+        "profileUrl",
+        "linkedSchemas",
+        "name",
+        "url"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Linked Schemas",
+    "description": "The schemaIds against which the profile must be validated",
+    "type": "array",
+    "items": {
+        "type": "string",
+        "pattern": "[A-Fa-f0-9]{64}"
+    },
+    "minItems": 1,
+    "maxItems": 10,
+    "uniqueItems": true,
+    "context": "need to define and create a permanent URL"
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Descriptive Tags",
+    "description": "The most common tags used to describe the entity",
+    "type": "array",
+    "items": {
+        "type": "string"
+    },
+    "minItems": 1,
+    "maxItems": 50,
+    "uniqueItems": true,
+    "context": "https://schema.org/keywords"
+}

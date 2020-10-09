@@ -1,0 +1,24 @@
+{
+    "title": "Geolocation Coordinates",
+    "description": "The geo-coordinates (latitude & longitude) of the primary location of the entity",
+    "type": "object",
+    "properties": {
+        "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90,
+            "context": "https://schema.org/latitude"
+        },
+        "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180,
+            "context": "https://schema.org/longitude"
+        }
+    },
+    "required": [
+        "latitude",
+        "longitude"
+    ],
+    "context": "https://schema.org/geo"
+}
