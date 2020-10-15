@@ -1,6 +1,6 @@
 {
     "title": "Descriptive Tags",
-    "description": "The most common tags used to describe the entity",
+    "description": "The most common keywords used to describe the entity",
     "type": "array",
     "items": {
         "type": "string"

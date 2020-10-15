@@ -23,8 +23,8 @@
         "geolocation": {
             "$ref": "fields/geolocation-v1.json"
         },
-        "tags": {
-            "$ref": "fields/tags-v1.json"
+        "keywords": {
+            "$ref": "fields/keywords-v1.json"
         }
     },
     "required": [
