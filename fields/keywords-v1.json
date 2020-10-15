@@ -1,5 +1,5 @@
 {
-    "title": "Descriptive Tags",
+    "title": "Descriptive Keywords",
     "description": "The most common keywords used to describe the entity",
     "type": "array",
     "items": {
