@@ -8,7 +8,8 @@
             "name": {
                 "title": "URL Name",
                 "description": "A name to make the URL recognizable (e.g., social media provider, demo site, etc.)",
-                "type": "string"
+                "type": "string",
+                "maxLength": 100
             },
             "url": {
                 "$ref": "fields/url-v1.json"

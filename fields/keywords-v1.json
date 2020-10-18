@@ -3,7 +3,8 @@
     "description": "The most common keywords used to describe the entity",
     "type": "array",
     "items": {
-        "type": "string"
+        "type": "string",
+        "maxLength": 100
     },
     "minItems": 1,
     "maxItems": 50,
