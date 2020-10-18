@@ -1,0 +1,8 @@
+{
+    "title": "Website Address/URL",
+    "description": "The URL for the entity's main website or other relevant link",
+    "type": "string",
+    "maxLength": 100,
+    "pattern": "https?://",
+    "context": "http://schema.org/url"
+}

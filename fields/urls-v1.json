@@ -1,0 +1,27 @@
+{
+    "title": "Website Addresses/URLs",
+    "description": "URLs for the entity's website(s), social media, etc.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "URL Name",
+                "description": "A name to make the URL recognizable (e.g., social media provider, demo site, etc.)",
+                "type": "string",
+                "maxLength": 100
+            },
+            "url": {
+                "$ref": "fields/url-v1.json"
+            }
+        },
+        "required": [
+            "name",
+            "url"
+        ]
+    },
+    "minItems": 1,
+    "maxItems": 50,
+    "uniqueItems": true,
+    "context": "http://schema.org/url"
+}

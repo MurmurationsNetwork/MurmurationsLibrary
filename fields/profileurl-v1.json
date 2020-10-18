@@ -1,0 +1,8 @@
+{
+    "title": "Profile URL",
+    "description": "The URL where a node's profile is located",
+    "type": "string",
+    "pattern": "https?://",
+    "maxLength": 200,
+    "context": "need to define and create a permanent URL"
+}

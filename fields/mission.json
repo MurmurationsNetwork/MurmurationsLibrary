@@ -1,8 +1,0 @@
-{
-  "name":"mission",
-  "context":"http://purl.org/essglobal/vocab/mission",
-  "version": "1.0.0",
-  "description": "The mission, purpose or objective of this entity",
-  "type": "string",
-  "maxLength": 1000
-}

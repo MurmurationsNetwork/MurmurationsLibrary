@@ -1,0 +1,7 @@
+{
+    "title": "Entity Name",
+    "description": "The name of the entity, organization, project, etc.",
+    "type": "string",
+    "maxLength": 100,
+    "context": "http://schema.org/name"
+}

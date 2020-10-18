@@ -1,0 +1,7 @@
+{
+    "title": "Mission Statement",
+    "description": "A short statement of why the entity exists, what its overall goal is: what kind of product or service it provides, its primary customers or market, and its geographical region of operation.",
+    "type": "string",
+    "maxLength": 1000,
+    "context": "https://en.wikipedia.org/wiki/Mission_statement"
+}

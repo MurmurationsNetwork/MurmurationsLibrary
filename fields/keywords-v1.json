@@ -1,0 +1,13 @@
+{
+    "title": "Descriptive Keywords",
+    "description": "The most common keywords used to describe the entity",
+    "type": "array",
+    "items": {
+        "type": "string",
+        "maxLength": 100
+    },
+    "minItems": 1,
+    "maxItems": 50,
+    "uniqueItems": true,
+    "context": "https://schema.org/keywords"
+}
