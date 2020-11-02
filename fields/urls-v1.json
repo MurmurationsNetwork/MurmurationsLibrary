@@ -12,7 +12,7 @@
                 "maxLength": 100
             },
             "url": {
-                "$ref": "fields/url-v1.json"
+                "$ref": "url-v1.json"
             }
         },
         "required": [
