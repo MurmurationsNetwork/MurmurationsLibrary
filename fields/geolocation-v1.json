@@ -17,8 +17,8 @@
         }
     },
     "required": [
-        "latitude",
-        "longitude"
+        "lat",
+        "lon"
     ],
     "context": "https://schema.org/geo"
 }
