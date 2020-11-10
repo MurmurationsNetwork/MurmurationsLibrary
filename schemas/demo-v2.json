@@ -5,9 +5,6 @@
   "description": "A demo schema that is to be used only for testing purposes.",
   "type": "object",
   "properties": {
-      "profileUrl": {
-          "$ref": "fields/profileurl-v1.json"
-      },
       "linkedSchemas": {
           "$ref": "fields/linkedschemas-v1.json"
       },
@@ -28,7 +25,6 @@
       }
   },
   "required": [
-      "profileUrl",
       "linkedSchemas",
       "name",
       "urls",
