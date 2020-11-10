@@ -5,12 +5,12 @@
   "description": "The default schema for initial validation of a profile by the index.",
   "type": "object",
   "properties": {
-      "linkedSchemas": {
-          "$ref": "fields/linkedschemas-v1.json"
+      "linked_schemas": {
+          "$ref": "fields/linked_schemas-v1.json"
       }
   },
   "required": [
-      "linkedSchemas"
+      "linked_schemas"
   ],
   "metadata": {
       "owner": {
