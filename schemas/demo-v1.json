@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
   "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/",
-  "title": "Demo Schema",
+  "title": "Demo Schema 1",
   "description": "A demo schema that is to be used only for testing purposes.",
   "type": "object",
   "properties": {

@@ -9,6 +9,7 @@
         "title": "URL Name",
         "description": "A name to make the URL recognizable (e.g., social media provider, demo site, etc.)",
         "type": "string",
+        "minLength": 1,
         "maxLength": 100
       },
       "url": {

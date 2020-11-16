@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
   "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/",
-  "title": "Demo Schema",
-  "description": "A demo schema that is to be used only for testing purposes.",
+  "title": "Demo Schema 2",
+  "description": "Another demo schema that is to be used only for testing purposes.",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -19,6 +19,9 @@
     },
     "geolocation": {
       "$ref": "fields/geolocation-v1.json"
+    },
+    "location": {
+      "$ref": "fields/location-v1.json"
     },
     "keywords": {
       "$ref": "fields/keywords-v1.json"
