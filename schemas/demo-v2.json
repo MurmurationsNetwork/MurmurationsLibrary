@@ -1,27 +1,27 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/",
+  "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/schemas/demo-v2.json",
   "title": "Demo Schema 2",
   "description": "Another demo schema that is to be used only for testing purposes.",
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "fields/linked_schemas-v1.json"
+      "$ref": "../fields/linked_schemas-v1.json"
     },
     "name": {
-      "$ref": "fields/name-v1.json"
+      "$ref": "../fields/name-v1.json"
     },
     "urls": {
-      "$ref": "fields/urls-v1.json"
+      "$ref": "../fields/urls-v1.json"
     },
     "mission": {
-      "$ref": "fields/mission-v1.json"
+      "$ref": "../fields/mission-v1.json"
     },
     "location": {
-      "$ref": "fields/location-v1.json"
+      "$ref": "../fields/location-v1.json"
     },
     "keywords": {
-      "$ref": "fields/keywords-v1.json"
+      "$ref": "../fields/keywords-v1.json"
     }
   },
   "required": [

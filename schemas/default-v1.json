@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/",
+  "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/schemas/default-v1.json",
   "title": "Default Schema",
   "description": "The default schema for initial validation of a profile by the index.",
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "fields/linked_schemas-v1.json"
+      "$ref": "../fields/linked_schemas-v1.json"
     }
   },
   "required": [
