@@ -17,9 +17,6 @@
     "mission": {
       "$ref": "fields/mission-v1.json"
     },
-    "geolocation": {
-      "$ref": "fields/geolocation-v1.json"
-    },
     "location": {
       "$ref": "fields/location-v1.json"
     },

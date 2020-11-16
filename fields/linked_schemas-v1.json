@@ -1,6 +1,6 @@
 {
   "title": "Linked Schemas",
-  "description": "The schemas against which the profile must be validated",
+  "description": "The schemas against which the profile must be validated (must be alphanumeric with a dash(-) and/or underscore(_), e.g., demo_schema-v1",
   "type": "array",
   "items": {
     "type": "string",
