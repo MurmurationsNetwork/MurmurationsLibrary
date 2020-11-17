@@ -31,4 +31,16 @@ Schemas and fields in the Murmurations library are validated against JSON Schema
     - Reusing existing fields from the library whenever possible makes it easier for nodes using your schema to be compatible with other schemas without needing to re-enter the same data twice
 4. Make sure your schema validates using the [JSON Schema Validator](https://www.jsonschemavalidator.net/)
     - Select _Schema Draft v4_ from the "Select schema" dropdown menu and then paste your schema into the "Input JSON" text area
-5. Fork this library repo and create a new branch for your schema, then create a pull request
+
+## Testing Your Schema
+
+1. Once your schema validates to Draft 4, cut it from the "Input JSON" text area and paste it into the "Select schema" text area on the left
+2. Add curly braces to create an object, and then start entering the key/value pairs for your schema
+3. Test various values to ensure that the validation rules you created are working correctly
+
+## Adding Your Schema to the Library
+
+1. Fork this library repo and create a new branch for your schema
+2. Add your new schema in the the `/schemas` directory
+3. Create a pull request
+    - If there are fields that you think should be added into the `/fields` directory because they are highly likely to be useful to others in their schemas, please mention this in your pull request
