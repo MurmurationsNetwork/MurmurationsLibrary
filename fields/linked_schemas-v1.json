@@ -1,13 +1,13 @@
 {
-    "title": "Linked Schemas",
-    "description": "The schemas against which the profile must be validated",
-    "type": "array",
-    "items": {
-        "type": "string",
-        "pattern": "[A-Za-z0-9]{4,100}"
-    },
-    "minItems": 1,
-    "maxItems": 10,
-    "uniqueItems": true,
-    "context": "need to define and create a permanent URL"
+  "title": "Linked Schemas",
+  "description": "The schemas against which the profile must be validated (must be alphanumeric with a dash(-) and/or underscore(_), e.g., demo_schema-v1",
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[A-Za-z0-9-_]{4,100}$"
+  },
+  "minItems": 1,
+  "maxItems": 10,
+  "uniqueItems": true,
+  "context": "need to define and create a permanent URL"
 }
