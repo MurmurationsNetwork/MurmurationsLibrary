@@ -44,3 +44,7 @@ Schemas and fields in the Murmurations library are validated against JSON Schema
 2. Add your new schema in the `/schemas` directory
 3. Create a pull request
     - If there are fields in your schema that you think should be added into the `/fields` directory because they are highly likely to be useful to others in their schemas, please mention this in your pull request
+
+## Questions?
+
+If you need help setting up your schema or if you have any questions, please post them at the [Murmurations Forum](https://murmurations.flarum.cloud/d/14-creating-murmurations-schemas).
