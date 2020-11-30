@@ -16,13 +16,20 @@
         "$ref": "url-v1.json"
       }
     },
-    "required": [
-      "name",
-      "url"
-    ]
+    "required": ["name", "url"]
   },
   "minItems": 1,
   "maxItems": 50,
   "uniqueItems": true,
-  "context": "http://schema.org/url"
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "urls-v1",
+      "version": 1
+    },
+    "context": ["http://schema.org/url"]
+  }
 }

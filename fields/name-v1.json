@@ -4,5 +4,15 @@
   "type": "string",
   "minLength": 1,
   "maxLength": 100,
-  "context": "http://schema.org/name"
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "name-v1",
+      "version": 1
+    },
+    "context": ["http://schema.org/name"]
+  }
 }

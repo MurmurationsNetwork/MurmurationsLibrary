@@ -6,19 +6,28 @@
     "lat": {
       "type": "number",
       "minimum": -90,
-      "maximum": 90,
-      "context": "https://schema.org/latitude"
+      "maximum": 90
     },
     "lon": {
       "type": "number",
       "minimum": -180,
-      "maximum": 180,
-      "context": "https://schema.org/longitude"
+      "maximum": 180
     }
   },
-  "required": [
-    "lat",
-    "lon"
-  ],
-  "context": "https://schema.org/geo"
+  "required": ["lat", "lon"],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "geolocation-v1",
+      "version": 1
+    },
+    "context": [
+      "https://schema.org/latitude",
+      "https://schema.org/longitude",
+      "https://schema.org/GeoCoordinates"
+    ]
+  }
 }

@@ -10,5 +10,15 @@
   "minItems": 1,
   "maxItems": 50,
   "uniqueItems": true,
-  "context": "https://schema.org/keywords"
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "keywords-v1",
+      "version": 1
+    },
+    "context": ["https://schema.org/keywords"]
+  }
 }

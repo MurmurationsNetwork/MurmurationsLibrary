@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/schemas/default-v1.json",
+  "id": "https://cdn.murmurations.tech/schemas/default-v1.json",
   "title": "Default Schema",
   "description": "The default schema for initial validation of a profile by the index.",
   "type": "object",
@@ -9,12 +9,15 @@
       "$ref": "../fields/linked_schemas-v1.json"
     }
   },
-  "required": [
-    "linked_schemas"
-  ],
+  "required": ["linked_schemas"],
   "metadata": {
-    "owner": {
+    "creator": {
       "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "schema": {
+      "name": "default-v1",
+      "version": 1,
       "url": "https://murmurations.network"
     }
   }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/MurmurationsNetwork/MurmurationsLibrary/master/schemas/demo-v2.json",
-  "title": "Demo Schema 2",
-  "description": "Another demo schema that is to be used only for testing purposes.",
+  "id": "https://cdn.murmurations.tech/schemas/demo-v2.json",
+  "title": "Demo Schema",
+  "description": "Another version of the demo schema that is to be used only for testing purposes.",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -24,15 +24,15 @@
       "$ref": "../fields/keywords-v1.json"
     }
   },
-  "required": [
-    "linked_schemas",
-    "name",
-    "urls",
-    "mission"
-  ],
+  "required": ["linked_schemas", "name", "urls", "mission"],
   "metadata": {
-    "owner": {
+    "creator": {
       "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "schema": {
+      "name": "demo-v2",
+      "version": 2,
       "url": "https://murmurations.network"
     }
   }

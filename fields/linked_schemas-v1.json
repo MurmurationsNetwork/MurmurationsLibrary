@@ -9,5 +9,15 @@
   "minItems": 1,
   "maxItems": 10,
   "uniqueItems": true,
-  "context": "need to define and create a permanent URL"
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "linked_schemas-v1",
+      "version": 1
+    },
+    "context": ["https://murmurations.network"]
+  }
 }

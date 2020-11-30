@@ -257,26 +257,36 @@
         "YE",
         "ZM",
         "ZW"
-      ],
-      "context": "https://en.wikipedia.org/wiki/ISO_3166-1"
+      ]
     },
     "locality": {
       "title": "Locality",
       "description": "A city, town, village, etc.",
       "type": "string",
-      "pattern": "^.{1,100}$",
-      "context": "https://schema.org/addressLocality"
+      "pattern": "^.{1,100}$"
     },
     "region": {
       "title": "Region",
       "description": "A state, county, province, etc.",
       "type": "string",
-      "pattern": "^.{1,100}$",
-      "context": "https://schema.org/addressRegion"
+      "pattern": "^.{1,100}$"
     }
   },
-  "required": [
-    "country"
-  ],
-  "context": "https://en.wikipedia.org/wiki/Location"
+  "required": ["country"],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "location-v1",
+      "version": 1
+    },
+    "context": [
+      "https://en.wikipedia.org/wiki/ISO_3166-1",
+      "https://schema.org/addressLocality",
+      "https://schema.org/addressRegion",
+      "https://en.wikipedia.org/wiki/Location"
+    ]
+  }
 }

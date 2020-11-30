@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://cdn.murmurations.tech/schemas/demo-v1.json",
-  "title": "Demo Schema",
-  "description": "A demo schema that is to be used only for testing purposes.",
+  "id": "https://cdn.murmurations.tech/schemas/murmurations_users-v1.json",
+  "title": "Murmurations User Map",
+  "description": "Include this schema in your profile to show up on the map of Murmurations users.",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -14,14 +14,8 @@
     "url": {
       "$ref": "../fields/url-v1.json"
     },
-    "mission": {
-      "$ref": "../fields/mission-v1.json"
-    },
     "geolocation": {
       "$ref": "../fields/geolocation-v1.json"
-    },
-    "keywords": {
-      "$ref": "../fields/keywords-v1.json"
     }
   },
   "required": ["linked_schemas", "name", "url"],
@@ -31,7 +25,7 @@
       "url": "https://murmurations.network"
     },
     "schema": {
-      "name": "demo-v1",
+      "name": "murmurations_users-v1",
       "version": 1,
       "url": "https://murmurations.network"
     }
