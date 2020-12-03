@@ -21,7 +21,8 @@ const fetch = require("node-fetch");
 let schemas = [];
 
 module.exports = (_, res) => {
-  fetch("https://cdn.murmurations.tech/schemas")
+  // fetch("https://cdn.murmurations.tech/schemas")
+  fetch("https://murmurations-library-5dq2s0fbp.vercel.app/schemas")
     .then((res) => res.text())
     .then((body) => {
       const files = [...body.matchAll(/(?<=file json">)(.*)(?=<\/a>)/g)];
