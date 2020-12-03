@@ -20,14 +20,16 @@ const fetch = require("node-fetch");
 
 let schemas = [];
 
-fetch("https://cdn.murmurations.tech/schemas")
-  .then((res) => res.text())
-  .then((body) => {
-    const files = [...body.matchAll(/(?<=file json">)(.*)(?=<\/a>)/g)];
+module.exports = (_, res) => {
+  fetch("https://cdn.murmurations.tech/schemas")
+    .then((res) => res.text())
+    .then((body) => {
+      const files = [...body.matchAll(/(?<=file json">)(.*)(?=<\/a>)/g)];
 
-    files.forEach((file) => {
-      schemas.push(file[0]);
+      files.forEach((file) => {
+        schemas.push(file[0]);
+      });
     });
 
-    console.log(JSON.stringify(schemas, null, 2));
-  });
+  return res.status(200).send(JSON.stringify(schemas, null, 2));
+};
