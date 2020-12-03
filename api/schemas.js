@@ -27,7 +27,7 @@ module.exports = (_, res) => {
       const files = [...body.matchAll(/(?<=file json">)(.*)(?=<\/a>)/g)];
 
       files.forEach((file) => {
-        if (schemas.includes(file)) return;
+        if (schemas.includes(file[0])) return;
         schemas.push(file[0]);
       });
     });
