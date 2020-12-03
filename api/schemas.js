@@ -16,5 +16,6 @@ module.exports = (_, res) => {
 
   res.status(200)
   res.setHeader('Content-Type', 'application/json')
+  res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
   res.end(JSON.stringify(schemas, null, 2))
 }
