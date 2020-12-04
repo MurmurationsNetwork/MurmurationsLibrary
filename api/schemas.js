@@ -9,7 +9,7 @@ module.exports = (_, res) => {
       const files = [...body.matchAll(/(?<=file json">)(.*)(?=.json<\/a>)/g)]
 
       files.forEach((file) => {
-        if (schemas.includes(file[0])) return
+        if (schemaList.includes(file[0])) return
         schemaList.push(file[0])
       })
       return schemaList
