@@ -26,8 +26,8 @@ async function createSchemasResponse() {
   const lastCommit = await getGithubLastCommitTime()
   const schemaList = await getSchemaList()
 
-  response.lastCommit = await lastCommit
-  response.schemaList = await schemaList
+  response.last_commit = await lastCommit
+  response.schema_list = await schemaList
 
   return JSON.stringify(response, null, 2)
 }
