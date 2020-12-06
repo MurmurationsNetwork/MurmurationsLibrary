@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 
 async function getGithubLastCommitTime() {
   const response = await fetch(
-    'https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commit'
+    'https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits'
   )
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`)
@@ -47,7 +47,6 @@ module.exports = (_, res) => {
     .catch((err) => {
       res.status(500)
       res.setHeader('Content-Type', 'application/json')
-      // res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
       res.end(err.message)
     })
 }
