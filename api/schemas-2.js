@@ -5,7 +5,7 @@ async function getGithubLastCommitTime() {
     'https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commit'
   )
   if (response.status !== 200)
-    throw Error(`{"error": "${response.status} - ${response.url}"`)
+    throw Error(`{"error": "${response.status} - ${response.url}"}`)
   const data = await response.json()
   return data[0].commit.author.date
 }
@@ -14,7 +14,7 @@ async function getSchemaList() {
   let schemaList = []
   const response = await fetch('https://cdn.murmurations.tech/schemas')
   if (response.status !== 200)
-    throw Error(`{"error": "${response.status} - ${response.url}"`)
+    throw Error(`{"error": "${response.status} - ${response.url}"}`)
   const data = await response.text()
   const files = [...data.matchAll(/(?<=file json">)(.*)(?=.json<\/a>)/g)]
 
