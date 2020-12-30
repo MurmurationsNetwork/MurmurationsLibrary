@@ -1,13 +1,13 @@
 {
-  "title": "Website Address/URL",
-  "description": "The URL for the entity's main website or other relevant link",
+  "title": "URL",
+  "description": "The URL of the item",
   "type": "string",
   "maxLength": 100,
   "pattern": "https?://",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
-      "url": "https://murmurations.network"
+      "url": "https://murmurations.network/field/url"
     },
     "field": {
       "name": "url-v1",
