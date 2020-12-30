@@ -1,0 +1,17 @@
+{
+  "title": "Description",
+  "description": "A description of the item, entity, organization, project, etc.",
+  "type": "string",
+  "minLength": 1,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/fields/description"
+    },
+    "field": {
+      "name": "description-v1",
+      "version": 1
+    },
+    "context": ["http://schema.org/description"]
+  }
+}
