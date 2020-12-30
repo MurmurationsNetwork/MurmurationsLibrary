@@ -1,0 +1,32 @@
+{
+  "title": "Image",
+  "description": "A URL for an image of the item or logo etc.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Image Name (alt tag)",
+        "description": "Describe the image",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "url": {
+        "$ref": "url-v1.json"
+      }
+    },
+    "required": ["name", "url"]
+  },
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/fields/image"
+    },
+    "field": {
+      "name": "image-v1",
+      "version": 1
+    },
+    "context": ["http://schema.org/image"]
+  }
+}
