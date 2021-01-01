@@ -6,12 +6,13 @@
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
-      "url": "https://murmurations.network/fields/description"
+      "url": "https://murmurations.network"
     },
     "field": {
       "name": "description-v1",
       "version": 1
     },
     "context": ["http://schema.org/description"]
+    "purpose": "The Description field can be used to provided a description of the item, entity, organization, project, etc. We have chosen not to add a max length but aggregators will snip the first X characters of this field to provide a summary in directory listings or maps, so make sure the first 160 characters provides a good overview of the entity you are describing."
   }
 }
