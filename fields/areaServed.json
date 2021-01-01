@@ -1,0 +1,17 @@
+{
+	"title": "Area served",
+	"description": "The geographic area where a service or offered item is provided.",
+  	"type": "string",
+  	"enum": ["Local", "Regional", "National", "International"],
+  	"metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "areaServed-v1",
+      "version": 1
+    },
+    "context": ["http://schema.org/areaServed"]
+  }
+}
