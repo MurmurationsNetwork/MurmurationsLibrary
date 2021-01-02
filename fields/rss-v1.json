@@ -1,0 +1,18 @@
+{
+  "title": "RSS feed",
+  "description": "The URL for this entities RSS feed - usually somemthing like: yoursite.com/rss",
+  "type": "string",
+  "maxLength": 100,
+  "pattern": "https?://",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "rss-v1",
+      "version": 1
+    },
+    "context": ["https://en.wikipedia.org/wiki/RSS"]
+  }
+}
