@@ -30,6 +30,6 @@
       "name": "urls-v1",
       "version": 1
     },
-    "context": ["http://schema.org/url"]
+    "context": ["https://schema.org/url"]
   }
 }

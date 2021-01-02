@@ -27,6 +27,6 @@
       "name": "image-v1",
       "version": 1
     },
-    "context": ["http://schema.org/image"]
+    "context": ["https://schema.org/image"]
   }
 }
