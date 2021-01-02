@@ -1,13 +1,13 @@
 {
-  "title": "Website Addresses/URLs",
-  "description": "URLs for the entity's website(s), social media, etc.",
+  "title": "Image",
+  "description": "A URL for an image of the item or logo etc.",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "name": {
-        "title": "URL Name",
-        "description": "A name to make the URL recognizable (e.g., social media provider, demo site, etc.)",
+        "title": "Image Name (alt tag)",
+        "description": "Describe the image",
         "type": "string",
         "minLength": 1,
         "maxLength": 100
@@ -18,18 +18,15 @@
     },
     "required": ["name", "url"]
   },
-  "minItems": 1,
-  "maxItems": 50,
-  "uniqueItems": true,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "urls-v1",
+      "name": "image-v1",
       "version": 1
     },
-    "context": ["https://schema.org/url"]
+    "context": ["https://schema.org/image"]
   }
 }
