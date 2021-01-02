@@ -11,7 +11,7 @@
     "name": {
       "$ref": "../fields/name-v1.json"
     },
-    "url": {
+    "urls": {
       "$ref": "../fields/urls-v1.json"
     },
     "description": {
@@ -36,7 +36,7 @@
       "$ref": "../fields/org-type-tags-v1.json"
     }
   },
-  "required": ["linked_schemas", "name", "url"],
+  "required": ["linked_schemas", "name", "urls"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
