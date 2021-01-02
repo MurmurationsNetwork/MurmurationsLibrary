@@ -1,6 +1,6 @@
 {
   "title": "URL",
-  "description": "The URL of the item",
+  "description": "The URL of the entity or item",
   "type": "string",
   "maxLength": 100,
   "pattern": "https?://",
