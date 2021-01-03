@@ -32,8 +32,8 @@
     "rss": {
       "$ref": "../fields/rss-v1.json"
     },
-    "org-type-tags": {
-      "$ref": "../fields/org-type-tags-v1.json"
+    "org_type_tags": {
+      "$ref": "../fields/org_type_tags-v1.json"
     }
   },
   "required": ["linked_schemas", "name", "urls"],
