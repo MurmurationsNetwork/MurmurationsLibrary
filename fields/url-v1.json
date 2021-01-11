@@ -2,7 +2,7 @@
   "title": "URL",
   "description": "The URL of the entity or item",
   "type": "string",
-  "maxLength": 100,
+  "maxLength": 2000,
   "pattern": "https?://",
   "metadata": {
     "creator": {
