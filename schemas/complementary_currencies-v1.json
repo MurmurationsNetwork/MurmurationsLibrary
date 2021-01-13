@@ -133,6 +133,41 @@
           "title": "Some other mechanism"
         }
       ]
+    },
+    "costRecovery": {
+      "title": "Cost recovery",
+      "description": "How does the project cover its running costs? (multiple choice)",
+      "type": "string",
+      "anyOf": [
+        {
+          "const": "membershipFee",
+          "label": "Membership fee"
+        },
+        {
+          "const": "transactionFee",
+          "label": "Transaction fee"
+        },
+        {
+          "const": "demurrage",
+          "label": "Savings tax / Demurrage Fee / negative interest"
+        },
+        {
+          "const": "donations",
+          "label": "Donations"
+        },
+        {
+          "const": "grants",
+          "label": "Grants"
+        },
+        {
+          "const": "inkind",
+          "label": "In-kind contributions"
+        },
+        {
+          "const": "volunteers",
+          "label": "Volunteers"
+        }
+      ]
     }
   },
   "required": ["linked_schemas", "name", "url"],
