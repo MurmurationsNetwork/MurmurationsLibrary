@@ -141,31 +141,31 @@
       "oneOf": [
         {
           "const": "membershipFee",
-          "label": "Membership fee"
+          "title": "Membership fee"
         },
         {
           "const": "transactionFee",
-          "label": "Transaction fee"
+          "title": "Transaction fee"
         },
         {
           "const": "demurrage",
-          "label": "Savings tax / Demurrage Fee / negative interest"
+          "title": "Savings tax / Demurrage Fee / negative interest"
         },
         {
           "const": "donations",
-          "label": "Donations"
+          "title": "Donations"
         },
         {
           "const": "grants",
-          "label": "Grants"
+          "title": "Grants"
         },
         {
           "const": "inkind",
-          "label": "In-kind contributions"
+          "title": "In-kind contributions"
         },
         {
           "const": "volunteers",
-          "label": "Volunteers"
+          "title": "Volunteers"
         }
       ]
     },
@@ -282,13 +282,13 @@
       ]
     },
     "numTransactionsYear": {
-      "title": "Active users",
+      "title": "Number of transactions annually",
       "description": "The number of transactions registered in the last 12 months, not including usage fees",
       "type": "number",
       "minimum": 0
     },
     "numUsersYear": {
-      "title": "Active users",
+      "title": "Active users annually",
       "description": "The number of users who have traded / logged in within the last 12 months.",
       "type": "number",
       "minimum": 0
