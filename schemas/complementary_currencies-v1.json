@@ -67,6 +67,72 @@
           "title": "P2P App (e.g. Holochain)"
         }
       ]
+    },
+    "movement": {
+      "title": "Movement",
+      "description": "Does the project identify as part of a wider movement?",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "none",
+          "title": "One-of-a-kind"
+        },
+        {
+          "const": "barter",
+          "title": "Reciprocal trade / business barter"
+        },
+        {
+          "const": "timebank",
+          "title": "Time bank"
+        },
+        {
+          "const": "lets",
+          "title": "Local exchange trading system (LETS)"
+        },
+        {
+          "const": "crypto",
+          "title": "Cryptocurrency / blockchain"
+        },
+        {
+          "const": "gre",
+          "title": "Grassroots economics"
+        },
+        {
+          "const": "transition",
+          "title": "Transition network"
+        },
+        {
+          "const": "other",
+          "title": "Something else (we may contact you about it)"
+        }
+      ]
+    },
+    "convertToLegalMoney": {
+      "title": "Conversion to legal tender",
+      "description": "Whether and how the currency can be exchanged for money",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "none",
+          "title": "None / unofficial only e.g LETS, timebanks, other non-monetary systems."
+        },
+        {
+          "const": "market",
+          "title": "Market based e.g. via currency markets."
+        },
+        {
+          "const": "100%reserve",
+          "title": "Legal money is 100% held in a reserve E.g Bristol Pound"
+        },
+        {
+          "const": "fractionalReserve",
+          "title": "Redeemable from a fractional reserve, perhaps using a bonding curve e.g. Grassroots Economics."
+        },
+        {
+          "const": "other",
+          "title": "Some other mechanism"
+        }
+      ]
     }
   },
   "required": ["linked_schemas", "name", "url"],
