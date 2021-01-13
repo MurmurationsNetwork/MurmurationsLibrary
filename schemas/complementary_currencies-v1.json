@@ -1,0 +1,373 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://....",
+  "title": "Complementary currencies",
+  "description": "A schema to map, track and compare complementary currency projects.",
+  "type": "object",
+  "properties": {
+      "name": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/name-v1.json"
+      },
+      "areaServed": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/area_served-v1.json"
+      },
+      "description": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/description-v1.json"
+      },
+      "geolocation": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/geolocation-v1.json"
+      },
+      "image": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/image-v1.json"
+      },
+      "location": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/location-v1.json"
+      },
+      "rss": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/rss-v1.json"
+      },
+      "url": {
+          "$ref": "https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/fields/url-v1.json"
+      },        
+      "title" "Accounting software type"
+      "description": "N.B. The accounting software may differ from the User Interface",
+      "type": "string",
+      "oneOf":
+          [
+          {
+               "const": "blockchain",
+              "title": "Blockchain",
+            },
+            {
+              "const": "cyclos",
+              "title": "Cyclos",
+            },
+            {
+              "const": "cmsPlugin",
+              "title": "CMS Plugin",
+            },
+            {
+              "const": "webService",
+              "title": "Accounting web service",
+            },
+            {
+              "const": "unpublished",
+              "title": "Unpublished / proprietary software",
+            },
+            {
+              "const": "mesh",
+              "title": "Mesh credit (a.k.a Ripple)",
+            },
+            {
+              "const": "app",
+              "title": "Integrated with the App. (what's the best name for this)",
+            },
+            {
+              "const": "p2p",
+              "title": "P2P App (e.g. Holochain)",
+            },
+          ]
+          },
+          "title": "Movement",
+          "description": "Does the project identify as part of a wider movement?",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "none",
+              "title": "One-of-a-kind",
+            },
+            {
+              "const": "barter",
+              "title": "Reciprocal trade / business barter",
+            },
+            {
+              "const": "timebank",
+              "title": "Time bank",
+            },
+            {
+              "const": "lets",
+              "title": "Local exchange trading system (LETS)",
+            },
+            {
+              "const": "crypto",
+              "title": "Cryptocurrency / blockchain",
+            },
+            {
+              "const": "gre",
+              "title": "Grassroots economics",
+            },
+            {
+              "const": "transition",
+              "title": "Transition network",
+            },
+            {
+              "const": "other",
+              "title": "Something else (we may contact you about it)",
+            }
+          ],
+      "convertToLegalMoney": {
+          "title": "Conversion to legal tender",
+          "description": "Whether and how the currency can be exchanged for money",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "none",
+              "title": "None / unofficial only e.g LETS, timebanks, other non-monetary systems.",
+            },
+            {
+              "const": "market",
+              "title": "Market based e.g. via currency markets.",
+            },
+            {
+              "const": "100%reserve",
+              "title": "Legal money is 100% held in a reserve E.g Bristol Pound",
+            },
+            {
+              "const": "fractionalReserve",
+              "title": "Redeemable from a fractional reserve, perhaps using a bonding curve e.g. Grassroots Economics.",
+            },
+            {
+              "const": "other",
+              "title": "Some other mechanism",
+            }
+          ]
+      },
+      "costRecovery": {
+          "title": "Cost recovery",
+          "description": "How does the project cover its running costs? (multiple choice)",
+          "type": "string",
+          "anyOf": [
+            {
+              "const": "membershipFee",
+              "label": "Membership fee"
+            },
+            {
+              "const": "transactionFee",
+              "label": "Transaction fee",
+            },
+            {
+              "const": "demurrage",
+              "label": "Savings tax / Demurrage Fee / negative interest",
+            },
+            {
+              "const": "donations",
+              "label": "Donations",
+            },
+            {
+              "const": "grants",
+              "label": "Grants",
+            },
+            {
+              "const": "inkind",
+              "label": "In-kind contributions",
+            },
+            {
+              "const": "volunteers",
+              "label": "Volunteers",
+            }
+          ]
+      },
+      "launchYear": {
+          "title": "Launch Year",
+          "description": "The year that the entity was instantiated. ",
+          "type": "number",
+          "minimum": 1900,
+          "context": "https://schema.org/yearBuilt"
+      },
+      "legalForm": {
+          "title": "Complementary currency organisation types",
+          "description": "borrowing from at standards.esd.org.uk - voluntary and charity sector ",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "blockchain",
+              "title": "Blockchain only",
+            },
+            {
+              "const": "charity",
+              "title": "Charity",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/229"
+            },
+            {
+              "const": "cic",
+              "title": "Community interest company",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/230"
+            },
+            {
+              "const": "community",
+              "title": "Community group",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/95"
+            },
+            {
+              "const": "company",
+              "title": "Incorporated company",
+            },
+            {
+              "const": "coop",
+              "title": "Co-operative",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/231"
+            },
+            {
+              "const": "faith",
+              "title": "Faith group",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/98"
+            },
+            {
+              "const": "housingassoc",
+              "title": "Housing association",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/104"
+            },
+            {
+              "const": "residentsassoc",
+              "title": "Tenants and residents association",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/97"
+            },
+            {
+              "const": "trust",
+              "title": "Trust",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/232"
+            },
+            {
+              "const": "unincorporated",
+              "title": "None / Unincorporated association",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/233"
+            },
+            {
+              "const": "voluntary",
+              "title": "Voluntary organisation",
+              "context": "https://standards.esd.org.uk/?uri=organisationType/234"
+            },
+            {
+              "const": "other",
+              "title": "Other",
+            },
+          ],
+          "context": "http://id.esd.org.uk/organisationType/71"
+      },
+      "monetaryModel": {
+          "title": "Monetary model",
+          "description": "The basis of issuance and redemption",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "tokens", 
+              "title": "Fixed number of tokens e.g. Bitcoin"
+            },
+            {
+              "const": "points", 
+              "title": "Tokens issued as needed e.g. Time banks, reputation scores"
+            },
+            {
+              "const": "mutual", 
+              "title": "Mutual credit e.g. Sardex, Wir, business barter, LETS"
+            },
+            {
+              "const": "selfIssued", 
+              "title": "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques"
+            },
+            {
+              "const": "mesh", 
+              "title": "Mesh credit (a.k.a Ripple)"
+            },
+            {
+              "const": "hybrid", 
+              "title": "Hybrid"
+            },
+            {
+              "const": "other", 
+              "title": "Other"
+            }
+          ]
+      },
+      "numTransactionsYear": {
+          "title": "Active users",
+          "description": "The number of transactions registered in the last 12 months, not including usage fees",
+          "type": "number",
+          "minimum": 0
+      },
+      "numUsersYear": {
+          "title": "Active users",
+          "description": "The number of users who have traded / logged in within the last 12 months.",
+          "type": "number",
+          "minimum": 0
+      },
+      "paymentTech": {
+          "title": "Payments / user interface",
+          "description": "How do users make payments and view their accounts? (multiple choice)",
+          "type": "string",
+          "anyOf": [
+            {
+              "const": "cheque",
+              "title": "Cheques"
+            },
+            {
+              "const": "physical",
+              "title": "Circulating paper / physical tokens",
+            },
+            {
+              "const": "book",
+              "title": "Each member keeps an account book.",
+            },
+            {
+              "const": "plastic",
+              "title": "Plastic card with PoS system",
+            },
+            {
+              "const": "plugin",
+              "title": "Via a social networking plugin (Example needed)",
+            },
+            {
+              "const": "app",
+              "title": "Mobile app",
+            },
+            {
+              "const": "other",
+              "title": "Other",
+            }
+          ]
+      },
+      "unitOfAccount": {
+          "title": "Unit of account",
+          "description": "How is the value of the currency unit determined?",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "time",
+              "title": "Time based e.g. hour",
+            },
+            {
+              "const": "legal",
+              "title": "Equivalent to national legal unit e.g. US dollar.",
+            },
+            {
+              "const": "market",
+              "title": "Pure supply & demand e.g. Bitcoin",
+            },
+            {
+              "const": "index",
+              "title": "Indexed to a commodity price or basket e.g. gold, eggs",
+            },
+            {
+              "const": "redeemable",
+              "title": "Redeemable for a commodity e.g. vouchers",
+            },
+            {
+              "const": "other",
+              "title": "Other e.g. Most LETS create arbitary units",
+            }
+          ]
+      },
+      "required": ["linked_schemas", "name", "url"],
+        "metadata": {
+          "creator": {
+              "name": "Matthew Slater",
+              "url": "http://www.creditcommons.net/"
+  },
+  "schema": {
+    "name": "complementary_currencies-v1",
+    "version": 1,
+    "purpose": "A schema to map, track and compare complementary currency projects.",
+    "url": "https://....."
+  }
+}
+}
