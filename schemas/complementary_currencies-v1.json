@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://some.url/from.matt",
+  "id": "https://cdn.murmurations.tech/schemas/complementary_currencies-v1.json",
   "title": "Complementary currencies",
   "description": "A schema to map, track and compare complementary currency projects.",
   "type": "object",
