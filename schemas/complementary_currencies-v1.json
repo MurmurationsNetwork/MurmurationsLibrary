@@ -137,37 +137,19 @@
     "costRecovery": {
       "title": "Cost recovery",
       "description": "How does the project cover its running costs? (multiple choice)",
-      "type": "string",
-      "oneOf": [
-        {
-          "const": "membershipFee",
-          "title": "Membership fee"
-        },
-        {
-          "const": "transactionFee",
-          "title": "Transaction fee"
-        },
-        {
-          "const": "demurrage",
-          "title": "Savings tax / Demurrage fee / negative interest"
-        },
-        {
-          "const": "donations",
-          "title": "Donations"
-        },
-        {
-          "const": "grants",
-          "title": "Grants"
-        },
-        {
-          "const": "inkind",
-          "title": "In-kind contributions"
-        },
-        {
-          "const": "volunteers",
-          "title": "Volunteers"
-        }
-      ]
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Membership fee",
+          "Transaction fee",
+          "Savings tax / Demurrage fee / negative interest",
+          "Donations",
+          "Grants",
+          "In-kind contributions",
+          "Volunteers"
+        ]
+      }
     },
     "launchYear": {
       "title": "Launch Year",
@@ -248,37 +230,19 @@
     "monetaryModel": {
       "title": "Monetary model",
       "description": "The basis of issuance and redemption",
-      "type": "string",
-      "oneOf": [
-        {
-          "const": "tokens",
-          "title": "Fixed number of tokens e.g. Bitcoin"
-        },
-        {
-          "const": "points",
-          "title": "Tokens issued as needed e.g. Time banks, reputation scores"
-        },
-        {
-          "const": "mutual",
-          "title": "Mutual credit e.g. Sardex, Wir, business barter, LETS"
-        },
-        {
-          "const": "selfIssued",
-          "title": "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques"
-        },
-        {
-          "const": "mesh",
-          "title": "Mesh credit (a.k.a Ripple)"
-        },
-        {
-          "const": "hybrid",
-          "title": "Hybrid"
-        },
-        {
-          "const": "other",
-          "title": "Other"
-        }
-      ]
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Fixed number of tokens e.g. Bitcoin",
+          "Tokens issued as needed e.g. Time banks, reputation scores",
+          "Mutual credit e.g. Sardex, Wir, business barter, LETS",
+          "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques",
+          "Mesh credit (a.k.a Ripple)",
+          "Hybrid",
+          "Other"
+        ]
+      }
     },
     "numTransactionsYear": {
       "title": "Number of transactions annually",
