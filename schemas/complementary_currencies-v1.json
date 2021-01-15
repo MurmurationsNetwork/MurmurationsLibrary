@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://some.url/from.matt",
+  "id": "cdn.murmurations.tech/schemas/complementary_currencies-v1.json",
   "title": "Complementary currencies",
   "description": "A schema to map, track and compare complementary currency projects.",
   "type": "object",
@@ -28,9 +28,6 @@
     },
     "rss": {
       "$ref": "../fields/rss-v1.json"
-    },
-    "url": {
-      "$ref": "../fields/url-v1.json"
     },
     "accounting_tech": {
       "title": "Accounting software type",
@@ -200,7 +197,7 @@
         },
         {
           "const": "association",
-          "title": "Registered association",
+          "title": "Registered association"
         },
         {
           "const": "corp",
