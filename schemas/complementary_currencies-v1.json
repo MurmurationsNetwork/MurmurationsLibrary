@@ -29,7 +29,10 @@
     "rss": {
       "$ref": "../fields/rss-v1.json"
     },
-    "software": {
+    "url": {
+      "$ref": "../fields/url-v1.json"
+    },
+    "accounting_tech": {
       "title": "Accounting software type",
       "description": "N.B. The accounting software may differ from the user interface",
       "type": "string",
@@ -43,7 +46,7 @@
           "title": "Cyclos"
         },
         {
-          "const": "cmsPlugin",
+          "const": "cms",
           "title": "CMS Plugin"
         },
         {
