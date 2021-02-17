@@ -1,0 +1,14 @@
+{
+  "name": "murmurations-library",
+  "version": "1.0.0",
+  "main": "api/schemas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
