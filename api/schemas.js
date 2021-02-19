@@ -12,7 +12,7 @@ async function getGithubLastCommitTime() {
 
 async function getSchemaList() {
   let schemaList = []
-  const response = await fetch('https://cdn.murmurations.tech/schemas')
+  const response = await fetch('https://cdn.murmurations.network/schemas')
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`)
   const data = await response.text()
