@@ -249,7 +249,7 @@
     "schema": {
       "name": "complementary_currencies-v1",
       "version": 1,
-      "url": "https://creditcommons.net/murmurations"
+      "url": "http://creditcommons.net/murmurations-complementary-currency-schema"
     }
   }
 }
