@@ -175,27 +175,24 @@
     "monetary_model": {
       "title": "Monetary model",
       "description": "The basis of issuance and redemption",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "tokens",
-          "points",
-          "mutual",
-          "selfIssued",
-          "mesh",
-          "hybrid",
-          "other"
-        ],
-        "labels": {
-          "tokens": "Fixed number of tokens e.g. Bitcoin",
-          "points": "Tokens issued as needed e.g. Time banks, reputation scores",
-          "mutual": "Mutual credit e.g. Sardex, Wir, business barter, LETS",
-          "selfIssued": "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques",
-          "mesh": "Mesh credit (a.k.a Ripple)",
-          "hybrid": "Hybrid",
-          "other": "Other"
-        }
+      "type": "string",
+      "enum": [
+        "tokens",
+        "points",
+        "mutual",
+        "selfIssued",
+        "mesh",
+        "hybrid",
+        "other"
+      ],
+      "labels": {
+        "tokens": "Fixed number of tokens e.g. Bitcoin",
+        "points": "Tokens issued as needed e.g. Time banks, reputation scores",
+        "mutual": "Mutual credit e.g. Sardex, Wir, business barter, LETS",
+        "selfIssued": "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques",
+        "mesh": "Mesh credit (a.k.a Ripple)",
+        "hybrid": "Hybrid",
+        "other": "Other"
       }
     },
     "num_transactions_year": {
@@ -213,16 +210,28 @@
     "payment_tech": {
       "title": "Payments / user interface",
       "description": "How do users make payments and view their accounts? (multiple choice)",
-      "type": "string",
-      "enum": ["cheque", "physical", "book", "plastic", "web", "app", "other"],
-      "labels": {
-        "cheque": "Cheques",
-        "physical": "Circulating paper / physical tokens",
-        "book": "Each member keeps an account book.",
-        "plastic": "Plastic cards with PoS system",
-        "web": "Web site",
-        "app": "Mobile app",
-        "other": "Other"
+      "type": "array",
+      "items": {
+        "type": "string",
+
+        "enum": [
+          "cheque",
+          "physical",
+          "book",
+          "plastic",
+          "web",
+          "app",
+          "other"
+        ],
+        "labels": {
+          "cheque": "Cheques",
+          "physical": "Circulating paper / physical tokens",
+          "book": "Each member keeps an account book.",
+          "plastic": "Plastic cards with PoS system",
+          "web": "Web site",
+          "app": "Mobile app",
+          "other": "Other"
+        }
       }
     },
     "unit_of_account_type": {
