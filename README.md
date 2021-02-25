@@ -38,6 +38,9 @@ Schemas and fields in the Murmurations library are validated against JSON Schema
 2. Add curly braces to create an object, and then start entering the key/value pairs for your schema in the "Input JSON" text area
 3. Test various values to ensure that the validation rules you created are working correctly
 
+(see [an example](https://github.com/MurmurationsNetwork/MurmurationsProtocol/wiki/Testing-your-schema---example) of testing a new schema )
+
+
 ## Adding Your Schema to the Library
 
 1. Fork this library repo and create a new branch for your schema
