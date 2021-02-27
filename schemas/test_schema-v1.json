@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
   "id": "https://cdn.murmurations.network/schemas/test_schema-v1.json",
-  "title": "Test schema",
-  "description": "Just for testing - Select this schema to see your profile show up straight away on the Test map",
+  "title": "Test Schema",
+  "description": "Just for testing - Select this schema to see your profile show up straight away on the Test map.",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -13,7 +13,7 @@
     },
     "geolocation": {
       "$ref": "../fields/geolocation-v1.json"
-    },
+    }
   },
   "required": ["linked_schemas", "name", "geolocation"],
   "metadata": {
@@ -24,7 +24,7 @@
     "schema": {
       "name": "test_schema-v1",
       "version": 1,
-      "purpose": "A test schema to present. test profiles on the test map",
+      "purpose": "A test schema to present profiles on the test map.",
       "url": "https://murmurations.network/schemas/test_schema"
     }
   }
