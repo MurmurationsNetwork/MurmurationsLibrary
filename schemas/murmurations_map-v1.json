@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft-04/schema#",
   "id": "https://cdn.murmurations.network/schemas/murmurations_map-v1.json",
   "title": "Murmurations Map",
-  "description": "Regenerative economy orgs - Select this schema to see your profile show up straight away on the Murmurations map",
+  "description": "Regenerative economy orgs - Select this schema to show your profile on the Murmurations map.",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -45,7 +45,7 @@
     "schema": {
       "name": "murmurations_map-v1",
       "version": 1,
-      "purpose": "A map of organisations within the regenerative economy that have created Murmurations profiles",
+      "purpose": "A map of organisations within the regenerative economy that have created Murmurations profiles.",
       "url": "https://murmurations.network/schemas/murmurations_map"
     }
   }
