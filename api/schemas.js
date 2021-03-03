@@ -42,7 +42,7 @@ module.exports = (req, res) => {
       res.status(200)
       res.setHeader('Content-Type', 'application/json')
       res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
-      res.end(req)
+      res.end(req.host)
     })
     .catch((err) => {
       res.status(500)
