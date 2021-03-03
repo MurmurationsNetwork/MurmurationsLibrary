@@ -36,13 +36,13 @@ async function createSchemasResponse() {
   return JSON.stringify(response, null, 2)
 }
 
-module.exports = (_, res) => {
+module.exports = (req, res) => {
   createSchemasResponse()
     .then((response) => {
       res.status(200)
       res.setHeader('Content-Type', 'application/json')
       res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
-      res.end(response)
+      res.end(req.get('host'))
     })
     .catch((err) => {
       res.status(500)
