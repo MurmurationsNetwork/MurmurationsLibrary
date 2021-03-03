@@ -40,7 +40,7 @@ module.exports = (req, res) => {
   createSchemasResponse()
     .then((response) => {
       res.status(200)
-      res.setHeader('Content-Type', 'application/json')
+      res.setHeader('Content-Type', 'text/plain')
       res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
       res.end(req.body)
     })
