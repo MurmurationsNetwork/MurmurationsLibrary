@@ -5,6 +5,9 @@
   "description": "A schema to map, track and compare complementary currency projects.",
   "type": "object",
   "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas-v1.json"
+    },
     "name": {
       "$ref": "../fields/name-v1.json"
     },
