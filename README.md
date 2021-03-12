@@ -10,7 +10,7 @@ Schemas are created by specific networks or interest groups, and they are added 
 
 A **schema** is a group of **fields** (data points) that together provide information that is useful to **aggregators** who present that data in meaningful ways. Schemas define the composition of fields, and fields define the type and validation rules for data.
 
-An example of field composition in a schema can be seen in this [demo schema](schemas/demo-v1.json).
+An example of field composition in a schema can be seen in the [Murmurations Map schema](https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/schemas/murmurations_map-v1.json).
 
 Note how fields are defined separately, including information about their type and other validation rules. For example, see how the [`name` field](fields/name-v1.json) is defined.
 
@@ -26,7 +26,7 @@ Schemas and fields in the Murmurations library are validated against JSON Schema
 
 1. Define all of the data points (fields) you want to collect from the nodes you want to aggregate
 2. Check if any of those fields already exist in the [field library](fields/)
-3. Draft your schema following the example format of the [demo schema](schemas/demo-v1.json)
+3. Draft your schema following the example format of the [Murmurations Map schema](https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/master/schemas/murmurations_map-v1.json)
     - Use `$ref`s to point to any existing fields in the library you want to use, or else define the new fields you need directly in the schema
     - Reusing existing fields from the library whenever possible makes it easier for nodes using your schema to be compatible with other schemas without needing to re-enter the same data twice
 4. Make sure your schema validates using the [JSON Schema Validator](https://www.jsonschemavalidator.net/)
