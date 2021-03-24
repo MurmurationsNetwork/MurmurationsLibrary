@@ -46,16 +46,16 @@
         "p2p",
         "other"
       ],
-      "labels": {
-        "blockchain": "Blockchain",
-        "cyclos": "Cyclos",
-        "cms": "CMS Plugin",
-        "webService": "Accounting web service",
-        "mesh": "Mesh credit (a.k.a Ripple)",
-        "app": "Integrated with the App. (what's the best name for this)",
-        "p2p": "P2P App (e.g. Holochain)",
-        "other": "Unpublished / proprietary"
-      }
+      "enumNames": [
+        "Blockchain",
+        "Cyclos",
+        "CMS Plugin",
+        "Accounting web service",
+        "Mesh credit (a.k.a Ripple)",
+        "Integrated with the App. (what's the best name for this)",
+        "P2P App (e.g. Holochain)",
+        "Unpublished / proprietary"
+      ]
     },
     "movement": {
       "title": "Movement",
@@ -71,29 +71,29 @@
         "transition",
         "other"
       ],
-      "labels": {
-        "none": "One-of-a-kind",
-        "barter": "Reciprocal trade / business barter",
-        "timebank": "Time bank",
-        "lets": "Local exchange trading system (LETS)",
-        "crypto": "Cryptocurrency / blockchain",
-        "gre": "Grassroots economics",
-        "transition": "Transition network",
-        "other": "Something else (we may contact you about it)"
-      }
+      "enumNames": [
+        "One-of-a-kind",
+        "Reciprocal trade / business barter",
+        "Time bank",
+        "Local exchange trading system (LETS)",
+        "Cryptocurrency / blockchain",
+        "Grassroots economics",
+        "Transition network",
+        "Something else (we may contact you about it)"
+      ]
     },
     "convert_to_legal_money": {
       "title": "Conversion to legal tender",
       "description": "Whether and how the currency can be exchanged for money",
       "type": "string",
       "enum": ["none", "market", "fullReserve", "fractionalReserve", "other"],
-      "labels": {
-        "none": "None / unofficial only e.g LETS, timebanks, other non-monetary systems.",
-        "market": "Market based e.g. via currency markets.",
-        "fullReserve": "Legal money is 100% held in a reserve E.g Bristol Pound",
-        "fractionalReserve": "Redeemable from a fractional reserve, perhaps using a bonding curve e.g. Grassroots Economics.",
-        "other": "Some other mechanism"
-      }
+      "enumNames": [
+        "None / unofficial only e.g LETS, timebanks, other non-monetary systems.",
+        "Market based e.g. via currency markets.",
+        "Legal money is 100% held in a reserve E.g Bristol Pound",
+        "Redeemable from a fractional reserve, perhaps using a bonding curve e.g. Grassroots Economics.",
+        "Some other mechanism"
+      ]
     },
     "cost_recovery": {
       "title": "Cost recovery",
@@ -110,15 +110,15 @@
           "inkind",
           "volunteers"
         ],
-        "labels": {
-          "membershipFee": "Membership fee",
-          "transactionFee": "Transaction fee",
-          "demurrage": "Savings tax / Demurrage fee / negative interest",
-          "donations": "Donations",
-          "grants": "Grants",
-          "inkind": "In-kind contributions",
-          "volunteers": "Volunteers"
-        }
+        "enumNames": [
+          "Membership fee",
+          "Transaction fee",
+          "Savings tax / Demurrage fee / negative interest",
+          "Donations",
+          "Grants",
+          "In-kind contributions",
+          "Volunteers"
+        ]
       }
     },
     "launch_year": {
@@ -147,21 +147,21 @@
         "voluntary",
         "other"
       ],
-      "labels": {
-        "blockchain": "Blockchain only",
-        "charity": "Charity",
-        "cic": "Community interest company",
-        "association": "Registered association",
-        "corp": "Incorporated company",
-        "coop": "Co-operative",
-        "faith": "Faith group",
-        "housingassoc": "Housing association",
-        "residentsassoc": "Tenants and residents association",
-        "trust": "Trust",
-        "unincorporated": "None / Unincorporated association",
-        "voluntary": "Voluntary organisation",
-        "other": "Other"
-      },
+      "enumNames": [
+        "Blockchain only",
+        "Charity",
+        "Community interest company",
+        "Registered association",
+        "Incorporated company",
+        "Co-operative",
+        "Faith group",
+        "Housing association",
+        "Tenants and residents association",
+        "Trust",
+        "None / Unincorporated association",
+        "Voluntary organisation",
+        "Other"
+      ],
       "contexts": {
         "charity": "https://standards.esd.org.uk/?uri=organisationType/229",
         "cic": "https://standards.esd.org.uk/?uri=organisationType/230",
@@ -188,15 +188,15 @@
         "hybrid",
         "other"
       ],
-      "labels": {
-        "tokens": "Fixed number of tokens e.g. Bitcoin",
-        "points": "Tokens issued as needed e.g. Time banks, reputation scores",
-        "mutual": "Mutual credit e.g. Sardex, Wir, business barter, LETS",
-        "selfIssued": "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques",
-        "mesh": "Mesh credit (a.k.a Ripple)",
-        "hybrid": "Hybrid",
-        "other": "Other"
-      }
+      "enumNames": [
+        "Fixed number of tokens e.g. Bitcoin",
+        "Tokens issued as needed e.g. Time banks, reputation scores",
+        "Mutual credit e.g. Sardex, Wir, business barter, LETS",
+        "Self-issued credit e.g. shopping vouchers, deli dollars, self-signed cheques",
+        "Mesh credit (a.k.a Ripple)",
+        "Hybrid",
+        "Other"
+      ]
     },
     "num_transactions_year": {
       "title": "Number of transactions annually",
@@ -226,15 +226,15 @@
           "app",
           "other"
         ],
-        "labels": {
-          "cheque": "Cheques",
-          "physical": "Circulating paper / physical tokens",
-          "book": "Each member keeps an account book.",
-          "plastic": "Plastic cards with PoS system",
-          "web": "Web site",
-          "app": "Mobile app",
-          "other": "Other"
-        }
+        "enumNames": [
+          "Cheques",
+          "Circulating paper / physical tokens",
+          "Each member keeps an account book.",
+          "Plastic cards with PoS system",
+          "Web site",
+          "Mobile app",
+          "Other"
+        ]
       }
     },
     "unit_of_account_type": {
@@ -242,14 +242,14 @@
       "description": "How is the value of the currency unit determined?",
       "type": "string",
       "enum": ["time", "legal", "market", "index", "redeemable", "other"],
-      "labels": {
-        "time": "Time based e.g. hour",
-        "legal": "Equivalent to national legal unit e.g. US dollar.",
-        "market": "Pure supply & demand e.g. Bitcoin",
-        "index": "Indexed to a commodity price or basket e.g. gold, eggs",
-        "redeemable": "Redeemable for a commodity e.g. vouchers",
-        "other": "Other e.g. Most LETS create arbitary units"
-      }
+      "enumNames": [
+        "Time based e.g. hour",
+        "Equivalent to national legal unit e.g. US dollar.",
+        "Pure supply & demand e.g. Bitcoin",
+        "Indexed to a commodity price or basket e.g. gold, eggs",
+        "Redeemable for a commodity e.g. vouchers",
+        "Other e.g. Most LETS create arbitary units"
+      ]
     }
   },
   "required": ["linked_schemas", "name", "url"],
