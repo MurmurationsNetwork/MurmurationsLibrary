@@ -1,0 +1,18 @@
+{
+  "title": "Job title",
+  "description": "The job title of the person (for example, Financial Manager).",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 100,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "jobtitle-v1.0.0",
+      "version": 1.0.0
+    },
+    "context": ["https://schema.org/jobTitle"]
+  }
+}
