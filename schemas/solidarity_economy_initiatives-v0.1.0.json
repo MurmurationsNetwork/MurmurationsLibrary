@@ -41,7 +41,7 @@
     },
     "schema": {
       "name": "solidarity_economy_initiatives-v0.1.0",
-      "version": "0.1.0",
+      "version": "1",
       "url": "https://github.com/SolidarityEconomyAssociation/MurmurationsLibrary/wiki/solidarity_economy_initiatives-v0.1.0",
       "purpose": "A map of organisations within the solidarity economy."
     }
