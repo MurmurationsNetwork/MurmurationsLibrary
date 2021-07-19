@@ -1,6 +1,6 @@
 {
   "title": "Org Type - freeform tags",
-  "description": "What type of Organisation is this? e.g. Private limited company, School, Co-op, etc.",
+  "description": "What type of Organisation is this? (e.g. Private limited company, School, Co-op, etc.)",
   "type": "array",
   "items": {
     "type": "string",
@@ -19,6 +19,8 @@
       "name": "org_type_tags-v1",
       "version": 1
     },
-    "context": ["https://schema.org/keywords"]
+    "context": [
+      "https://schema.org/keywords"
+    ]
   }
 }

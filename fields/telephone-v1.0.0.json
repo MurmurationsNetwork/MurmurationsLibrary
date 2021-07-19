@@ -1,6 +1,6 @@
 {
   "title": "Telephone number",
-  "description": "The telephone number.",
+  "description": "A telephone number",
   "type": "string",
   "minLength": 1,
   "maxLength": 100,
@@ -11,8 +11,10 @@
     },
     "field": {
       "name": "telephone-v1.0.0",
-      "version": 1.0.0
+      "version": 1
     },
-    "context": ["https://schema.org/telephone"]
+    "context": [
+      "https://schema.org/telephone"
+    ]
   }
 }

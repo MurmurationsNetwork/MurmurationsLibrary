@@ -19,6 +19,8 @@
       "name": "keywords-v1",
       "version": 1
     },
-    "context": ["https://schema.org/keywords"]
+    "context": [
+      "https://schema.org/keywords"
+    ]
   }
 }

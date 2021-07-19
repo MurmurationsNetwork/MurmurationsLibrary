@@ -1,6 +1,6 @@
 {
   "title": "First Name",
-  "description": "The first name / birth name of a person.",
+  "description": "The first name / birth name of a person",
   "type": "string",
   "minLength": 1,
   "maxLength": 100,
@@ -10,9 +10,11 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "firstname-v1.0.0",
-      "version": 1.0.0
+      "name": "first_name-v1.0.0",
+      "version": 1
     },
-    "context": ["https://schema.org/givenName"]
+    "context": [
+      "https://schema.org/givenName"
+    ]
   }
 }

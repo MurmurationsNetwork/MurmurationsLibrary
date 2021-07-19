@@ -1,6 +1,6 @@
 {
   "title": "Languages",
-  "description": "The languages which a person knows.",
+  "description": "The languages which a person knows",
   "type": "array",
   "items": {
     "type": "string",
@@ -16,9 +16,11 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "knowslanguage-v1.0.0",
-      "version": 1.0.0
+      "name": "knows_language-v1.0.0",
+      "version": 1
     },
-    "context": ["https://schema.org/knowsLanguage"]
+    "context": [
+      "https://schema.org/knowsLanguage"
+    ]
   }
 }

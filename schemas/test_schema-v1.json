@@ -15,7 +15,11 @@
       "$ref": "../fields/geolocation-v1.json"
     }
   },
-  "required": ["linked_schemas", "name", "geolocation"],
+  "required": [
+    "linked_schemas",
+    "name",
+    "geolocation"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

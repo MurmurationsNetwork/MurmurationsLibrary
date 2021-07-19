@@ -1,6 +1,6 @@
 {
   "title": "Last Name",
-  "description": "The last name / family name of a person.",
+  "description": "The last name / family name of a person",
   "type": "string",
   "minLength": 1,
   "maxLength": 100,
@@ -10,9 +10,11 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "lastname-v1.0.0",
-      "version": 1.0.0
+      "name": "last_name-v1.0.0",
+      "version": 1
     },
-    "context": ["https://schema.org/familyName"]
+    "context": [
+      "https://schema.org/familyName"
+    ]
   }
 }
