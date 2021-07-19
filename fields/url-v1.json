@@ -13,6 +13,8 @@
       "name": "url-v1",
       "version": 1
     },
-    "context": ["https://schema.org/url"]
+    "context": [
+      "https://schema.org/url"
+    ]
   }
 }

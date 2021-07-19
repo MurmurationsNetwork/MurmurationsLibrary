@@ -1,20 +1,20 @@
 {
-  "title": "RSS feed",
-  "description": "The URL for this entities RSS feed - usually somemthing like: yoursite.com/rss",
+  "title": "Email",
+  "description": "An email address",
   "type": "string",
+  "minLength": 1,
   "maxLength": 100,
-  "pattern": "https?://",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "rss-v1",
+      "name": "email-v1.0.0",
       "version": 1
     },
     "context": [
-      "https://en.wikipedia.org/wiki/RSS"
+      "https://schema.org/email"
     ]
   }
 }

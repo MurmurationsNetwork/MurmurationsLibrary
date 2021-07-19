@@ -14,7 +14,10 @@
       "maximum": 180
     }
   },
-  "required": ["lat", "lon"],
+  "required": [
+    "lat",
+    "lon"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

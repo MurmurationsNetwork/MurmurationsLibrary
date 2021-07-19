@@ -1,6 +1,6 @@
 {
-  "title": "Descriptive Keywords",
-  "description": "The most common keywords used to describe the entity",
+  "title": "Languages",
+  "description": "The languages which a person knows",
   "type": "array",
   "items": {
     "type": "string",
@@ -16,11 +16,11 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "keywords-v1",
+      "name": "knows_language-v1.0.0",
       "version": 1
     },
     "context": [
-      "https://schema.org/keywords"
+      "https://schema.org/knowsLanguage"
     ]
   }
 }

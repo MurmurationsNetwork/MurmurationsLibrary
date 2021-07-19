@@ -272,7 +272,9 @@
       "pattern": "^.{1,100}$"
     }
   },
-  "required": ["country"],
+  "required": [
+    "country"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
