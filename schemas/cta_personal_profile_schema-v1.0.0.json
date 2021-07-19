@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://cdn.murmurations.network/schemas/cta_personal_profile_schema-v1.0.0.json",
+  "title": "Personal Profile",
+  "description": "A profile of a person (alive, dead or fictional)",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas-v1.json"
+    },
+    "first_name": {
+      "$ref": "../fields/first_name-v1.0.0.json"
+    },
+    "last_name": {
+      "$ref": "../fields/last_name-v1.0.0.json"
+    },
+    "email": {
+      "$ref": "../fields/email-v1.0.0.json"
+    },
+    "telephone": {
+      "$ref": "../fields/telephone-v1.0.0.json"
+    },
+    "description": {
+      "$ref": "../fields/description-v1.json"
+    },
+    "image": {
+      "$ref": "../fields/image-v1.json"
+    },
+    "urls": {
+      "$ref": "../fields/urls-v1.json"
+    },
+    "location": {
+      "$ref": "../fields/location-v1.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation-v1.json"
+    },
+    "job_title": {
+      "$ref": "../fields/job_title-v1.0.0.json"
+    },
+    "knows_language": {
+      "$ref": "../fields/knows_language-v1.0.0.json"
+    },
+    "member_of": {
+      "$ref": "../fields/member_of-v1.0.0.json"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "firstname",
+    "lastname",
+    "geolocation"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "cta_personal_profile_schema-v1.0.0",
+      "version": 1,
+      "purpose": "A personal profile schema to encourage cross platform and network discovery and synergy.",
+      "url": "https://murmurations.network/schemas/cta_personal_profile_schema"
+    }
+  }
+}
