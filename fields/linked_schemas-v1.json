@@ -4,7 +4,7 @@
   "type": "array",
   "items": {
     "type": "string",
-    "pattern": "[A-Za-z0-9-_]{4,100}$"
+    "pattern": "[A-Za-z0-9-._]{4,100}$"
   },
   "minItems": 1,
   "maxItems": 10,

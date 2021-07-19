@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://cdn.murmurations.network/schemas/solidarity_economy_initiatives-v0.1.0.json",
+  "title": "Solidarity Economy Initiatives",
+  "description": "Describes an initiative in the Solidarity Economy. FIXME and WARNING: this is experimental!",
+  "type": "object",
+  "propertyNames": {
+    "pattern": "^[a-z0-9_]*$"
+  },
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas-v1.json"
+    },
+    "ld_uri": {
+      "$ref": "../fields/url-v1.json"
+    },
+    "name": {
+      "$ref": "../fields/name-v1.json"
+    },
+    "description": {
+      "$ref": "../fields/description-v1.json"
+    },
+    "website": {
+      "$ref": "../fields/url-v1.json"
+    },
+    "location": {
+      "$ref": "../fields/location-v1.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation-v1.json"
+    },
+    "org_type_tags": {
+      "$ref": "../fields/org_type_tags-v1.json"
+    }
+  },
+  "required": ["linked_schemas", "name", "ld_uri"],
+  "metadata": {
+    "creator": {
+      "name": "Solidarity Economy Association",
+      "url": "https://www.solidarityeconomy.coop/"
+    },
+    "schema": {
+      "name": "solidarity_economy_initiatives-v0.1.0",
+      "version": 1,
+      "url": "https://github.com/SolidarityEconomyAssociation/MurmurationsLibrary/wiki/solidarity_economy_initiatives-v0.1.0",
+      "purpose": "A map of organisations within the solidarity economy."
+    }
+  }
+}
