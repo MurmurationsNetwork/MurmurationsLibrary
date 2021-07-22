@@ -1,36 +1,36 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://cdn.murmurations.network/schemas/complementary_currencies-v1.json",
+  "id": "https://cdn.murmurations.network/schemas/complementary_currencies-v1.0.0.json",
   "title": "Complementary Currencies",
   "description": "A schema to map, track and compare complementary currency projects.",
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "../fields/linked_schemas-v1.json"
+      "$ref": "../fields/linked_schemas-v1.0.0.json"
     },
     "name": {
-      "$ref": "../fields/name-v1.json"
+      "$ref": "../fields/name-v1.0.0.json"
     },
     "url": {
-      "$ref": "../fields/url-v1.json"
+      "$ref": "../fields/url-v1.0.0.json"
     },
     "area_served": {
-      "$ref": "../fields/area_served-v1.json"
+      "$ref": "../fields/area_served-v1.0.0.json"
     },
     "description": {
-      "$ref": "../fields/description-v1.json"
+      "$ref": "../fields/description-v1.0.0.json"
     },
     "location": {
-      "$ref": "../fields/location-v1.json"
+      "$ref": "../fields/location-v1.0.0.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation-v1.json"
+      "$ref": "../fields/geolocation-v1.0.0.json"
     },
     "image": {
-      "$ref": "../fields/image-v1.json"
+      "$ref": "../fields/image-v1.0.0.json"
     },
     "rss": {
-      "$ref": "../fields/rss-v1.json"
+      "$ref": "../fields/rss-v1.0.0.json"
     },
     "accounting_tech": {
       "title": "Accounting software type",
@@ -275,7 +275,7 @@
       "url": "http://www.creditcommons.net/"
     },
     "schema": {
-      "name": "complementary_currencies-v1",
+      "name": "complementary_currencies-v1.0.0",
       "version": "1.0.0",
       "url": "http://creditcommons.net/murmurations-complementary-currency-schema"
     }

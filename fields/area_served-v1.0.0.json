@@ -14,8 +14,8 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "area_served-v1",
-      "version": 1
+      "name": "area_served-v1.0.0",
+      "version": "1.0.0"
     },
     "context": [
       "http://schema.org/areaServed"

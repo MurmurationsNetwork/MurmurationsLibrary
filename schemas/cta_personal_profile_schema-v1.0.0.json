@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "../fields/linked_schemas-v1.json"
+      "$ref": "../fields/linked_schemas-v1.0.0.json"
     },
     "first_name": {
       "$ref": "../fields/first_name-v1.0.0.json"
@@ -21,19 +21,19 @@
       "$ref": "../fields/telephone-v1.0.0.json"
     },
     "description": {
-      "$ref": "../fields/description-v1.json"
+      "$ref": "../fields/description-v1.0.0.json"
     },
     "image": {
-      "$ref": "../fields/image-v1.json"
+      "$ref": "../fields/image-v1.0.0.json"
     },
     "urls": {
-      "$ref": "../fields/urls-v1.json"
+      "$ref": "../fields/urls-v1.0.0.json"
     },
     "location": {
-      "$ref": "../fields/location-v1.json"
+      "$ref": "../fields/location-v1.0.0.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation-v1.json"
+      "$ref": "../fields/geolocation-v1.0.0.json"
     },
     "job_title": {
       "$ref": "../fields/job_title-v1.0.0.json"

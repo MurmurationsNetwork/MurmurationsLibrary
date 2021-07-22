@@ -16,8 +16,8 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "keywords-v1",
-      "version": 1
+      "name": "keywords-v1.0.0",
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/keywords"
