@@ -58,7 +58,7 @@
     },
     "schema": {
       "name": "cta_personal_profile_schema-v1.0.0",
-      "version": 1,
+      "version": "1.0.0",
       "purpose": "A personal profile schema to encourage cross platform and network discovery and synergy.",
       "url": "https://murmurations.network/schemas/cta_personal_profile_schema"
     }

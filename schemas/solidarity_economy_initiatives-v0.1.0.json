@@ -33,7 +33,11 @@
       "$ref": "../fields/org_type_tags-v1.json"
     }
   },
-  "required": ["linked_schemas", "name", "ld_uri"],
+  "required": [
+    "linked_schemas",
+    "name",
+    "ld_uri"
+  ],
   "metadata": {
     "creator": {
       "name": "Solidarity Economy Association",
@@ -41,7 +45,7 @@
     },
     "schema": {
       "name": "solidarity_economy_initiatives-v0.1.0",
-      "version": 1,
+      "version": "1.0.0",
       "url": "https://github.com/SolidarityEconomyAssociation/MurmurationsLibrary/wiki/solidarity_economy_initiatives-v0.1.0",
       "purpose": "A map of organisations within the solidarity economy."
     }

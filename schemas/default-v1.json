@@ -22,7 +22,7 @@
     },
     "schema": {
       "name": "default-v1",
-      "version": 1,
+      "version": "1.0.0",
       "url": "https://murmurations.network/schemas/default_schema"
     }
   }

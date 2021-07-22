@@ -276,7 +276,7 @@
     },
     "schema": {
       "name": "complementary_currencies-v1",
-      "version": 1,
+      "version": "1.0.0",
       "url": "http://creditcommons.net/murmurations-complementary-currency-schema"
     }
   }

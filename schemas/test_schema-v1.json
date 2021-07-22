@@ -27,7 +27,7 @@
     },
     "schema": {
       "name": "test_schema-v1",
-      "version": 1,
+      "version": "1.0.0",
       "purpose": "A test schema to present profiles on the test map.",
       "url": "https://murmurations.network/schemas/test_schema"
     }
