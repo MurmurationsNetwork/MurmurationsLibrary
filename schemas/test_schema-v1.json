@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://cdn.murmurations.network/schemas/test_schema-v1.json",
+  "id": "https://cdn.murmurations.network/schemas/test_schema-v1.0.0.json",
   "title": "Test Schema",
   "description": "Just for testing - Select this schema to see your profile show up straight away on the Test map.",
   "type": "object",
@@ -26,7 +26,7 @@
       "url": "https://murmurations.network/"
     },
     "schema": {
-      "name": "test_schema-v1",
+      "name": "test_schema-v1.0.0",
       "version": "1.0.0",
       "purpose": "A test schema to present profiles on the test map.",
       "url": "https://murmurations.network/schemas/test_schema"
