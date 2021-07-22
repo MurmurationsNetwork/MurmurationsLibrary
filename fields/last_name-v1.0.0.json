@@ -11,7 +11,7 @@
     },
     "field": {
       "name": "last_name-v1.0.0",
-      "version": 1
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/familyName"

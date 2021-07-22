@@ -9,28 +9,28 @@
   },
   "properties": {
     "linked_schemas": {
-      "$ref": "../fields/linked_schemas-v1.json"
+      "$ref": "../fields/linked_schemas-v1.0.0.json"
     },
     "ld_uri": {
-      "$ref": "../fields/url-v1.json"
+      "$ref": "../fields/url-v1.0.0.json"
     },
     "name": {
-      "$ref": "../fields/name-v1.json"
+      "$ref": "../fields/name-v1.0.0.json"
     },
     "description": {
-      "$ref": "../fields/description-v1.json"
+      "$ref": "../fields/description-v1.0.0.json"
     },
     "website": {
-      "$ref": "../fields/url-v1.json"
+      "$ref": "../fields/url-v1.0.0.json"
     },
     "location": {
-      "$ref": "../fields/location-v1.json"
+      "$ref": "../fields/location-v1.0.0.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation-v1.json"
+      "$ref": "../fields/geolocation-v1.0.0.json"
     },
     "org_type_tags": {
-      "$ref": "../fields/org_type_tags-v1.json"
+      "$ref": "../fields/org_type_tags-v1.0.0.json"
     }
   },
   "required": [
@@ -45,7 +45,7 @@
     },
     "schema": {
       "name": "solidarity_economy_initiatives-v0.1.0",
-      "version": "1.0.0",
+      "version": "0.1.0",
       "url": "https://github.com/SolidarityEconomyAssociation/MurmurationsLibrary/wiki/solidarity_economy_initiatives-v0.1.0",
       "purpose": "A map of organisations within the solidarity economy."
     }

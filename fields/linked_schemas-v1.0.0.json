@@ -15,8 +15,8 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "linked_schemas-v1",
-      "version": 1
+      "name": "linked_schemas-v1.0.0",
+      "version": "1.0.0"
     },
     "context": [
       "https://murmurations.network/fields/linked_schemas"

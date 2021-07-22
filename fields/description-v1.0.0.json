@@ -9,8 +9,8 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "description-v1",
-      "version": 1
+      "name": "description-v1.0.0",
+      "version": "1.0.0"
     },
     "context": [
       "http://schema.org/description"
