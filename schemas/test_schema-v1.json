@@ -6,13 +6,13 @@
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "../fields/linked_schemas-v1.0.0.json"
+      "$ref": "../fields/linked_schemas-v1.json"
     },
     "name": {
-      "$ref": "../fields/name-v1.0.0.json"
+      "$ref": "../fields/name-v1.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation-v1.0.0.json"
+      "$ref": "../fields/geolocation-v1.json"
     }
   },
   "required": [

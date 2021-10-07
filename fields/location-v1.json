@@ -281,8 +281,8 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "location-v1.0.0",
-      "version": "1.0.0"
+      "name": "location-v1",
+      "version": 1
     },
     "context": [
       "https://en.wikipedia.org/wiki/ISO_3166-1",

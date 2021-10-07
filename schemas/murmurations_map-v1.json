@@ -1,39 +1,39 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "id": "https://cdn.murmurations.network/schemas/murmurations_map-v1.0.0.json",
+  "id": "https://cdn.murmurations.network/schemas/murmurations_map-v1.json",
   "title": "Murmurations Map",
   "description": "Regenerative economy orgs - Select this schema to show your profile on the Murmurations map.",
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "../fields/linked_schemas-v1.0.0.json"
+      "$ref": "../fields/linked_schemas-v1.json"
     },
     "name": {
-      "$ref": "../fields/name-v1.0.0.json"
+      "$ref": "../fields/name-v1.json"
     },
     "urls": {
-      "$ref": "../fields/urls-v1.0.0.json"
+      "$ref": "../fields/urls-v1.json"
     },
     "description": {
-      "$ref": "../fields/description-v1.0.0.json"
+      "$ref": "../fields/description-v1.json"
     },
     "mission": {
-      "$ref": "../fields/mission-v1.0.0.json"
+      "$ref": "../fields/mission-v1.json"
     },
     "location": {
-      "$ref": "../fields/location-v1.0.0.json"
+      "$ref": "../fields/location-v1.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation-v1.0.0.json"
+      "$ref": "../fields/geolocation-v1.json"
     },
     "image": {
-      "$ref": "../fields/image-v1.0.0.json"
+      "$ref": "../fields/image-v1.json"
     },
     "rss": {
-      "$ref": "../fields/rss-v1.0.0.json"
+      "$ref": "../fields/rss-v1.json"
     },
     "org_type_tags": {
-      "$ref": "../fields/org_type_tags-v1.0.0.json"
+      "$ref": "../fields/org_type_tags-v1.json"
     }
   },
   "required": [
@@ -47,7 +47,7 @@
       "url": "https://murmurations.network/"
     },
     "schema": {
-      "name": "murmurations_map-v1.0.0",
+      "name": "murmurations_map-v1",
       "version": "1.0.0",
       "purpose": "A map of organisations within the regenerative economy that have created Murmurations profiles.",
       "url": "https://murmurations.network/schemas/murmurations_map"

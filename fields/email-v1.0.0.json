@@ -11,7 +11,7 @@
     },
     "field": {
       "name": "email-v1.0.0",
-      "version": "1.0.0"
+      "version": 1
     },
     "context": [
       "https://schema.org/email"

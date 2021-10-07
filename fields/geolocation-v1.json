@@ -24,8 +24,8 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "geolocation-v1.0.0",
-      "version": "1.0.0"
+      "name": "geolocation-v1",
+      "version": 1
     },
     "context": [
       "https://schema.org/latitude",
