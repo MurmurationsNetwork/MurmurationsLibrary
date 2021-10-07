@@ -48,7 +48,7 @@
     },
     "schema": {
       "name": "murmurations_map-v1",
-      "version": "1.0.0",
+      "version": 1,
       "purpose": "A map of organisations within the regenerative economy that have created Murmurations profiles.",
       "url": "https://murmurations.network/schemas/murmurations_map"
     }
