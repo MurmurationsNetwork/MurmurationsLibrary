@@ -36,11 +36,7 @@
       "$ref": "../fields/org_type_tags-v1.json"
     }
   },
-  "required": [
-    "linked_schemas",
-    "name",
-    "urls"
-  ],
+  "required": ["linked_schemas", "name", "urls"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

@@ -1,6 +1,6 @@
 {
   "title": "Linked Schemas",
-  "description": "The schemas against which the profile must be validated (must be alphanumeric with a dash(-), period(.) and underscore(_), e.g., demo_schema-v1.0.0",
+  "description": "The schemas against which the profile must be validated (must be alphanumeric with a dash(-) and/or underscore(_), e.g., demo_schema-v1",
   "type": "array",
   "items": {
     "type": "string",
@@ -18,8 +18,6 @@
       "name": "linked_schemas-v1",
       "version": 1
     },
-    "context": [
-      "https://murmurations.network/fields/linked_schemas"
-    ]
+    "context": ["https://murmurations.network/fields/linked_schemas"]
   }
 }

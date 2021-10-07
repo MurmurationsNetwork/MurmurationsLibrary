@@ -86,13 +86,7 @@
       "title": "Conversion to legal tender",
       "description": "Whether and how the currency can be exchanged for money",
       "type": "string",
-      "enum": [
-        "none",
-        "market",
-        "fullReserve",
-        "fractionalReserve",
-        "other"
-      ],
+      "enum": ["none", "market", "fullReserve", "fractionalReserve", "other"],
       "enumNames": [
         "None / unofficial only e.g LETS, timebanks, other non-monetary systems.",
         "Market based e.g. via currency markets.",
@@ -222,6 +216,7 @@
       "type": "array",
       "items": {
         "type": "string",
+
         "enum": [
           "cheque",
           "physical",
@@ -246,14 +241,7 @@
       "title": "Type of unit of account",
       "description": "How is the value of the currency unit determined?",
       "type": "string",
-      "enum": [
-        "time",
-        "legal",
-        "market",
-        "index",
-        "redeemable",
-        "other"
-      ],
+      "enum": ["time", "legal", "market", "index", "redeemable", "other"],
       "enumNames": [
         "Time based e.g. hour",
         "Equivalent to national legal unit e.g. US dollar.",
@@ -264,11 +252,7 @@
       ]
     }
   },
-  "required": [
-    "linked_schemas",
-    "name",
-    "url"
-  ],
+  "required": ["linked_schemas", "name", "url"],
   "metadata": {
     "creator": {
       "name": "Matthew Slater",

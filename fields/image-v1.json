@@ -16,10 +16,7 @@
         "$ref": "url-v1.json"
       }
     },
-    "required": [
-      "name",
-      "url"
-    ]
+    "required": ["name", "url"]
   },
   "metadata": {
     "creator": {
@@ -30,8 +27,6 @@
       "name": "image-v1",
       "version": 1
     },
-    "context": [
-      "https://schema.org/image"
-    ]
+    "context": ["https://schema.org/image"]
   }
 }

@@ -16,10 +16,7 @@
         "$ref": "url-v1.json"
       }
     },
-    "required": [
-      "name",
-      "url"
-    ]
+    "required": ["name", "url"]
   },
   "minItems": 1,
   "maxItems": 50,
@@ -33,8 +30,6 @@
       "name": "urls-v1",
       "version": 1
     },
-    "context": [
-      "https://schema.org/url"
-    ]
+    "context": ["https://schema.org/url"]
   }
 }

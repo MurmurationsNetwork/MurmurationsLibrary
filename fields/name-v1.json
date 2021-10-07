@@ -13,8 +13,6 @@
       "name": "name-v1",
       "version": 1
     },
-    "context": [
-      "https://schema.org/name"
-    ]
+    "context": ["https://schema.org/name"]
   }
 }

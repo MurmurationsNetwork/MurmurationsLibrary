@@ -12,9 +12,7 @@
       "$ref": "../fields/linked_schemas-v1.json"
     }
   },
-  "required": [
-    "linked_schemas"
-  ],
+  "required": ["linked_schemas"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
