@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft-06/schema#",
   "id": "https://cdn.murmurations.network/schemas/default-v1.0.0.json",
   "title": "Default Schema",
   "description": "The default schema for initial validation of a profile by the index.",
