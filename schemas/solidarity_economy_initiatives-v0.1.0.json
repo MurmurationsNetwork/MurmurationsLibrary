@@ -12,7 +12,22 @@
       "$ref": "../fields/linked_schemas-v1.json"
     },
     "ld_uri": {
-      "$ref": "../fields/url-v1.json"
+      "title": "Linked-Data URI",
+      "description": "The URI for the entity or item",
+      "type": "string",
+      "maxLength": 2000,
+      "pattern": "^(https?)://([a-zA-Z0-9-]{1,63}[.])+[a-zA-Z0-9-]{2,63}(/[\\w.~%!$&\\+'(),;=@\\-]+)/?([#?]\\S*)?$",
+      "metadata": {
+        "creator": {
+          "name": "Solidarity Economy Association",
+          "url": "https://solidarityeconomy.coop"
+        },
+        "field": {
+          "name": "uri",
+          "version": 1
+        },
+        "context": ["https://schema.org/identifier"]
+      }
     },
     "name": {
       "$ref": "../fields/name-v1.json"
