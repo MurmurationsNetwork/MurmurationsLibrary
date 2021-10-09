@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://cdn.murmurations.network/schemas/systems_change_map-v1.json",
+  "title": "Systems Change around the World",
+  "description": "A map of projects and organizations moving towards systems change.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas-v1.json"
+    },
+    "name": {
+      "$ref": "../fields/name-v1.json"
+    },
+    "url": {
+      "$ref": "../fields/url-v1.json"
+    },
+    "description": {
+      "$ref": "../fields/description-v1.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation-v1.json"
+    },
+    "address": {
+      "$ref": "../fields/address-v1.json"
+    },
+    "Contact email": {
+      "$ref": "../fields/email-v1.json"
+    },    
+    "image": {
+      "$ref": "../fields/image-v1.json"
+    },
+    "org_type_tags": {
+      "$ref": "../fields/org_type_tags-v1.json"
+    }
+  },
+  "required": ["linked_schemas", "name", "urls"],
+  "metadata": {
+    "creator": {
+      "name": "Shareable",
+      "url": "https://www.shareable.net/"
+    },
+    "schema": {
+      "name": "systems_change_map-v1",
+      "version": 1,
+      "purpose": "A map of projects and organizations moving towards systems change."
+    }
+  }
+}
