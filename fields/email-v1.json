@@ -1,6 +1,6 @@
 {
   "title": "email",
-  "description": "Email address.",
+  "description": "An email address",
   "type": "string",
   "minLength": 1,
   "maxLength": 100,
@@ -13,6 +13,8 @@
       "name": "email-v1",
       "version": 1
     },
-    "context": ["https://schema.org/email"]
+    "context": [
+      "https://schema.org/email"
+    ]
   }
 }
