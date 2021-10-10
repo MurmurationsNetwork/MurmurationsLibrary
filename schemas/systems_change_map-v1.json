@@ -23,9 +23,9 @@
     "address": {
       "$ref": "../fields/address-v1.json"
     },
-    "Contact email": {
+    "contact_email": {
       "$ref": "../fields/email-v1.json"
-    },    
+    },
     "image": {
       "$ref": "../fields/image-v1.json"
     },
@@ -33,7 +33,11 @@
       "$ref": "../fields/org_type_tags-v1.json"
     }
   },
-  "required": ["linked_schemas", "name", "urls"],
+  "required": [
+    "linked_schemas",
+    "name",
+    "urls"
+  ],
   "metadata": {
     "creator": {
       "name": "Shareable",
