@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft-04/schema#",
   "id": "https://cdn.murmurations.network/schemas/solidarity_economy_initiatives-v0.1.0.json",
   "title": "Solidarity Economy Initiatives",
-  "description": "Describes an initiative in the Solidarity Economy. FIXME and WARNING: this is experimental!",
+  "description": "Describes an initiative in the Solidarity Economy. FIXME and WARNING: this is experimental!!",
   "type": "object",
   "propertyNames": {
     "pattern": "^[a-z0-9_]*$"
@@ -12,7 +12,24 @@
       "$ref": "../fields/linked_schemas-v1.json"
     },
     "ld_uri": {
-      "$ref": "../fields/url-v1.json"
+      "title": "Linked-Data URI",
+      "description": "The URI for the entity or item",
+      "type": "string",
+      "maxLength": 2000,
+      "pattern": "https?://",
+      "metadata": {
+        "creator": {
+          "name": "Solidarity Economy Association",
+          "url": "https://solidarityeconomy.coop"
+        },
+        "field": {
+          "name": "ld_uri-v1",
+          "version": 1
+        },
+        "context": [
+          "https://schema.org/identifier"
+        ]
+      }
     },
     "name": {
       "$ref": "../fields/name-v1.json"
@@ -33,7 +50,11 @@
       "$ref": "../fields/org_type_tags-v1.json"
     }
   },
-  "required": ["linked_schemas", "name", "ld_uri"],
+  "required": [
+    "linked_schemas",
+    "name",
+    "ld_uri"
+  ],
   "metadata": {
     "creator": {
       "name": "Solidarity Economy Association",
