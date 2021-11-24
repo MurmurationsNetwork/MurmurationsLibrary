@@ -1,0 +1,18 @@
+{
+  "title": "Country name",
+  "description": "The name of country where the entity is based",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "country_name",
+      "version": 1
+    },
+    "context": [
+      "https://schema.org/Country"
+    ]
+  }
+}
