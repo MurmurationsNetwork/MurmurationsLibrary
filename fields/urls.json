@@ -1,0 +1,33 @@
+{
+  "title": "Website Addresses/URLs",
+  "description": "URLs for website(s), social media, etc.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "URL Name",
+        "description": "The name of what this URL is for (e.g., the name of the social media provider, website, etc.)",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "url": {
+        "$ref": "url.json"
+      }
+    },
+    "required": ["name", "url"]
+  },
+  "uniqueItems": true,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "urls",
+      "version": "0.0.1"
+    },
+    "context": ["https://schema.org/url"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Image",
+  "description": "The URL of a logo or other image for the entity",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "image",
+      "version": "0.0.1"
+    },
+    "context": ["https://schema.org/image"]
+  }
+}
