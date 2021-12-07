@@ -1,5 +1,5 @@
 {
-  "title": "URL",
+  "title": "Primary URL",
   "description": "The primary URL of the entity or item",
   "type": "string",
   "maxLength": 2000,
@@ -10,7 +10,7 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "url",
+      "name": "primary_url",
       "version": "0.0.1"
     },
     "context": ["https://schema.org/url"]
