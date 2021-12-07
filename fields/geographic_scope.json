@@ -1,0 +1,16 @@
+{
+  "title": "Geographic Scope",
+  "description": "The geographic scope of this entity",
+  "type": "string",
+  "enum": ["local", "regional", "national", "international"],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "geographic_scope",
+      "version": "0.0.1"
+    }
+  }
+}
