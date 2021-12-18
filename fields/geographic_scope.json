@@ -1,18 +1,16 @@
 {
-  "title": "Locality",
-  "description": "A city, town, village, etc.",
+  "title": "Geographic Scope",
+  "description": "The geographic scope of this entity",
   "type": "string",
+  "enum": ["local", "regional", "national", "international"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "locality",
+      "name": "geographic_scope",
       "version": "0.0.1"
-    },
-    "context": [
-      "https://schema.org/addressLocality"
-    ]
+    }
   }
 }

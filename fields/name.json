@@ -1,6 +1,6 @@
 {
-  "title": "Locality",
-  "description": "A city, town, village, etc.",
+  "title": "Name",
+  "description": "The name of the entity, organization, project, etc.",
   "type": "string",
   "metadata": {
     "creator": {
@@ -8,11 +8,9 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "locality",
+      "name": "name",
       "version": "0.0.1"
     },
-    "context": [
-      "https://schema.org/addressLocality"
-    ]
+    "context": ["https://schema.org/name"]
   }
 }

@@ -1,6 +1,6 @@
 {
-  "title": "Locality",
-  "description": "A city, town, village, etc.",
+  "title": "Email address",
+  "description": "An email address",
   "type": "string",
   "metadata": {
     "creator": {
@@ -8,11 +8,11 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "locality",
+      "name": "email",
       "version": "0.0.1"
     },
     "context": [
-      "https://schema.org/addressLocality"
+      "https://schema.org/email"
     ]
   }
 }

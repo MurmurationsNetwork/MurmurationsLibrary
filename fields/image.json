@@ -1,6 +1,6 @@
 {
-  "title": "Locality",
-  "description": "A city, town, village, etc.",
+  "title": "Image",
+  "description": "The URL of a logo or other image for the entity",
   "type": "string",
   "metadata": {
     "creator": {
@@ -8,11 +8,9 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "locality",
+      "name": "image",
       "version": "0.0.1"
     },
-    "context": [
-      "https://schema.org/addressLocality"
-    ]
+    "context": ["https://schema.org/image"]
   }
 }
