@@ -8,12 +8,14 @@
       "name": {
         "title": "URL Name",
         "description": "The name of what this URL is for (e.g., the name of the social media provider, website, etc.)",
-        "type": "string",
-        "minLength": 1,
-        "maxLength": 100
+        "type": "string"
       },
       "url": {
-        "$ref": "url.json"
+        "title": "URL",
+        "description": "The URL of the entity or item",
+        "type": "string",
+        "maxLength": 2000,
+        "pattern": "https?://"
       }
     },
     "required": ["name", "url"]
