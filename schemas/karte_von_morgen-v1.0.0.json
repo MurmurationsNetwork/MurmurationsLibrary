@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://cdn.murmurations.network/schemas/karte_von_morgen-v1.0.0.json",
+  "title": "Map of Tomorrow / Karte von Morgen",
+  "description": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json"
+    },
+    "url": {
+      "$ref": "../fields/primary_url.json"
+    },
+    "description": {
+      "$ref": "../fields/description.json"
+    },
+    "latitude": {
+      "$ref": "../fields/latitude.json"
+    },
+    "longitude": {
+      "$ref": "../fields/longitude.json"
+    },
+    "address": {
+      "$ref": "../fields/address.json"
+    },
+    "contact_email": {
+      "$ref": "../fields/email.json"
+    },
+    "image": {
+      "$ref": "../fields/image.json"
+    },
+    "kvm_category": {
+      "type" : "string",
+      "title" : "Type of entry: Initiative (non-profit), Company (for-profit)"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Karte von Morgen",
+      "url": "https://www.kartevonmorgen.org"
+    },
+    "schema": {
+      "name": "karte_von_morgen",
+      "version": 1,
+      "purpose": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org."
+    }
+  }
+}
