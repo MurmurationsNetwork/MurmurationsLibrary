@@ -52,7 +52,7 @@
     },
     "schema": {
       "name": "karte_von_morgen",
-      "version": "0.0.1",
+      "version": 1,
       "purpose": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org."
     }
   }
