@@ -33,8 +33,8 @@
       "$ref": "../fields/image.json"
     },
     "kvm_category": {
-      "type" : "string",
-      "title" : "Type of entry: Initiative (non-profit), Company (for-profit)"
+      "type": "string",
+      "title": "Type of entry: Initiative (non-profit), Company (for-profit)"
     },
     "tags": {
       "$ref": "../fields/tags.json"
@@ -51,7 +51,7 @@
       "url": "https://www.kartevonmorgen.org"
     },
     "schema": {
-      "name": "karte_von_morgen",
+      "name": "karte_von_morgen-v1.0.0",
       "version": 1,
       "purpose": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org."
     }
