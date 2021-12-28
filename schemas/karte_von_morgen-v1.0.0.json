@@ -11,7 +11,7 @@
     "name": {
       "$ref": "../fields/name.json"
     },
-    "url": {
+    "primary_url": {
       "$ref": "../fields/primary_url.json"
     },
     "description": {
