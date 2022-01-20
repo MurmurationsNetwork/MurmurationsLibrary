@@ -24,7 +24,7 @@
       "$ref": "../fields/region.json"
     },
     "country": {
-      "$ref": "../fields/country_iso_3166-1.json"
+      "$ref": "../fields/country_iso_3166_1.json"
     }
   },
   "required": [

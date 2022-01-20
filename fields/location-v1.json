@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "country": {
-      "$ref": "../fields/country_iso_3166-1.json"
+      "$ref": "../fields/country_iso_3166_1.json"
     },
     "locality": {
       "$ref": "../fields/locality.json"
@@ -13,7 +13,9 @@
       "$ref": "../fields/region.json"
     }
   },
-  "required": ["country"],
+  "required": [
+    "country"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
