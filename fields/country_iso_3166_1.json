@@ -259,11 +259,11 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "country_iso_3166-1",
+      "name": "country_iso_3166_1",
       "version": "0.0.1"
     },
     "context": [
       "https://en.wikipedia.org/wiki/ISO_3166-1"
-   ]
+    ]
   }
 }

@@ -23,8 +23,8 @@
     "region": {
       "$ref": "../fields/region.json"
     },
-    "country_iso_3166-1": {
-      "$ref": "../fields/country_iso_3166-1.json"
+    "country_iso_3166_1": {
+      "$ref": "../fields/country_iso_3166_1.json"
     },
     "country_name": {
       "$ref": "../fields/country_name.json"
