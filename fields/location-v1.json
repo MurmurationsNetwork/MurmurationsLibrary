@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "country": {
-      "$ref": "../fields/country_iso_3166_1.json"
+      "$ref": "../fields/country_iso_3166.json"
     },
     "locality": {
       "$ref": "../fields/locality.json"

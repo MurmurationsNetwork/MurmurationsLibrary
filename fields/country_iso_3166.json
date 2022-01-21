@@ -259,7 +259,7 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "country_iso_3166_1",
+      "name": "country_iso_3166",
       "version": "0.0.1"
     },
     "context": [
