@@ -4,7 +4,7 @@
   "type": "array",
   "items": {
     "type": "string",
-    "pattern": "^[a-z_][a-z0-9_]{4,99}$"
+    "pattern": "^[a-z_][a-z0-9-._]{4,99}$"
   },
   "minItems": 1,
   "uniqueItems": true,
