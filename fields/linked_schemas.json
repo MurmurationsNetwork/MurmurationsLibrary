@@ -1,10 +1,10 @@
 {
   "title": "Linked Schemas",
-  "description": "The schemas against which the profile must be validated (must be alphanumeric with a dash(-) and/or underscore(_), e.g., demo_schema-v1",
+  "description": "A list of schemas against which a profile must be validated (schema names must be alphanumeric with underscore(_) spacers and dash(-) version separator, e.g., my_data_schema-v1.0.0)",
   "type": "array",
   "items": {
     "type": "string",
-    "pattern": "[A-Za-z0-9-._]{4,100}$"
+    "pattern": "^[a-z_][a-z0-9_]{4,99}$"
   },
   "minItems": 1,
   "uniqueItems": true,
@@ -16,7 +16,6 @@
     "field": {
       "name": "linked_schemas",
       "version": "0.0.1"
-    },
-    "context": ["https://murmurations.network/fields/linked_schemas"]
+    }
   }
 }
