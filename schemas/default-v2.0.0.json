@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://test-cdn.murmurations.network/schemas/default-v2.0.0.json",
+  "title": "Default Schema",
+  "description": "The default schema used for initial validation of a profile by the Murmurations Index.",
+  "type": "object",
+  "propertyNames": {
+    "pattern": "^[a-z_][a-z0-9_]{4,99}$"
+  },
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    }
+  },
+  "required": [
+    "linked_schemas"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "schema": {
+      "name": "default-v2.0.0",
+      "version": 2,
+      "url": "https://murmurations.network/schemas/default_schema"
+    }
+  }
+}
