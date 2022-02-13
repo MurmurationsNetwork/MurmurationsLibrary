@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://test-cdn.murmurations.network/schemas/test_schema-v3.2.0.json",
+  "title": "Test Schema",
+  "description": "Just for testing - Select this schema to see your profile show up straight away on the Test map.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json"
+    },
+    "geolocation": {
+      "type": "string",
+      "value": "lat,lon"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
+    },
+    "latitude": {
+      "$ref": "../fields/latitude.json"
+    },
+    "longitude": {
+      "$ref": "../fields/longitude.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json"
+    }
+  },
+  "required": [
+    "linked_schemas"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "test_schema-v3.2.0",
+      "version": 3,
+      "purpose": "A test schema to present profiles on the test map.",
+      "url": "https://murmurations.network/schemas/test_schema"
+    }
+  }
+}
