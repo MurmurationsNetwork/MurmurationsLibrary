@@ -80,35 +80,32 @@
           "Tesla"
         ]
       }
-    }
-  },
-  "urls": {
-    "$ref": "../fields/urls.json"
-  },
-  "urls2": {
-    "$ref": "../fields/urls-v1.json"
-  },
-  "image": {
-    "title": "Image",
-    "description": "A URL for an image of the item or logo etc.",
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "title": "Image Name (alt tag)",
-          "description": "Describe the image",
-          "type": "string",
-          "minLength": 1,
-          "maxLength": 100
+    },
+    "urls": {
+      "$ref": "../fields/urls.json"
+    },
+    "image": {
+      "title": "Image",
+      "description": "A URL for an image of the item or logo etc.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Image Name (alt tag)",
+            "description": "Describe the image",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "url": {
+            "$ref": "../fields/url-v1.json"
+          }
         },
-        "url": {
-          "$ref": "../fields/url-v1.json"
-        }
-      },
-      "required": [
-        "url"
-      ]
+        "required": [
+          "url"
+        ]
+      }
     }
   },
   "required": [
