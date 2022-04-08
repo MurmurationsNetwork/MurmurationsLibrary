@@ -16,7 +16,7 @@
       "description": "The URI for the entity or item",
       "type": "string",
       "maxLength": 2000,
-      "pattern": "https?://",
+      "pattern": "^https?://.*",
       "metadata": {
         "creator": {
           "name": "Solidarity Economy Association",

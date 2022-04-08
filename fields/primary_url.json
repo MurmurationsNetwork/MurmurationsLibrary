@@ -3,7 +3,7 @@
   "description": "The primary URL of the entity or item",
   "type": "string",
   "maxLength": 2000,
-  "pattern": "https?://",
+  "pattern": "^https?://.*",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
@@ -13,6 +13,8 @@
       "name": "primary_url",
       "version": "0.0.1"
     },
-    "context": ["https://schema.org/url"]
+    "context": [
+      "https://schema.org/url"
+    ]
   }
 }
