@@ -91,7 +91,7 @@
       "items": {
         "type": "object",
         "properties": {
-          "filename": {
+          "name": {
             "title": "Image Name (alt tag)",
             "description": "Describe the image",
             "type": "string",
