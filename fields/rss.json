@@ -2,7 +2,7 @@
   "title": "RSS feed",
   "description": "The URL for an RSS feed",
   "type": "string",
-  "pattern": "https?://",
+  "pattern": "^https?://.*",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
@@ -12,6 +12,8 @@
       "name": "rss",
       "version": "0.0.1"
     },
-    "context": ["https://en.wikipedia.org/wiki/RSS"]
+    "context": [
+      "https://en.wikipedia.org/wiki/RSS"
+    ]
   }
 }

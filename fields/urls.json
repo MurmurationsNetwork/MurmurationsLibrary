@@ -15,10 +15,13 @@
         "description": "The URL of the entity or item",
         "type": "string",
         "maxLength": 2000,
-        "pattern": "https?://"
+        "pattern": "^https?://.*"
       }
     },
-    "required": ["name", "url"]
+    "required": [
+      "name",
+      "url"
+    ]
   },
   "uniqueItems": true,
   "metadata": {
@@ -30,6 +33,8 @@
       "name": "urls",
       "version": "0.0.1"
     },
-    "context": ["https://schema.org/url"]
+    "context": [
+      "https://schema.org/url"
+    ]
   }
 }
