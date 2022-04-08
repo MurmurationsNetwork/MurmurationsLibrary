@@ -5,6 +5,9 @@
   "description": "Just for testing.",
   "type": "object",
   "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
     "aosn": {
       "title": "ArrObjStrObj",
       "description": "Array of objects with a string and an object inside.",
