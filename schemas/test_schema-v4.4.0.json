@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "id": "https://test-cdn.murmurations.network/schemas/test_schema-v4.4.0.json",
+  "title": "Test Schema",
+  "description": "Just for testing.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "oaosn": {
+      "title": "ObjArrObjStrNum",
+      "description": "An object with an array of objects with string and number.",
+      "type": "object",
+      "properties": {
+        "some_arr": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "some_obj": {
+                "title": "Object",
+                "description": "An object.",
+                "type": "object",
+                "properties": {
+                  "some_string": {
+                    "title": "String",
+                    "description": "A string.",
+                    "type": "string"
+                  },
+                  "some_number": {
+                    "title": "Number",
+                    "description": "A number.",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "some_string"
+                ]
+              }
+            },
+            "required": [
+              "some_obj"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "linked_schemas"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "test_schema-v4.4.0"
+    }
+  }
+}
