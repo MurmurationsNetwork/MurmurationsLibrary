@@ -85,6 +85,9 @@
   "urls": {
     "$ref": "../fields/urls.json"
   },
+  "urls2": {
+    "$ref": "../fields/urls-v1.json"
+  },
   "image": {
     "title": "Image",
     "description": "A URL for an image of the item or logo etc.",
