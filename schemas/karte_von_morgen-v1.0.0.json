@@ -23,10 +23,6 @@
     "longitude": {
       "$ref": "../fields/longitude.json"
     },
-    "geolocation": {
-      "type": "string",
-      "value": "lat,lon"
-    },
     "address": {
       "$ref": "../fields/address.json"
     },
