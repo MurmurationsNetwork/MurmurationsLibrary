@@ -9,7 +9,7 @@
       "$ref": "../fields/linked_schemas.json"
     },
     "oaosn": {
-      "title": "ObjArrObjStrNum",
+      "title": "Obj-Arr->Obj->StrNum",
       "description": "An object with an array of objects with string and number.",
       "type": "object",
       "properties": {
@@ -18,29 +18,19 @@
           "items": {
             "type": "object",
             "properties": {
-              "some_obj": {
-                "title": "Object",
-                "description": "An object.",
-                "type": "object",
-                "properties": {
-                  "some_string": {
-                    "title": "String",
-                    "description": "A string.",
-                    "type": "string"
-                  },
-                  "some_number": {
-                    "title": "Number",
-                    "description": "A number.",
-                    "type": "number"
-                  }
-                },
-                "required": [
-                  "some_string"
-                ]
+              "some_string": {
+                "title": "String",
+                "description": "A string.",
+                "type": "string"
+              },
+              "some_number": {
+                "title": "Number",
+                "description": "A number.",
+                "type": "number"
               }
             },
             "required": [
-              "some_obj"
+              "some_string"
             ]
           }
         }
