@@ -19,6 +19,7 @@
           "type": "string"
         },
         "obj2": {
+          "title": "Obj2",
           "type": "object",
           "properties": {
             "b_string": {
@@ -27,7 +28,7 @@
               "type": "string"
             },
             "some_obj": {
-              "title": "Object",
+              "title": "Some Object",
               "description": "An object.",
               "type": "object",
               "properties": {
