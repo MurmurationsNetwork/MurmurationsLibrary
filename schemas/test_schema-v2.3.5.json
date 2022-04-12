@@ -11,20 +11,17 @@
     "aoas": {
       "title": "Arr->Obj->Arr->Str",
       "description": "An array with an object with an array of strings.",
-      "an_array": {
-        "title": "An array",
-        "type": "array",
-        "items": {
-          "title": "An object",
-          "type": "object",
-          "properties": {
-            "another_arr": {
-              "title": "Another array",
-              "type": "array",
-              "items": {
-                "title": "A string",
-                "type": "string"
-              }
+      "type": "array",
+      "items": {
+        "title": "An object",
+        "type": "object",
+        "properties": {
+          "another_arr": {
+            "title": "Another array",
+            "type": "array",
+            "items": {
+              "title": "A string",
+              "type": "string"
             }
           }
         }
