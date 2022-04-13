@@ -54,7 +54,8 @@
     }
   },
   "required": [
-    "linked_schemas"
+    "linked_schemas",
+    "store"
   ],
   "metadata": {
     "creator": {
