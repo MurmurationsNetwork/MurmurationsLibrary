@@ -9,11 +9,12 @@
       "$ref": "../fields/linked_schemas.json"
     },
     "store": {
-      "title": "Store Name",
+      "title": "Store & Inventory",
       "description": "A store with its inventory list.",
       "type": "object",
       "properties": {
         "name": {
+          "title": "Store Name",
           "type": "string",
           "description": "The name of the store."
         },
