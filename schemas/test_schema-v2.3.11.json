@@ -30,6 +30,7 @@
           "gender": {
             "title": "Gender",
             "description": "The gender of the person.",
+            "type": "string",
             "enum": [
               "male",
               "female"
@@ -98,6 +99,7 @@
               "planet": {
                 "title": "Planet",
                 "description": "The planet the person lives on.",
+                "type": "string",
                 "enum": [
                   "Earth",
                   "Venus",
