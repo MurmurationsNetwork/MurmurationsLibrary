@@ -12,7 +12,7 @@
       "title": "People",
       "description": "A list of people and information about each of them.",
       "type": "array",
-      "prefixItems": [
+      "items": [
         {
           "title": "Name",
           "description": "The name of the person.",
