@@ -67,7 +67,7 @@
       },
       "required": [
         "linked_schemas",
-        "person"
+        "people"
       ]
     }
   },
