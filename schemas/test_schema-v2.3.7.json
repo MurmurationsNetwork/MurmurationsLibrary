@@ -64,13 +64,13 @@
         "required": [
           "name"
         ]
-      },
-      "required": [
-        "linked_schemas",
-        "people"
-      ]
+      }
     }
   },
+  "required": [
+    "linked_schemas",
+    "people"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
