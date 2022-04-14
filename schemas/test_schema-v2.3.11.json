@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/test_schema-v2.3.11.json",
+  "title": "Test Schema",
+  "description": "Just for testing.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "people": {
+      "title": "People",
+      "description": "A list of people and information about each of them.",
+      "type": "array",
+      "items": {
+        "title": "Person",
+        "description": "A person and their information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the person.",
+            "type": "string"
+          },
+          "age": {
+            "title": "Age",
+            "description": "The age of the person.",
+            "type": "number"
+          },
+          "gender": {
+            "title": "Gender",
+            "description": "The gender of the person.",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "convert_to_legal_money": {
+            "title": "Conversion to legal tender",
+            "description": "Whether and how the currency can be exchanged for money",
+            "type": "string",
+            "enum": [
+              "none",
+              "market",
+              "fullReserve",
+              "fractionalReserve",
+              "other"
+            ],
+            "enumNames": [
+              "None / unofficial only e.g LETS, timebanks, other non-monetary systems.",
+              "Market based e.g. via currency markets.",
+              "Legal money is 100% held in a reserve E.g Bristol Pound",
+              "Redeemable from a fractional reserve, perhaps using a bonding curve e.g. Grassroots Economics.",
+              "Some other mechanism"
+            ]
+          },
+          "cost_recovery": {
+            "title": "Cost recovery",
+            "description": "How does the project cover its running costs? (multiple choice)",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "membershipFee",
+                "transactionFee",
+                "demurrage",
+                "donations",
+                "grants",
+                "inkind",
+                "volunteers"
+              ],
+              "enumNames": [
+                "Membership fee",
+                "Transaction fee",
+                "Savings tax / Demurrage fee / negative interest",
+                "Donations",
+                "Grants",
+                "In-kind contributions",
+                "Volunteers"
+              ]
+            }
+          },
+          "address": {
+            "title": "Address",
+            "description": "The person's home address.",
+            "type": "object",
+            "properties": {
+              "number": {
+                "title": "Street Number",
+                "description": "The street number.",
+                "type": "number"
+              },
+              "street": {
+                "title": "Street Name",
+                "description": "The street name.",
+                "type": "string"
+              },
+              "planet": {
+                "title": "Planet",
+                "description": "The planet the person lives on.",
+                "enum": [
+                  "Earth",
+                  "Venus",
+                  "Mars"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "people"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "test_schema-v2.3.11"
+    }
+  }
+}
