@@ -15,9 +15,12 @@
       "properties": {
         "some_arr": {
           "title": "Some Array",
+          "description": "An array of objects with string and number.",
           "type": "array",
           "items": {
             "type": "object",
+            "title": "Some Object",
+            "description": "An object with a string and number.",
             "properties": {
               "some_string": {
                 "title": "String",

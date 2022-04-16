@@ -14,13 +14,16 @@
       "type": "array",
       "items": {
         "title": "An object",
+        "description": "An object with an array of strings.",
         "type": "object",
         "properties": {
           "another_arr": {
             "title": "Another array",
+            "description": "An array of strings.",
             "type": "array",
             "items": {
               "title": "A string",
+              "description": "A string.",
               "type": "string"
             }
           }

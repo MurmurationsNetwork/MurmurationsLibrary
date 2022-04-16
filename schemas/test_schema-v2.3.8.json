@@ -20,6 +20,7 @@
         },
         "inventory": {
           "title": "Inventory",
+          "description": "A list of the store's inventory.",
           "type": "array",
           "items": {
             "type": "object",
