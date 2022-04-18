@@ -13,6 +13,8 @@
       "description": "A list of people and information about each of them.",
       "type": "array",
       "items": {
+        "title": "Person",
+        "description": "A person and their information.",
         "type": "object",
         "properties": {
           "name": {
