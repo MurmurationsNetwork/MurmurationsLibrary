@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/test_schema-v2.3.12.json",
+  "title": "Test Schema",
+  "description": "Just for testing.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "or": {
+      "title": "Required Object",
+      "description": "A required object with one required property.",
+      "type": "object",
+      "properties": {
+        "or_rs": {
+          "title": "Required String",
+          "description": "A required string.",
+          "type": "string"
+        },
+        "or_nrs": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "or_rs"
+      ]
+    },
+    "onr": {
+      "title": "Non-Required Object",
+      "description": "A non-required object with one required property.",
+      "type": "object",
+      "properties": {
+        "onr_rs": {
+          "title": "Required String",
+          "description": "A required string.",
+          "type": "string"
+        },
+        "onr_nrs": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "onr_rs"
+      ]
+    },
+    "ar": {
+      "title": "Required Array",
+      "description": "A required array with one required property.",
+      "type": "array",
+      "properties": {
+        "ar_rs": {
+          "title": "Required String",
+          "description": "A required string.",
+          "type": "string"
+        },
+        "ar_nrs": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ar_rs"
+      ]
+    },
+    "anr": {
+      "title": "Non-Required Array",
+      "description": "A non-required array with one required property.",
+      "type": "array",
+      "properties": {
+        "anr_rs": {
+          "title": "Required String",
+          "description": "A required string.",
+          "type": "string"
+        },
+        "anr_nrs": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "anr_rs"
+      ]
+    },
+    "ornrp": {
+      "title": "Required Object",
+      "description": "A required object with no required properties.",
+      "type": "object",
+      "properties": {
+        "orrnrp_nrs_1": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        },
+        "ornrp_nrs_2": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        }
+      }
+    },
+    "arnrp": {
+      "title": "Required Array",
+      "description": "A required array with no required properties.",
+      "type": "array",
+      "properties": {
+        "arnrp_nrs_1": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        },
+        "arnrp_nrs_2": {
+          "title": "Non-Required String",
+          "description": "A non-required string.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "or",
+    "ar",
+    "ornrp",
+    "arnrp"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "test_schema-v2.3.12"
+    }
+  }
+}
