@@ -50,43 +50,23 @@
     },
     "ar": {
       "title": "Required Array",
-      "description": "A required array with one required property.",
+      "description": "A required array.",
       "type": "array",
-      "properties": {
-        "ar_rs": {
-          "title": "Required String",
-          "description": "A required string.",
-          "type": "string"
-        },
-        "ar_nrs": {
-          "title": "Non-Required String",
-          "description": "A non-required string.",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ar_rs"
-      ]
+      "items": {
+        "title": "String",
+        "description": "A string.",
+        "type": "string"
+      }
     },
     "anr": {
       "title": "Non-Required Array",
-      "description": "A non-required array with one required property.",
+      "description": "A non-required array.",
       "type": "array",
-      "properties": {
-        "anr_rs": {
-          "title": "Required String",
-          "description": "A required string.",
-          "type": "string"
-        },
-        "anr_nrs": {
-          "title": "Non-Required String",
-          "description": "A non-required string.",
-          "type": "string"
-        }
-      },
-      "required": [
-        "anr_rs"
-      ]
+      "items": {
+        "title": "String",
+        "description": "A string.",
+        "type": "string"
+      }
     },
     "ornrp": {
       "title": "Required Object",
@@ -104,31 +84,13 @@
           "type": "string"
         }
       }
-    },
-    "arnrp": {
-      "title": "Required Array",
-      "description": "A required array with no required properties.",
-      "type": "array",
-      "properties": {
-        "arnrp_nrs_1": {
-          "title": "Non-Required String",
-          "description": "A non-required string.",
-          "type": "string"
-        },
-        "arnrp_nrs_2": {
-          "title": "Non-Required String",
-          "description": "A non-required string.",
-          "type": "string"
-        }
-      }
     }
   },
   "required": [
     "linked_schemas",
     "or",
     "ar",
-    "ornrp",
-    "arnrp"
+    "ornrp"
   ],
   "metadata": {
     "creator": {
