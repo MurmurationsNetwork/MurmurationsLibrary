@@ -133,6 +133,11 @@
           "pattern": "^https?://.*"
         }
       }
+    },
+    "expires_at": {
+      "title": "Expires At",
+      "description": "The date and time (an integer expressing Unix time) when this offer or want expires.",
+      "type": "integer"
     }
   },
   "required": [
