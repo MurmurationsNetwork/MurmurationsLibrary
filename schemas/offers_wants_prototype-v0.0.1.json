@@ -13,8 +13,8 @@
       "description": "Are you offering ('selling') or wanting ('buying') something?",
       "type": "string",
       "enum": [
-        "offers",
-        "wants"
+        "offer",
+        "want"
       ],
       "enumNames": [
         "Offer - I have something to lend, lease, sell or donate",
@@ -60,22 +60,38 @@
       },
       "uniqueItems": true
     },
+    "title": {
+      "title": "Title",
+      "description": "A few words describing the good or service you are offering or wanting.",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "description": "A longer description (1 to 3 sentences) of the good or service you are offering or wanting.",
+      "type": "string"
+    },
     "details_url": {
       "title": "Item Details URL",
-      "description": "A webpage with details about the item you are offering or wanting.",
+      "description": "A webpage (starting with https:// or http://) with details about the item you are offering or wanting.",
       "type": "string",
       "pattern": "^https?://.*"
     },
     "geolocation": {
       "title": "Geolocation Coordinates",
-      "description": "The geo-coordinates (latitude & longitude) where the item is available or wanted.",
+      "description": "The geo-coordinates (in decimal format) where the item is available or wanted.",
       "type": "object",
       "properties": {
         "lat": {
-          "$ref": "../fields/latitude.json"
+          "title": "Latitude",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
         },
         "lon": {
-          "$ref": "../fields/longitude.json"
+          "title": "Longitude",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
         }
       },
       "required": [
@@ -112,7 +128,7 @@
         },
         "contact_form": {
           "title": "Contact Form",
-          "description": "A webpage with a contact form that can be used to reach you.",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you (choose at least one).",
           "type": "string",
           "pattern": "^https?://.*"
         }
@@ -125,6 +141,8 @@
     "item_type",
     "transaction_type",
     "tags",
+    "title",
+    "description",
     "geolocation",
     "geographic_scope",
     "contact_details"
