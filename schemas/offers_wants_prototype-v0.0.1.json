@@ -136,7 +136,7 @@
     },
     "expires_at": {
       "title": "Expires At",
-      "description": "The date and time (an integer expressing Unix time) when this offer or want expires.",
+      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when this offer or want expires.",
       "type": "integer"
     }
   },
