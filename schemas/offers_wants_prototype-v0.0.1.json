@@ -72,12 +72,12 @@
     },
     "details_url": {
       "title": "Item Details URL",
-      "description": "A webpage (starting with https:// or http://) with details about the item you are offering or wanting.",
+      "description": "A webpage (starting with https:// or http://) with further details about the item you are offering or wanting.",
       "type": "string",
       "pattern": "^https?://.*"
     },
     "geolocation": {
-      "title": "Geolocation Coordinates",
+      "title": "Geolocation",
       "description": "The geo-coordinates (in decimal format) where the item is available or wanted.",
       "type": "object",
       "properties": {
@@ -118,7 +118,7 @@
     },
     "contact_details": {
       "title": "Contact Details",
-      "description": "The contact details for the person or organization offering or wanting the item.",
+      "description": "The contact details for the person or organization offering or wanting the item (choose at least one).",
       "type": "object",
       "properties": {
         "email": {
@@ -128,7 +128,7 @@
         },
         "contact_form": {
           "title": "Contact Form",
-          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you (choose at least one).",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you.",
           "type": "string",
           "pattern": "^https?://.*"
         }
