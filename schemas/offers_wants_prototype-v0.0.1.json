@@ -118,7 +118,7 @@
     },
     "contact_details": {
       "title": "Contact Details",
-      "description": "The contact details for the person or organization offering or wanting the item (choose at least one).",
+      "description": "The contact details for the person or organization offering or wanting the item (fill in at least one).",
       "type": "object",
       "properties": {
         "email": {
