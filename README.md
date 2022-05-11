@@ -1,5 +1,7 @@
 # Murmurations Library
 
+_This project is licensed under the terms of the GNU General Public License v3.0_
+
 This repo is for storing and curating Murmurations **fields** and **schemas**.
 
 Additions or modifications to library fields occur through pull requests to this repo. Issues can be used to discuss and propose updates or changes. 
