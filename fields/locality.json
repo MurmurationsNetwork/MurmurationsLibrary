@@ -1,6 +1,6 @@
 {
   "title": "Locality",
-  "description": "A city, town, village, etc.",
+  "description": "The locality (city, town, village, etc.) where the entity is located",
   "type": "string",
   "metadata": {
     "creator": {

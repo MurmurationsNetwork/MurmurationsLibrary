@@ -1,7 +1,8 @@
 {
   "title": "RSS feed",
-  "description": "The URL for an RSS feed",
+  "description": "The URL for the entity's RSS feed (e.g.,  https://yoursite.com/rss or /feed)",
   "type": "string",
+  "maxLength": 2000,
   "pattern": "^https?://.*",
   "metadata": {
     "creator": {

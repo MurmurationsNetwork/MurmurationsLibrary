@@ -1,8 +1,19 @@
 {
   "title": "Geographic Scope",
-  "description": "The geographic scope of this entity",
+  "description": "The geographic scope of the entity is defined by the geographic extent of the entity's activities or the availability of an item",
   "type": "string",
-  "enum": ["local", "regional", "national", "international"],
+  "enum": [
+    "local",
+    "regional",
+    "national",
+    "international"
+  ],
+  "enumNames": [
+    "Local",
+    "Regional",
+    "National",
+    "International"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
@@ -11,6 +22,7 @@
     "field": {
       "name": "geographic_scope",
       "version": "0.0.1"
-    }
+    },
+    "purpose": "An entity will generally have a scope in which it operates from a local up to a global range. An item will generally be available within a specific scope as well. For example, perishable food will be available in a local or possibly regional market, but not in a national  or international market."
   }
 }

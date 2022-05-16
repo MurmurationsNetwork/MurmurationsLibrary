@@ -1,6 +1,6 @@
 {
   "title": "Image",
-  "description": "The URL of a logo or other image for the entity",
+  "description": "The URL of a logo or other image for the entity starting with http:// or https://",
   "type": "string",
   "maxLength": 2000,
   "pattern": "^https?://.*",

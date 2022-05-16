@@ -1,6 +1,6 @@
 {
   "title": "Country (2 letters)",
-  "description": "The two-letter country code according to the ISO 3166-1 standard",
+  "description": "The two-letter country code according to the ISO 3166-1 standard where the entity is located",
   "type": "string",
   "enum": [
     "AD",
