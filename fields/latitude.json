@@ -1,7 +1,7 @@
 {
   "title": "Latitude",
-  "description": "The latitude of the primary location of the entity",
-  "type":"number",
+  "description": "A decimal amount between -90 and 90",
+  "type": "number",
   "minimum": -90,
   "maximum": 90,
   "metadata": {

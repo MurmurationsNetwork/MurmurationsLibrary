@@ -11,6 +11,9 @@
       "name": "name",
       "version": "0.0.1"
     },
-    "context": ["https://schema.org/name"]
+    "context": [
+      "https://schema.org/name"
+    ],
+    "purpose": "The common name that is generally used to refer to the entity, organization, project, etc."
   }
 }

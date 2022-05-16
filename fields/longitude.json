@@ -1,7 +1,7 @@
 {
   "title": "Longitude",
-  "description": "The longitude of the primary location of the entity",
-  "type":"number",
+  "description": "A decimal amount between -180 and 180",
+  "type": "number",
   "minimum": -180,
   "maximum": 180,
   "metadata": {

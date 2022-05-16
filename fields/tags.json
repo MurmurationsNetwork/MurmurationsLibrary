@@ -15,6 +15,9 @@
       "name": "tags",
       "version": "0.0.1"
     },
-    "context": ["https://schema.org/keywords"]
+    "context": [
+      "https://schema.org/keywords"
+    ],
+    "purpose": "Tags holds a list of unique keywords that are used to describe any aspect of the entity, such that there is enough information to fit the entity into a variety of data taxonomies."
   }
 }

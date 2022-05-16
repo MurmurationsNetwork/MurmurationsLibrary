@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft-07/schema#",
   "id": "https://test-cdn.murmurations.network/schemas/karte_von_morgen-v1.0.0.json",
   "title": "Map of Tomorrow / Karte von Morgen",
   "description": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org",
@@ -33,8 +33,9 @@
       "$ref": "../fields/image.json"
     },
     "kvm_category": {
-      "type": "string",
-      "title": "Type of entry: Initiative (non-profit), Company (for-profit)"
+      "title": "Type of Entry",
+      "description": "KVM category for the entity: Initiative (non-profit), Company (for-profit)",
+      "type": "string"
     },
     "tags": {
       "$ref": "../fields/tags.json"
@@ -52,8 +53,7 @@
     },
     "schema": {
       "name": "karte_von_morgen-v1.0.0",
-      "version": 1,
-      "purpose": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org."
+      "purpose": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org"
     }
   }
 }
