@@ -1,6 +1,6 @@
 {
-  "title": "RSS feed",
-  "description": "The URL for the entity's RSS feed (e.g.,  https://yoursite.com/rss or /feed)",
+  "title": "RSS Feed",
+  "description": "The URL for the entity's RSS feed (e.g.,  yoursite.org/rss or yoursite.org/feed) starting with http:// or https://",
   "type": "string",
   "maxLength": 2000,
   "pattern": "^https?://.*",
