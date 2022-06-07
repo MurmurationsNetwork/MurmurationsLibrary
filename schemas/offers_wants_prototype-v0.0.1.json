@@ -21,6 +21,12 @@
         "Want - I want to borrow, rent, buy or receive something"
       ]
     },
+    "image": {
+      "title": "Image",
+      "description": "An image URL (starting with https:// or http://)",
+      "type": "string",
+      "pattern": "^https?://.*"
+    },
     "item_type": {
       "title": "Item Type",
       "description": "Is it a good (something made) or service (something performed)?",
