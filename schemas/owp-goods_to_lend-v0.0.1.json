@@ -9,12 +9,18 @@
       "$ref": "../fields/linked_schemas.json"
     },
     "exchange_type": {
+      "title": "Offering",
+      "type": "string",
       "const": "offer"
     },
     "item_type": {
+      "title": "a Good or Item",
+      "type": "string",
       "const": "good"
     },
     "transaction_type": {
+      "title": "to Borrow",
+      "type": "string",
       "const": "borrow-lend"
     },
     "tags": {
