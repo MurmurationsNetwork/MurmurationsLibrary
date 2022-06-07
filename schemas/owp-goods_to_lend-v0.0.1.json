@@ -11,17 +11,23 @@
     "exchange_type": {
       "title": "Offering",
       "type": "string",
-      "const": "offer"
+      "enum": [
+        "offer"
+      ]
     },
     "item_type": {
       "title": "a Good or Item",
       "type": "string",
-      "const": "good"
+      "enum": [
+        "good"
+      ]
     },
     "transaction_type": {
       "title": "to Borrow",
       "type": "string",
-      "const": "borrow-lend"
+      "enum": [
+        "borrow-lend"
+      ]
     },
     "tags": {
       "title": "Tags",
