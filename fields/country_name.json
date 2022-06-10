@@ -13,6 +13,7 @@
     },
     "context": [
       "https://schema.org/Country"
-    ]
+    ],
+    "purpose": "A free form field to enter a country's name. The Index will try to match that text to a country's name and will store the country's ISO code in the Index database to enable searching by country for the entity. The name-to-ISO mapping is here: https://github.com/MurmurationsNetwork/MurmurationsLibrary/blob/staging/countries/map.json"
   }
 }

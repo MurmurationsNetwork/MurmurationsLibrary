@@ -12,14 +12,13 @@
       },
       "url": {
         "title": "URL",
-        "description": "The URL of the entity or item",
+        "description": "The URL (starting with http:// or https://) that links to the entity or further describes the item",
         "type": "string",
         "maxLength": 2000,
         "pattern": "^https?://.*"
       }
     },
     "required": [
-      "name",
       "url"
     ]
   },
@@ -35,6 +34,7 @@
     },
     "context": [
       "https://schema.org/url"
-    ]
+    ],
+    "purpose": "URLs can be used to link the named entity to its presence on the web. In the case of an item or service, URLs can provide further information."
   }
 }

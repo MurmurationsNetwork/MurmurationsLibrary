@@ -1,5 +1,5 @@
 {
-  "title": "Image",
+  "title": "Images",
   "description": "A URL for an image of the item, a logo, etc.",
   "type": "array",
   "items": {
@@ -21,7 +21,6 @@
       }
     },
     "required": [
-      "name",
       "url"
     ]
   },

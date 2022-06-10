@@ -1,6 +1,6 @@
 {
   "title": "Tags",
-  "description": "Keywords relevant to this entity or its activities",
+  "description": "Keywords relevant to this entity and its activities or attributes",
   "type": "array",
   "items": {
     "type": "string"

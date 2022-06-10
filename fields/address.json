@@ -16,6 +16,6 @@
     "context": [
       "https://schema.org/address"
     ],
-    "purpose": "Address captures the complete physical address of an entity. It is used to identify the location of the entity (e.g., a street address or a virtual location)."
+    "purpose": "Address captures the complete physical address of an entity. It is used to identify the location of the entity (e.g., a street address or a virtual location in a metaverse)."
   }
 }

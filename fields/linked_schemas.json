@@ -16,6 +16,7 @@
     "field": {
       "name": "linked_schemas",
       "version": "0.0.1"
-    }
+    },
+    "purpose": "This field is required in all Murmurations schemas to ensure that a profile is valid and can be posted to the Index. It is the only required field in the default-v2.0.0 schema, which is the schema used by the Index to process incoming profiles."
   }
 }
