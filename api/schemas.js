@@ -4,6 +4,8 @@ async function getGithubLastCommitTime(host) {
   const response = await fetch(
     host === "cdn.murmurations.network"
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits"
+      : host === "main-cdn.murmurations.network"
+      ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=main"
       : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=staging"
   );
   if (response.status !== 200)
@@ -17,7 +19,9 @@ async function getSchemaList(host) {
   const response = await fetch(
     host === "cdn.murmurations.network"
       ? "https://cdn.murmurations.network/schemas"
-      : "https://main-cdn.murmurations.network/schemas"
+      : host === "main-cdn.murmurations.network"
+      ? "https://main-cdn.murmurations.network/schemas"
+      : "https://test-cdn.murmurations.network/schemas"
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
