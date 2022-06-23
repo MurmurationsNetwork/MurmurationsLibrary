@@ -5,7 +5,7 @@
   "description": "The default schema used for initial validation of a profile by the Murmurations Index.",
   "type": "object",
   "propertyNames": {
-    "pattern": "^[a-z_][a-z0-9_]{0,99}$"
+    "pattern": "^[a-z][a-z0-9_]{0,97}[a-z0-9]$"
   },
   "properties": {
     "linked_schemas": {
