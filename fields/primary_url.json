@@ -1,9 +1,8 @@
 {
   "title": "Primary URL",
-  "description": "The primary URL of the entity or item (i.e., its unique website address) starting with http:// or https://",
+  "description": "The primary URL of the entity or item (i.e., its unique website address)",
   "type": "string",
   "maxLength": 2000,
-  "pattern": "^https?://.*",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
