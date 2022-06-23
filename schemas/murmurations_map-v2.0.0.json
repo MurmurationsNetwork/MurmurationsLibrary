@@ -11,6 +11,9 @@
     "name": {
       "$ref": "../fields/name.json"
     },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
+    },
     "urls": {
       "$ref": "../fields/urls.json"
     },
@@ -47,7 +50,7 @@
   "required": [
     "linked_schemas",
     "name",
-    "urls"
+    "primary_url"
   ],
   "metadata": {
     "creator": {

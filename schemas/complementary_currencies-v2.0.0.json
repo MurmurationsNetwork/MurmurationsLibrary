@@ -11,8 +11,8 @@
     "name": {
       "$ref": "../fields/name.json"
     },
-    "url": {
-      "$ref": "../fields/url.json"
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
     },
     "area_served": {
       "$ref": "../fields/geographic_scope.json"
@@ -276,7 +276,7 @@
   "required": [
     "linked_schemas",
     "name",
-    "url"
+    "primary_url"
   ],
   "metadata": {
     "creator": {
