@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/owp-goods_to_lend-v0.0.1.json",
+  "title": "Offers/Wants Prototype",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "exchange_type": {
+      "title": "Offering",
+      "type": "string",
+      "default": "offer"
+    },
+    "item_type": {
+      "title": "a Good or Item",
+      "type": "string",
+      "default": "good"
+    },
+    "transaction_type": {
+      "title": "to Borrow",
+      "type": "string",
+      "default": "borrow-lend"
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Keywords relevant to the good or service you are offering or wanting.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "title": {
+      "title": "Title",
+      "description": "A few words describing the good or service you are offering or wanting.",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "description": "A longer description (1 to 3 sentences) of the good or service you are offering or wanting.",
+      "type": "string"
+    },
+    "image": {
+      "title": "Image",
+      "description": "An image URL (starting with https:// or http://)",
+      "type": "string",
+      "pattern": "^https?://.*"
+    },
+    "details_url": {
+      "title": "Item Details URL",
+      "description": "A webpage (starting with https:// or http://) with further details about the item you are offering or wanting.",
+      "type": "string",
+      "pattern": "^https?://.*"
+    },
+    "geolocation": {
+      "title": "Geolocation",
+      "description": "The geo-coordinates (in decimal format) where the item is available or wanted.",
+      "type": "object",
+      "properties": {
+        "lat": {
+          "title": "Latitude",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "title": "Longitude",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    },
+    "geographic_scope": {
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the avalability of or wish for the item.",
+      "type": "string",
+      "enum": [
+        "local",
+        "regional",
+        "national",
+        "international"
+      ],
+      "enumNames": [
+        "Local - Within a city or nearby towns",
+        "Regional - Within a state, province, or region",
+        "National - Within a country",
+        "International - Worldwide"
+      ]
+    },
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The contact details for the person or organization offering or wanting the item (fill in at least one).",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "Your email address.",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you.",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
+    },
+    "expires_at": {
+      "title": "Expires At",
+      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when this offer or want expires.",
+      "type": "number"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "exchange_type",
+    "item_type",
+    "transaction_type",
+    "tags",
+    "title",
+    "description",
+    "geolocation",
+    "geographic_scope",
+    "contact_details"
+  ],
+  "metadata": {
+    "schema": {
+      "name": "owp-goods_to_lend-v0.0.1"
+    }
+  }
+}
