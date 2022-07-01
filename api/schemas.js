@@ -6,7 +6,7 @@ async function getGithubLastCommitTime(host) {
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits"
       : host === "main-cdn.murmurations.network"
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=main"
-      : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=staging"
+      : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=test"
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://main-cdn.murmurations.network/schemas/solidarity_economy_initiatives-v0.2.0.json",
+  "$id": "https://test-cdn.murmurations.network/schemas/solidarity_economy_initiatives-v0.2.0.json",
   "title": "Solidarity Economy Initiatives",
   "description": "Describes an initiative in the Solidarity Economy. FIXME and WARNING: this is experimental!!",
   "type": "object",
