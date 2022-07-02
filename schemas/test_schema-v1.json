@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/test_schema-v1.json",
+  "title": "Test Schema",
+  "description": "Just for testing.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas-v1.json"
+    },
+    "name": {
+      "$ref": "../fields/name-v1.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation-v1.json"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "name",
+    "geolocation"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "test_schema-v1",
+      "purpose": "A test schema for creating test profiles.",
+      "url": "https://murmurations.network/schemas/test_schema"
+    }
+  }
+}
