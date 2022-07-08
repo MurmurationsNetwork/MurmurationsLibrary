@@ -32,7 +32,7 @@
     "country_name": {
       "$ref": "../fields/country_name.json"
     },
-    "contact_email": {
+    "email": {
       "$ref": "../fields/email.json"
     },
     "image": {
