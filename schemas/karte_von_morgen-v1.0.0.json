@@ -23,8 +23,14 @@
     "longitude": {
       "$ref": "../fields/longitude.json"
     },
-    "address": {
-      "$ref": "../fields/address.json"
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
     },
     "contact_email": {
       "$ref": "../fields/email.json"
