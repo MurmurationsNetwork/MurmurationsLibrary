@@ -41,7 +41,11 @@
     "kvm_category": {
       "title": "Type of Entry",
       "description": "KVM category for the entity: Initiative (non-profit), Company (for-profit)",
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     },
     "tags": {
       "$ref": "../fields/tags.json"
