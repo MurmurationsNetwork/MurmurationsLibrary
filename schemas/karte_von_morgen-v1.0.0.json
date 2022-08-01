@@ -23,10 +23,16 @@
     "longitude": {
       "$ref": "../fields/longitude.json"
     },
-    "address": {
-      "$ref": "../fields/address.json"
+    "locality": {
+      "$ref": "../fields/locality.json"
     },
-    "contact_email": {
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "email": {
       "$ref": "../fields/email.json"
     },
     "image": {
@@ -35,7 +41,11 @@
     "kvm_category": {
       "title": "Type of Entry",
       "description": "KVM category for the entity: Initiative (non-profit), Company (for-profit)",
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     },
     "tags": {
       "$ref": "../fields/tags.json"
