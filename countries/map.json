@@ -254,6 +254,7 @@
   "AT": [
     "austria",
     "republic-of-austria",
+    "österreich",
     "republik-osterreich",
     "rakouska-republika",
     "awstria",
@@ -1160,6 +1161,7 @@
     "germany",
     "allemagne",
     "deutschland",
+    "de",
     "federal-republic-of-germany",
     "bundesrepublik-deutschland",
     "spolkova-republika-nemecko",
@@ -1232,6 +1234,7 @@
   ],
   "DK": [
     "denmark",
+    "dänemark",
     "kingdom-of-denmark",
     "kongeriget-danmark",
     "danske-kralovstvi",
@@ -1594,6 +1597,7 @@
     "united-kingdom-of-great-britain-and-northern-ireland",
     "spojene-kralovstvi-velke-britanie-a-severniho-irska",
     "vereinigtes-konigreich-grossbritannien-und-nordirland",
+    "vereinigtes-königreich",
     "royaume-uni-de-grande-bretagne-et-dirlande-du-nord",
     "ujedinjeno-kraljevstvo-velike-britanije-i-sjeverne-irske",
     "regno-unito-di-gran-bretagna-e-irlanda-del-nord",
@@ -2155,6 +2159,7 @@
   "IT": [
     "italy",
     "italie",
+    "italien",
     "italian-republic",
     "repubblica-italiana",
     "italska-republika",
@@ -3248,6 +3253,7 @@
   ],
   "NL": [
     "netherlands",
+    "nederland",
     "holland",
     "kingdom-of-the-netherlands",
     "koninkrijk-der-nederlanden",
@@ -3694,6 +3700,7 @@
   ],
   "RU": [
     "russia",
+    "Россия",
     "russian-federation",
     "ruska-federace",
     "federation-de-russie",
@@ -4578,6 +4585,7 @@
     "united-states",
     "united-states-of-america",
     "vereinigte-staaten",
+    "vereinigte-staaten-von-amerika",
     "etats-unis",
     "les-etats-unis-damerique",
     "sjedinjene-drzave-amerike",
