@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/projects_schema-v2.0.0.json",
+  "title": "Projects Schema",
+  "description": "A schema to add regenerative economy Projects to the Murmrations Index.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
+    },
+    "urls": {
+      "$ref": "../fields/urls.json"
+    },
+    "description": {
+      "$ref": "../fields/description.json"
+    },
+    "mission": {
+      "$ref": "../fields/mission.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json"
+    },
+    "image": {
+      "$ref": "../fields/image.json"
+    },
+    "rss": {
+      "$ref": "../fields/rss.json"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "What type of Project is this?"
+    },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json"
+    },
+    "founding_date": {
+      "$ref": "..fields/founding_date.json",
+      "title": "Founding date"
+    },
+    "member": {
+      "$ref": "../fields/urls.json",
+      "title": "Member/s",
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of any People or Oganizations that are Members of this Project."
+    },
+    "member_of": {
+      "$ref": "../fields/urls.json",
+      "title": "Member of",
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the Oganization/s, or Project/s, to which this Project belongs."
+    },
+    "status": {
+      "$ref": "../fields/status.json"
+    },
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "projects_schema-v2.0.0",
+      "purpose": "To map projects within the regenerative economy.",
+      "url": "https://murmurations.network"
+    }
+  }
+}
