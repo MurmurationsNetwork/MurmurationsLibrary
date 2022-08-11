@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-cdn.murmurations.network/schemas/murmurations_schema-v2.0.0.json",
-  "title": "Murmurations Schema",
-  "description": "A schema for regenerative economy organizations to show their profile on a map and/or in a directory.",
+  "$id": "https://test-cdn.murmurations.network/schemas/organizations_schema-v2.0.0.json",
+  "title": "Organizations Schema",
+  "description": "A schema to add regenerative economy Organizations to the Murmrations Index.",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -58,9 +58,9 @@
       "url": "https://murmurations.network/"
     },
     "schema": {
-      "name": "murmurations_map-v2.0.0",
-      "purpose": "A map of organisations within the regenerative economy that have created Murmurations profiles.",
-      "url": "https://murmurations.network/schemas/murmurations_map"
+      "name": "organizations_schema-v2.0.0",
+      "purpose": "To map of organizations within the regenerative economy.",
+      "url": "https://murmurations.network"
     }
   }
 }
