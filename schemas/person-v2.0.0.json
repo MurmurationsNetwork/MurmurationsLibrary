@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/person-v2.0.0.json",
+  "title": "Personal Profile",
+  "description": "A profile of a person (alive, dead, undead, or fictional).",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas-v1.json"
+    },
+    "firstname": {
+      "$ref": "../fields/firstname.json"
+    },
+    "lastname": {
+      "$ref": "../fields/lastname.json"
+    },
+    "email": {
+      "$ref": "../fields/email.json"
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json"
+    },
+    "description": {
+      "$ref": "../fields/description.json"
+    },
+    "image": {
+      "$ref": "../fields/image.json"
+    },
+    "urls": {
+      "$ref": "../fields/urls.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json"
+    },
+    "jobtitle": {
+      "$ref": "../fields/jobtitle.json"
+    },
+    "knowslanguage": {
+      "$ref": "../fields/knowslanguage.json"
+    },
+    "member_of": {
+      "$ref": "../fields/urls.json",
+      "title": "Member of",
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the Oganization/s, and/or Project/s, to which this Person belongs."
+    },
+    "knows": {
+      "$ref": "../fields/urls.json",
+      "title": "Knows",
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of People this Person knows."
+    },    
+  },
+  "required": ["linked_schemas", "firstname", "lastname"],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "person",
+      "version": "2.0.0",
+      "purpose": "A personal profile schema to encourage cross platform and network discovery and synergy.",
+      "url": "https://murmurations.network"
+    }
+  }
+}
