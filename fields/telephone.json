@@ -1,0 +1,17 @@
+{
+  "title": "Telephone number",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 100,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "telephone",
+      "version": "0.0.1"
+    },
+    "context": ["https://schema.org/telephone"]
+  }
+}
