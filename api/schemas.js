@@ -1,3 +1,5 @@
+// API
+
 const fetch = require("node-fetch");
 
 async function getGithubLastCommitTime(host) {
