@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://main-cdn.murmurations.network/schemas/murmurations_schema-v2.0.0.json",
+  "$id": "https://cdn.murmurations.network/schemas/murmurations_schema-v2.0.0.json",
   "title": "Murmurations Schema",
   "description": "A schema for regenerative economy organizations to show their profile on a map and/or in a directory.",
   "type": "object",

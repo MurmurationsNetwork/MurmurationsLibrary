@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://main-cdn.murmurations.network/schemas/systems_change_map-v2.0.0.json",
+  "$id": "https://cdn.murmurations.network/schemas/systems_change_map-v2.0.0.json",
   "title": "Systems Change around the World",
   "description": "A map of projects and organizations moving towards systems change.",
   "type": "object",
