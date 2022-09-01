@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://test-cdn.murmurations.network/schemas/test_schema-v1.0.0.json",
   "title": "Test Schema",
-  "description": "Use only for testing.",
+  "description": "Just for testing.",
   "type": "object",
   "properties": {
     "linked_schemas": {
