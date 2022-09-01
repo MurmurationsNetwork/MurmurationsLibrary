@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/offers_wants_prototype-v0.0.2.json",
+  "title": "Offers/Wants Prototype",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "exchange_type": {
+      "title": "Exchange Type",
+      "description": "Are you offering ('selling') or wanting ('buying') something?",
+      "type": "string",
+      "enum": [
+        "offer",
+        "want"
+      ],
+      "enumNames": [
+        "Offer - I have something to lend, lease, sell or donate",
+        "Want - I want to borrow, rent, buy or receive something"
+      ]
+    },
+    "item_type": {
+      "title": "Item Type",
+      "description": "Is it a good (something made) or service (something performed)?",
+      "type": "string",
+      "enum": [
+        "good",
+        "service"
+      ],
+      "enumNames": [
+        "Good - a tangible or intangible item to be delivered from the giver to the receiver",
+        "Service - a service to be performed by the giver for the receiver"
+      ]
+    },
+    "transaction_type": {
+      "title": "Transaction Type",
+      "description": "On what basis do you want to exchange the item?",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "borrow-lend",
+          "rent-lease",
+          "buy-sell",
+          "receive-donate"
+        ],
+        "enumNames": [
+          "Borrow/Lend - I want to borrow or lend the item",
+          "Rent/Lease - I want to rent or lease the item",
+          "Buy/Sell - I want to buy or sell the item",
+          "Receive/Donate - I want to receive or donate the item"
+        ]
+      }
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Keywords relevant to the good or service you are offering or wanting.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "title": {
+      "title": "Title",
+      "description": "A few words describing the good or service you are offering or wanting.",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "description": "A longer description (1 to 3 sentences) of the good or service you are offering or wanting.",
+      "type": "string"
+    },
+    "image": {
+      "title": "Image",
+      "description": "An image URL (starting with https:// or http://)",
+      "type": "string",
+      "pattern": "^https?://.*"
+    },
+    "details_url": {
+      "title": "Item Details URL",
+      "description": "A webpage (starting with https:// or http://) with further details about the item you are offering or wanting.",
+      "type": "string",
+      "pattern": "^https?://.*"
+    },
+    "geolocation": {
+      "title": "Geolocation",
+      "description": "The geo-coordinates (in decimal format) where the item is available or wanted.",
+      "type": "object",
+      "properties": {
+        "lat": {
+          "title": "Latitude",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "title": "Longitude",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    },
+    "geographic_scope": {
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the avalability of or wish for the item.",
+      "type": "string",
+      "enum": [
+        "local",
+        "regional",
+        "national",
+        "international"
+      ],
+      "enumNames": [
+        "Local - Within a city or nearby towns",
+        "Regional - Within a state, province, or region",
+        "National - Within a country",
+        "International - Worldwide"
+      ]
+    },
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The contact details for the person or organization offering or wanting the item (fill in at least one).",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "Your email address.",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you.",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
+    },
+    "expires_at": {
+      "title": "Expires At",
+      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when this offer or want expires.",
+      "type": "number"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "exchange_type",
+    "transaction_type",
+    "tags",
+    "title",
+    "description",
+    "geolocation",
+    "geographic_scope",
+    "contact_details"
+  ],
+  "metadata": {
+    "schema": {
+      "name": "offers_wants_prototype-v0.0.2"
+    }
+  }
+}
