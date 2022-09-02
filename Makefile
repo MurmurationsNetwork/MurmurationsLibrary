@@ -6,7 +6,7 @@ docker-build:
 docker-tag: docker-build
 	docker tag murmurations/cdn murmurations/cdn:${TAG}
 
-docker-push: docker-build
+docker-push: docker-tag
 	docker push murmurations/cdn:latest
 	docker push murmurations/cdn:$(TAG)
 
