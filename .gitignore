@@ -1,6 +1,7 @@
 # Editor-generated files
 .idea
 .vscode
+node_modules
 
 # OS-generated files
 .DS_Store

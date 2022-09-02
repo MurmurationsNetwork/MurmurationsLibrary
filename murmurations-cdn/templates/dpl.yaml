@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-app
+spec:
+  replicas: {{ .Values.replica }}
+  selector:
+    matchLabels:
+      app: cdn-app
+  template:
+    metadata:
+      labels:
+        app: cdn-app
+    spec:
+      containers:
+        - name: cdn-app
+          image: {{ .Values.image }}

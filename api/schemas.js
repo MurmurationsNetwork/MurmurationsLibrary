@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from 'node-fetch';
 
 async function getGithubLastCommitTime(host) {
   const response = await fetch(
@@ -31,7 +31,7 @@ async function getSchemaList(host) {
   return schemaList;
 }
 
-async function createSchemasResponse(host) {
+export async function createSchemasResponse(host) {
   const response = {};
   const lastCommit = await getGithubLastCommitTime(host);
   const schemaList = await getSchemaList(host);
@@ -41,18 +41,3 @@ async function createSchemasResponse(host) {
 
   return JSON.stringify(response, null, 2);
 }
-
-module.exports = (req, res) => {
-  createSchemasResponse(req.headers.host)
-    .then((response) => {
-      res.status(200);
-      res.setHeader("Content-Type", "application/json");
-      res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
-      res.end(response);
-    })
-    .catch((err) => {
-      res.status(500);
-      res.setHeader("Content-Type", "application/json");
-      res.end(err.message);
-    });
-};
