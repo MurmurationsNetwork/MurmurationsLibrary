@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-cdn:
-    name: Build Cdn
+    name: Build CDN
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
       run: make docker-push
 
   deploy:
-    name: Deploy
+    name: Deploy CDN
     needs: [ build-cdn ]
     runs-on: ubuntu-latest
     steps:
@@ -36,5 +36,5 @@ jobs:
     - name: Save DigitalOcean kubeconfig with short-lived credentials
       run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 murmpretest
 
-    - name: Restart index deployment
+    - name: Restart CDN deployment
       run: make deploy
