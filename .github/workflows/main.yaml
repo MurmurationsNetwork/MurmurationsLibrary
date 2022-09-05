@@ -1,9 +1,8 @@
 name: pretest
 
 on:
-  pull_request:
+  push:
     branches:
-      - test
       - main
 
 jobs:
@@ -35,7 +34,7 @@ jobs:
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
 
     - name: Save DigitalOcean kubeconfig with short-lived credentials
-      run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 murmpretest
+      run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 murmprod
 
     - name: Restart CDN deployment
       run: make deploy

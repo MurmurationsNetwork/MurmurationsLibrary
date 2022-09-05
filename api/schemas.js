@@ -1,10 +1,20 @@
 import fetch from 'node-fetch';
 
 async function getGithubLastCommitTime(host) {
+  if (!process.env?.GITHUB_TOKEN) {
+    throw Error(`{"error": "GITHUB_TOKEN is missing."}`);
+  }
   const response = await fetch(
-    host === "cdn.murmurations.network"
+    host === "cdn.murmurations.network" || host === "temp-cdn.murmurations.network"
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=main"
-      : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=test"
+      : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=test",
+    {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer '+ process.env.GITHUB_TOKEN
+      }
+    }
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
@@ -15,15 +25,14 @@ async function getGithubLastCommitTime(host) {
 async function getSchemaList(host) {
   let schemaList = [];
   const response = await fetch(
-    host === "cdn.murmurations.network"
-      ? "https://cdn.murmurations.network/schemas"
-      : "https://test-cdn.murmurations.network/schemas"
+    host === "cdn.murmurations.network" || host === "temp-cdn.murmurations.network"
+      ? "https://temp-cdn.murmurations.network/schemas"
+      : "https://temp-test-cdn.murmurations.network/schemas"
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
   const data = await response.text();
-  const files = [...data.matchAll(/(?<=file json">)(.*)(?=.json<\/a>)/g)];
-
+  const files = [...data.matchAll(/(?<=name">)(.*)(?=.json<\/span>)/g)];
   files.forEach((file) => {
     if (schemaList.includes(file[0])) return;
     schemaList.push(file[0]);

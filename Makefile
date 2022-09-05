@@ -11,4 +11,4 @@ docker-push: docker-tag
 	docker push murmurations/cdn:$(TAG)
 
 deploy:
-	helm upgrade murmurations-cdn ./murmurations-cdn --set image=murmurations/cdn:latest --install --atomic
+	helm upgrade murmurations-cdn ./murmurations-cdn --set image=murmurations/cdn:$(TAG) --install --atomic
