@@ -5,7 +5,7 @@ async function getGithubLastCommitTime(host) {
     throw Error(`{"error": "GITHUB_TOKEN is missing."}`);
   }
   const response = await fetch(
-    host === "cdn.murmurations.network" || host === "temp-cdn.murmurations.network"
+    host === "cdn.murmurations.network"
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=main"
       : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=test",
     {
@@ -25,9 +25,9 @@ async function getGithubLastCommitTime(host) {
 async function getSchemaList(host) {
   let schemaList = [];
   const response = await fetch(
-    host === "cdn.murmurations.network" || host === "temp-cdn.murmurations.network"
-      ? "https://temp-cdn.murmurations.network/schemas"
-      : "https://temp-test-cdn.murmurations.network/schemas"
+    host === "cdn.murmurations.network"
+      ? "https://cdn.murmurations.network/schemas"
+      : "https://test-cdn.murmurations.network/schemas"
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
