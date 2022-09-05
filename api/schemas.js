@@ -1,10 +1,20 @@
-const fetch = require("node-fetch");
+import fetch from 'node-fetch';
 
 async function getGithubLastCommitTime(host) {
+  if (!process.env?.GITHUB_TOKEN) {
+    throw Error(`{"error": "GITHUB_TOKEN is missing."}`);
+  }
   const response = await fetch(
-    host === "cdn.murmurations.network"
+    host === "cdn.murmurations.network" || host === "temp-cdn.murmurations.network"
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=main"
-      : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=test"
+      : "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=test",
+    {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer '+ process.env.GITHUB_TOKEN
+      }
+    }
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
@@ -15,15 +25,14 @@ async function getGithubLastCommitTime(host) {
 async function getSchemaList(host) {
   let schemaList = [];
   const response = await fetch(
-    host === "cdn.murmurations.network"
-      ? "https://cdn.murmurations.network/schemas"
-      : "https://test-cdn.murmurations.network/schemas"
+    host === "cdn.murmurations.network" || host === "temp-cdn.murmurations.network"
+      ? "https://temp-cdn.murmurations.network/schemas"
+      : "https://temp-test-cdn.murmurations.network/schemas"
   );
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
   const data = await response.text();
-  const files = [...data.matchAll(/(?<=file json">)(.*)(?=.json<\/a>)/g)];
-
+  const files = [...data.matchAll(/(?<=name">)(.*)(?=.json<\/span>)/g)];
   files.forEach((file) => {
     if (schemaList.includes(file[0])) return;
     schemaList.push(file[0]);
@@ -31,7 +40,7 @@ async function getSchemaList(host) {
   return schemaList;
 }
 
-async function createSchemasResponse(host) {
+export async function createSchemasResponse(host) {
   const response = {};
   const lastCommit = await getGithubLastCommitTime(host);
   const schemaList = await getSchemaList(host);
@@ -41,18 +50,3 @@ async function createSchemasResponse(host) {
 
   return JSON.stringify(response, null, 2);
 }
-
-module.exports = (req, res) => {
-  createSchemasResponse(req.headers.host)
-    .then((response) => {
-      res.status(200);
-      res.setHeader("Content-Type", "application/json");
-      res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
-      res.end(response);
-    })
-    .catch((err) => {
-      res.status(500);
-      res.setHeader("Content-Type", "application/json");
-      res.end(err.message);
-    });
-};

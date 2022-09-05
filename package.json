@@ -1,14 +1,19 @@
 {
   "name": "murmurations-library",
   "version": "1.0.0",
-  "main": "api/schemas.js",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
+    "start": "node -r dotenv/config index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.1",
+    "serve-index": "^1.9.1"
   }
 }
