@@ -1,11 +1,11 @@
 import express from 'express'
-import path from 'path';
+import path from 'path'
 import serveIndex from 'serve-index'
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'url'
 import { createSchemasResponse } from './api/schemas.js'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 const app = express()
 const port = 8080
 
