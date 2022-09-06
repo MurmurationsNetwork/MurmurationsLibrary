@@ -1,9 +1,7 @@
 import fetch from 'node-fetch'
 
 async function getGithubLastCommitTime(host) {
-  if (!process.env?.GITHUB_TOKEN) {
-    throw Error(`{"error": "GITHUB_TOKEN is missing."}`)
-  }
+  if (!process.env?.GITHUB_TOKEN) throw Error(`{"error": "GITHUB_TOKEN is missing."}`)
   const response = await fetch(
     host === "cdn.murmurations.network"
       ? "https://api.github.com/repos/MurmurationsNetwork/MurmurationsLibrary/commits?sha=main&per_page=1"
@@ -15,7 +13,9 @@ async function getGithubLastCommitTime(host) {
         'Authorization': 'Bearer '+ process.env.GITHUB_TOKEN
       }
     }
-  )
+  ).catch(err => {
+    console.log(`getGithubLastCommitTime error: ${err}`)
+  })
   if (response.status !== 200)
     throw Error(`{"error": "${response.status} - ${response.url}"}`);
   const data = await response.json()
@@ -32,7 +32,9 @@ async function getSchemaList(host) {
     {
       method: 'GET'
     }
-  )
+  ).catch(err => {
+    console.log(`getSchemaList error: ${err}`)
+  })
   if (response.status !== 200) throw Error(`{"error": "${response.status} - ${response.url}"}`)
   const data = await response.text();
   const files = [...data.matchAll(/(?<=name">)(.*)(?=.json<\/span>)/g)];
