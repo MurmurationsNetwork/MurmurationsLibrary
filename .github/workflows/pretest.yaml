@@ -38,4 +38,4 @@ jobs:
       run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 murmpretest
 
     - name: Restart CDN deployment
-      run: make deploy
+      run: make deploy ENV=pretest
