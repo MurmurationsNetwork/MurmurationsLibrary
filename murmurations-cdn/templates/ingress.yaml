@@ -1,0 +1,46 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cdn-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    {{- if not (eq .Values.env "development") }}
+    cert-manager.io/issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    {{- end }}
+spec:
+  tls:
+    {{- if eq .Values.env "production" }}
+    - hosts:
+      - cdn.murmurations.network
+      secretName: murmurations-cdn-tls
+    {{- else if eq .Values.env "staging" }}
+    - hosts:
+      - test-cdn.murmurations.network
+      secretName: murmurations-cdn-tls
+    {{- else if eq .Values.env "pretest" }}
+    - hosts:
+      - pretest-cdn.murmurations.network
+      secretName: murmurations-cdn-tls
+    {{- end }}
+  rules:
+    {{- if eq .Values.env "production" }}
+    - host: cdn.murmurations.network
+    {{- else if eq .Values.env "staging" }}
+    - host: test-cdn.murmurations.network
+    {{- else if eq .Values.env "pretest" }}
+    - host: pretest-cdn.murmurations.network
+    {{- else }}
+    - host: cdn.murmurations.dev
+    {{- end }}
+      http:
+        paths:
+          - pathType: Prefix
+            path: /(|$)(.*)
+            backend:
+              service:
+                name: cdn-app
+                port:
+                  number: {{ .Values.service.port }}
