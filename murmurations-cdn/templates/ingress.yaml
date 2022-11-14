@@ -20,18 +20,12 @@ spec:
     - hosts:
       - test-cdn.murmurations.network
       secretName: murmurations-cdn-tls
-    {{- else if eq .Values.env "pretest" }}
-    - hosts:
-      - pretest-cdn.murmurations.network
-      secretName: murmurations-cdn-tls
     {{- end }}
   rules:
     {{- if eq .Values.env "production" }}
     - host: cdn.murmurations.network
     {{- else if eq .Values.env "staging" }}
     - host: test-cdn.murmurations.network
-    {{- else if eq .Values.env "pretest" }}
-    - host: pretest-cdn.murmurations.network
     {{- else }}
     - host: cdn.murmurations.dev
     {{- end }}
