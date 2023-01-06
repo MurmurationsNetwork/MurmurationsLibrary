@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/small_social_graph_people-v0.0.1.json",
+  "title": "Small Social Graph - People Schema",
+  "description": "Represents a unique person",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json",
+      "title": "Full Name",
+      "description": "The person's full name that may uniquely identify the person"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Definitive URL",
+      "description": "A URL that uniquely and decisively identifies the person (e.g., a personal home page, Twitter profile, etc.)"
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Personal Description",
+      "description": "A brief description about the person"
+    },
+    "noo_uid": {
+      "title": "Noo UID",
+      "description": "Noo's unique identifier for the person",
+      "type": "string"
+    },
+    "noo_created": {
+      "title": "Noo Created",
+      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when Noo cataloged this person",
+      "type": "number"
+    },
+    "noo_data": {
+      "title": "Additional Data",
+      "description": "An object to store a JSON payload containing any additional data about the person",
+      "type": "object"
+    },
+    "links": {
+      "title": "Links",
+      "description": "Other people this person follows",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "noo_uid": {
+            "title": "Linkee's Noo UID",
+            "description": "Noo's unique identifier for the linked person",
+            "type": "string"
+          },
+          "link_type": {
+            "title": "Link Type",
+            "description": "Type of link to this person (e.g., \"follows\")",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url",
+    "noo_uid"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "NooNet",
+      "url": "https://noo.network"
+    },
+    "schema": {
+      "name": "small_social_graph_people-v0.0.1",
+      "purpose": "Shareable Communities"
+    }
+  }
+}
