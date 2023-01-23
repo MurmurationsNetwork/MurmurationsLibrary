@@ -35,6 +35,9 @@
     "geolocation": {
       "$ref": "../fields/geolocation.json"
     },
+    "email": {
+      "$ref": "../fields/email.json"
+    },
     "image": {
       "$ref": "../fields/image.json"
     },
