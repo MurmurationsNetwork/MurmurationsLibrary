@@ -63,7 +63,7 @@
     },
     "schema": {
       "name": "person",
-      "version": "2.0.0",
+      "version": "0.1.0",
       "purpose": "A personal profile schema to encourage cross platform and network discovery and synergy.",
       "url": "https://murmurations.network"
     }
