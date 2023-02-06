@@ -1,0 +1,19 @@
+{
+  "title": "Founding Date",
+  "description": "The date the entity was founded (as a Unix timestamp, e.g., 1651848477).",
+  "type": "integer",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "founding_date",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/foundingDate"
+    ],
+    "purpose": "The date and approximate time the entity was established. To specify just the year, assume a date of 1 January at the beginning of the day (e.g., 1672531200 for Sun 01 Jan 2023 00:00:00 GMT+0000)."
+  }
+}

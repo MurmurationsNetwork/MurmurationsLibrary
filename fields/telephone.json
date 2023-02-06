@@ -1,0 +1,19 @@
+{
+  "title": "Telephone Number",
+  "description": "A landline or mobile phone number, specified in international dialing format (e.g., +1 212 555 1212).",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "telephone",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/telephone"
+    ],
+    "purpose": "A phone number that can be used to contact a person or organization. The number should be provided in international dialing format (e.g., the US telephone number (212) 555-1212 should be formatted as +1 212 555 1212)."
+  }
+}

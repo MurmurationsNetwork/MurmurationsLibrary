@@ -1,0 +1,19 @@
+{
+  "title": "Job Title",
+  "description": "The job title of the person (e.g., Program Manager).",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "job_title",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/jobTitle"
+    ],
+    "purpose": "A title that describes the role filled by a person in an organization."
+  }
+}

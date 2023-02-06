@@ -1,0 +1,24 @@
+{
+  "title": "Languages",
+  "description": "The languages a person knows or are used in an organization.",
+  "type": "array",
+  "items": {
+    "type": "string"
+  },
+  "minItems": 1,
+  "uniqueItems": true,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "knows_language",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/knowsLanguage"
+    ],
+    "purpose": "A list of languages spoken by a person or used in communication within and by an organization."
+  }
+}
