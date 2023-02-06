@@ -1,0 +1,19 @@
+{
+  "title": "Last Name",
+  "description": "The last name or family name of a person.",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "last_name",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/familyName"
+    ],
+    "purpose": "The shared name given to a person, usually at birth (e.g., Smith or Doe)."
+  }
+}

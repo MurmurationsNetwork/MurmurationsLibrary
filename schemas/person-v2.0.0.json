@@ -1,18 +1,21 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-cdn.murmurations.network/schemas/person-v2.0.0.json",
+  "$id": "https://test-cdn.murmurations.network/schemas/person_schema-v0.1.0.json",
   "title": "Personal Profile",
-  "description": "A profile of a person (alive, dead, undead, or fictional).",
+  "description": "A profile of a person (living, deceased or fictional).",
   "type": "object",
   "properties": {
     "linked_schemas": {
-      "$ref": "../fields/linked_schemas-v1.json"
+      "$ref": "../fields/linked_schemas.json"
     },
-    "firstname": {
-      "$ref": "../fields/firstname.json"
+    "first_name": {
+      "$ref": "../fields/first_name.json"
     },
-    "lastname": {
-      "$ref": "../fields/lastname.json"
+    "last_name": {
+      "$ref": "../fields/last_name.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
     },
     "email": {
       "$ref": "../fields/email.json"
@@ -35,24 +38,24 @@
     "geolocation": {
       "$ref": "../fields/geolocation.json"
     },
-    "jobtitle": {
-      "$ref": "../fields/jobtitle.json"
+    "job_title": {
+      "$ref": "../fields/job_title.json"
     },
-    "knowslanguage": {
-      "$ref": "../fields/knowslanguage.json"
+    "knows_language": {
+      "$ref": "../fields/knows_language.json"
     },
     "member_of": {
       "$ref": "../fields/urls.json",
       "title": "Member of",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the Oganization/s, and/or Project/s, to which this Person belongs."
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the organization(s) and/or project(s) to which this person belongs."
     },
     "knows": {
       "$ref": "../fields/urls.json",
       "title": "Knows",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of People this Person knows."
-    },    
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of people this person knows."
+    }
   },
-  "required": ["linked_schemas", "firstname", "lastname"],
+  "required": ["linked_schemas", "first_name", "last_name"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

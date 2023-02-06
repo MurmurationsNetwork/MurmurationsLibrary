@@ -25,6 +25,6 @@
       "name": "status",
       "version": "0.0.1"
     },
-    "purpose": "To define the current state of a Project, Organisation or Event etc."
+    "purpose": "Status defines the current state of a project, organization, event, etc."
   }
 }
