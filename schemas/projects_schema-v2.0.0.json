@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-cdn.murmurations.network/schemas/projects_schema-v2.0.0.json",
+  "$id": "https://test-cdn.murmurations.network/schemas/projects_schema-v0.1.0.json",
   "title": "Projects Schema",
   "description": "A schema to add regenerative economy Projects to the Murmrations Index.",
   "type": "object",
@@ -44,7 +44,7 @@
     "tags": {
       "$ref": "../fields/tags.json",
       "title": "Tags",
-      "description": "What type of Project is this?"
+      "description": "What type of project is this?"
     },
     "geographic_scope": {
       "$ref": "../fields/geographic_scope.json"
@@ -55,17 +55,18 @@
     },
     "member": {
       "$ref": "../fields/urls.json",
-      "title": "Member/s",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of any People or Oganizations that are Members of this Project."
+      "title": "Member(s)",
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of any people or organizations that are members of this project."
     },
     "member_of": {
       "$ref": "../fields/urls.json",
       "title": "Member of",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the Oganization/s, or Project/s, to which this Project belongs."
+      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the organization(s) or project(s) to which this project belongs."
     },
     "status": {
       "$ref": "../fields/status.json"
-    },
+    }
+  },
   "required": [
     "linked_schemas",
     "name",
@@ -77,7 +78,7 @@
       "url": "https://murmurations.network/"
     },
     "schema": {
-      "name": "projects_schema-v2.0.0",
+      "name": "projects_schema-v0.1.0",
       "purpose": "To map projects within the regenerative economy.",
       "url": "https://murmurations.network"
     }
