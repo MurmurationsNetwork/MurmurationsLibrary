@@ -1,6 +1,6 @@
 {
   "title": "Member of",
-  "description": "Names and links of entities of which this person is a member.",
+  "description": "Names and links of entities of which this entity is a member.",
   "type": "array",
   "items": {
     "type": "object",
@@ -35,6 +35,6 @@
     "context": [
       "https://schema.org/memberOf"
     ],
-    "purpose": "Member of establishes a relationship between the subject of the profile and one or more entities, organizations, projects, etc."
+    "purpose": "Member of establishes a relationship between the subject of the profile and one or more entities, organizations, projects, etc. of which it is a member."
   }
 }
