@@ -50,7 +50,7 @@
       "$ref": "../fields/geographic_scope.json"
     },
     "founding_date": {
-      "$ref": "..fields/founding_date.json"
+      "$ref": "../fields/founding_date.json"
     },
     "status": {
       "$ref": "../fields/status.json"
