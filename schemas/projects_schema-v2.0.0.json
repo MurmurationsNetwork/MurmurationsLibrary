@@ -50,21 +50,16 @@
       "$ref": "../fields/geographic_scope.json"
     },
     "founding_date": {
-      "$ref": "..fields/founding_date.json",
-      "title": "Founding date"
-    },
-    "member": {
-      "$ref": "../fields/urls.json",
-      "title": "Member(s)",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of any people or organizations that are members of this project."
-    },
-    "member_of": {
-      "$ref": "../fields/urls.json",
-      "title": "Member of",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the organization(s) or project(s) to which this project belongs."
+      "$ref": "..fields/founding_date.json"
     },
     "status": {
       "$ref": "../fields/status.json"
+    },
+    "member": {
+      "$ref": "../fields/member.json"
+    },
+    "member_of": {
+      "$ref": "../fields/member_of.json"
     }
   },
   "required": [
