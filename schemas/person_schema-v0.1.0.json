@@ -62,8 +62,7 @@
       "url": "https://murmurations.network/"
     },
     "schema": {
-      "name": "person",
-      "version": "0.1.0",
+      "name": "person_schema-v0.1.0",
       "purpose": "A personal profile schema to encourage cross platform and network discovery and synergy.",
       "url": "https://murmurations.network"
     }
