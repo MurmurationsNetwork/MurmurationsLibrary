@@ -45,14 +45,10 @@
       "$ref": "../fields/knows_language.json"
     },
     "member_of": {
-      "$ref": "../fields/urls.json",
-      "title": "Member of",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of the organization(s) and/or project(s) to which this person belongs."
+      "$ref": "../fields/member_of.json"
     },
     "knows": {
-      "$ref": "../fields/urls.json",
-      "title": "Knows",
-      "description": "Add the names and URLs (primary URLs or preferably Murmurations .json Profile URLs) of people this person knows."
+      "$ref": "../fields/knows.json"
     }
   },
   "required": ["linked_schemas", "first_name", "last_name"],
