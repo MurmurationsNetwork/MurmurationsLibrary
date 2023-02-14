@@ -8,6 +8,9 @@
     "linked_schemas": {
       "$ref": "../fields/linked_schemas.json"
     },
+    "name" : {
+      "$ref": "../fields/name.json"
+    },
     "first_name": {
       "$ref": "../fields/first_name.json"
     },
@@ -51,7 +54,7 @@
       "$ref": "../fields/knows.json"
     }
   },
-  "required": ["linked_schemas", "first_name", "last_name"],
+  "required": ["linked_schemas"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
