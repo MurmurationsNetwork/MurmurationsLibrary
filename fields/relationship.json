@@ -1,0 +1,65 @@
+{
+  "title": "Relationship",
+  "description": "Defines a relationship between a subject and an object, acting as the predicate in a triple (Alice follows Bob, Charlie is a dog, etc.). In Graph database terminology, the relationship defines an edge between two nodes.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "title": "Relationship Type",
+        "description": "A link or action that describes the relationship (e.g., is a, has a, trusts, \"follows\", etc.)",
+        "type": "string"
+      },
+      "provisions": {
+        "title": "Provisions",
+        "description": "Description that qualifies the relationship (e.g., adjectives (\"is a _good_ dog\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "title": "Type of Provision",
+              "description": "Adjective, prepositional phrase, etc.",
+              "type": "string"
+            },
+            "condition": {
+              "title": "Provision Condition",
+              "description": "Condition that qualifies the provision (e.g., \"Bob trusts Alice to hold his keys _until the end of the year_\", \"Bob trusts Alice to return his keys _when locked out of the house_\")",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "condition"
+          ]
+        }
+      },
+      "object_url": {
+        "title": "Object URL",
+        "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the person.",
+        "type": "string",
+        "maxLength": 2000,
+        "pattern": "^https?://.*"
+      }
+    },
+    "required": [
+      "type",
+      "object_url"
+    ]
+  },
+  "uniqueItems": true,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "relationship",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://docs.murmurations.network/faqs/schema.html#what-is-a-relationship"
+    ],
+    "purpose": "Defines and quantifies a relationship between two entities."
+  }
+}
