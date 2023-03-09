@@ -50,6 +50,11 @@
     "knows_language": {
       "$ref": "../fields/knows_language.json"
     },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "Descriptive tags about you"
+    },
     "relationships": {
       "$ref": "../fields/relationships.json"
     }
