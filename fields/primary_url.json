@@ -1,6 +1,6 @@
 {
   "title": "Primary URL",
-  "description": "The primary URL of the entity or item (i.e., its unique website address)",
+  "description": "The primary URL of the entity or item (i.e., its unique, canonical and definitive website address)",
   "type": "string",
   "maxLength": 2000,
   "metadata": {
