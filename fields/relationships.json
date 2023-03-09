@@ -1,5 +1,5 @@
 {
-  "title": "Relationship",
+  "title": "Relationships",
   "description": "Defines a relationship between a subject and an object, acting as the predicate in a triple (Alice follows Bob, Charlie is a dog, etc.). In Graph database terminology, the relationship defines an edge between two nodes.",
   "type": "array",
   "items": {

@@ -38,6 +38,9 @@
     "locality": {
       "$ref": "../fields/locality.json"
     },
+    "country_iso_3166.json": {
+      "$ref": "../fields/country_iso_3166.json"
+    },
     "geolocation": {
       "$ref": "../fields/geolocation.json"
     },
@@ -47,8 +50,8 @@
     "knows_language": {
       "$ref": "../fields/knows_language.json"
     },
-    "relationship": {
-      "$ref": "../fields/relationship.json"
+    "relationships": {
+      "$ref": "../fields/relationships.json"
     }
   },
   "required": ["linked_schemas"],
