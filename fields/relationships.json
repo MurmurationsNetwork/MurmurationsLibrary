@@ -7,12 +7,12 @@
     "properties": {
       "type": {
         "title": "Relationship Type",
-        "description": "A link or action that describes the relationship (e.g., is a, has a, trusts, \"follows\", etc.)",
+        "description": "A declaration, action or link that describes the relationship (e.g., is a, has a, trusts, \"follows\", <https://schema.org/knows>, etc.)",
         "type": "string"
       },
       "provisions": {
         "title": "Provisions",
-        "description": "Description that qualifies the relationship (e.g., adjectives (\"is a _good_ dog\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
+        "description": "Description that qualifies the relationship (e.g., adjectives (\"is a _good_ programmer\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
         "type": "array",
         "items": {
           "type": "object",
@@ -29,7 +29,6 @@
             }
           },
           "required": [
-            "type",
             "condition"
           ]
         }
@@ -40,6 +39,11 @@
         "type": "string",
         "maxLength": 2000,
         "pattern": "^https?://.*"
+      },
+      "id": {
+        "title": "Unique Identifier",
+        "description": "A unique ID for the subject created by the object (e.g., your member ID in an organization, login name to a website, etc.)",
+        "type": "string"
       }
     },
     "required": [

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/communities_schema-v0.1.0.json",
+  "title": "Projects Schema",
+  "description": "A schema to add regenerative economy Communities to the Murmurations Index.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "What type of project is this?"
+    },
+    "relationships": {
+      "$ref": "../fields/relationships.json"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "primary_url",
+    "tags",
+    "relationships"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "communities_schema-v0.1.0",
+      "purpose": "To map projects within the regenerative economy.",
+      "url": "https://murmurations.network"
+    }
+  }
+}
