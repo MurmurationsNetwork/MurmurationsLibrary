@@ -30,7 +30,10 @@
             "condition": {
               "title": "Conditions of Qualifier",
               "description": "Defines conditions for the qualifier (e.g., \"Bob trusts Alice to hold his keys _until the end of the year_\", \"Bob trusts Alice to return his keys _when locked out of the house_\")",
-              "type": "string"
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           },
           "required": [
@@ -66,7 +69,10 @@
               "type": "number"
             }
           },
-          "required": ["domain", "strength"]
+          "required": [
+            "domain",
+            "strength"
+          ]
         }
       },
       "data": {
