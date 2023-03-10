@@ -109,12 +109,9 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "relationship",
+      "name": "connections",
       "version": "0.0.1"
     },
-    "context": [
-      "https://docs.murmurations.network/faqs/schema.html#what-is-a-relationship"
-    ],
-    "purpose": "Defines and quantifies a relationship between two entities."
+    "purpose": "Defines a connection between two entities and quantifies their relationship from the point of view of the subject."
   }
 }
