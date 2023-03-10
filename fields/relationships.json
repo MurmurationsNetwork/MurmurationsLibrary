@@ -5,42 +5,6 @@
   "items": {
     "type": "object",
     "properties": {
-      "type": {
-        "title": "Relationship Type",
-        "description": "A declaration, action or link that describes the relationship (e.g., is a, has a, trusts, \"follows\", <https://schema.org/knows>, etc.)",
-        "type": "string"
-      },
-      "qualifiers": {
-        "title": "Qualifiers",
-        "description": "Qualifies the relationship (e.g., adjectives (\"is a _good_ programmer\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "title": "Type of Qualifier",
-              "description": "Adjective, prepositional phrase, other parts of speech",
-              "type": "string",
-              "enum": [
-                "adjective",
-                "prepositional phrase",
-                "other"
-              ]
-            },
-            "condition": {
-              "title": "Conditions of Qualifier",
-              "description": "Defines conditions for the qualifier (e.g., \"Bob trusts Alice to hold his keys _until the end of the year_\", \"Bob trusts Alice to return his keys _when locked out of the house_\")",
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          },
-          "required": [
-            "condition"
-          ]
-        }
-      },
       "object_url": {
         "title": "Object URL",
         "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the object (org, project, person, etc.)",
@@ -48,41 +12,86 @@
         "maxLength": 2000,
         "pattern": "^https?://.*"
       },
-      "id": {
-        "title": "Unique Identifier",
-        "description": "A unique ID for the subject created by the object (e.g., your member ID in an organization, login name to a website, etc.)",
-        "type": "string"
-      },
-      "respects": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "domain": {
-              "title": "Domain",
-              "description": "The domain to which a strength rating is being applied",
-              "type": "string"
-            },
-            "strength": {
-              "title": "Strength",
-              "description": "The strength of knowledge, expertise, etc. in the specified domain (scale of 0 to 100)",
-              "type": "number"
+      "relationships": {"type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Relationship Type",
+            "description": "A declaration, action or link that describes the relationship (e.g., is a, has a, trusts, \"follows\", <https://schema.org/knows>, etc.)",
+            "type": "string"
+          },
+          "qualifiers": {
+            "title": "Qualifiers",
+            "description": "Qualifies the relationship (e.g., adjectives (\"is a _good_ programmer\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "title": "Type of Qualifier",
+                  "description": "Adjective, prepositional phrase, other parts of speech",
+                  "type": "string",
+                  "enum": [
+                    "adjective",
+                    "prepositional phrase",
+                    "other"
+                  ]
+                },
+                "condition": {
+                  "title": "Conditions of Qualifier",
+                  "description": "Defines conditions for the qualifier (e.g., \"Bob trusts Alice to hold his keys _until the end of the year_\", \"Bob trusts Alice to return his keys _when locked out of the house_\")",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "condition"
+              ]
             }
           },
-          "required": [
-            "domain",
-            "strength"
-          ]
-        }
-      },
-      "data": {
-        "title": "Other Data",
-        "description": "Data payload associated with the relationship",
-        "type": "object"
-      }
+          "id": {
+            "title": "Unique Identifier",
+            "description": "A unique ID for the subject created by the object (e.g., your member ID in an organization, login name to a website, etc.)",
+            "type": "string"
+          },
+          "respects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "domain": {
+                  "title": "Domain",
+                  "description": "The domain to which a strength rating is being applied",
+                  "type": "string"
+                },
+                "strength": {
+                  "title": "Strength",
+                  "description": "The strength of knowledge, expertise, etc. in the specified domain (scale of 0 to 100)",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "domain",
+                "strength"
+              ]
+            }
+          },
+          "data": {
+            "title": "Other Data",
+            "description": "Data payload associated with the relationship",
+            "type": "object"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }}
     },
     "required": [
-      "type",
+      "relationships",
       "object_url"
     ]
   },
