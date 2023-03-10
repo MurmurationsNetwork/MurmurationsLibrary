@@ -83,7 +83,14 @@
             "title": "Other Data",
             "description": "Data payload associated with the relationship",
             "type": "object"
-          }
+          },
+          "object_url": {
+            "title": "Object URL",
+            "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the object (org, project, person, etc.)",
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https?://.*"
+          }    
         },
         "required": [
           "type"
