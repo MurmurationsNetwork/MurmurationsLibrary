@@ -38,7 +38,7 @@
     "locality": {
       "$ref": "../fields/locality.json"
     },
-    "country_iso_3166.json": {
+    "country_iso_3166": {
       "$ref": "../fields/country_iso_3166.json"
     },
     "geolocation": {
