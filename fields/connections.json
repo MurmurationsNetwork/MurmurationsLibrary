@@ -1,6 +1,6 @@
 {
-  "title": "Relationships",
-  "description": "Defines a relationship between a subject and an object (Alice follows Bob, Alice is a programmer, etc.). In Graph database terminology, the relationship defines an edge between two nodes.",
+  "title": "Connections",
+  "description": "Defines a connection between a subject and an object (Alice follows Bob, Alice is a programmer, etc.). In Graph database terminology, the connection is an edge between two nodes.",
   "type": "array",
   "items": {
     "type": "object",

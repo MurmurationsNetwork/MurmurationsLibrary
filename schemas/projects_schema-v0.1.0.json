@@ -55,8 +55,8 @@
     "status": {
       "$ref": "../fields/status.json"
     },
-    "relationships": {
-      "$ref": "../fields/relationships.json"
+    "connections": {
+      "$ref": "../fields/connections.json"
     }
   },
   "required": [

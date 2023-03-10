@@ -19,15 +19,15 @@
       "title": "Tags",
       "description": "What type of project is this?"
     },
-    "relationships": {
-      "$ref": "../fields/relationships.json"
+    "connections": {
+      "$ref": "../fields/connections.json"
     }
   },
   "required": [
     "linked_schemas",
     "primary_url",
     "tags",
-    "relationships"
+    "connections"
   ],
   "metadata": {
     "creator": {
