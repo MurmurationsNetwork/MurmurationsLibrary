@@ -1,6 +1,6 @@
 {
   "title": "Connections",
-  "description": "Defines a connection between a subject and an object (Alice follows Bob, Alice is a programmer, etc.). In Graph database terminology, the connection is an edge between two nodes.",
+  "description": "Defines a connection between a subject and an object. In Graph database terminology, the connection is an edge between two nodes.",
   "type": "array",
   "items": {
     "type": "object",
@@ -12,7 +12,10 @@
         "maxLength": 2000,
         "pattern": "^https?://.*"
       },
-      "relationships": {"type": "array",
+      "relationships": {
+        "title": "Relationships",
+        "description": "Defines one or more relationships between a subject and an object ( (Alice follows Bob, Alice is a programmer, etc.)",
+        "type": "array",
       "items": {
         "type": "object",
         "properties": {
@@ -58,6 +61,8 @@
             "type": "string"
           },
           "respects": {
+            "title": "Respects",
+            "description": "A strength rating on a scale of 0 to 100 about the object on any domain (e.g., programming: 75)",
             "type": "array",
             "items": {
               "type": "object",
@@ -84,9 +89,9 @@
             "description": "Data payload associated with the relationship",
             "type": "object"
           },
-          "object_url": {
-            "title": "Object URL",
-            "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the object (org, project, person, etc.)",
+          "relationship_url": {
+            "title": "Relationship URL",
+            "description": "The URL (starting with http:// or https://) that further describes the relationship",
             "type": "string",
             "maxLength": 2000,
             "pattern": "^https?://.*"
