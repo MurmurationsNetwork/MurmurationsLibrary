@@ -1,7 +1,7 @@
 {
   "title": "Founding Date",
   "description": "The date the entity was founded (as a Unix timestamp, e.g., 1651848477).",
-  "type": "integer",
+  "type": "number",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
