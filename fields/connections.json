@@ -5,7 +5,13 @@
   "items": {
     "type": "object",
     "properties": {
-      "object_url": {
+      "subject_url": {
+        "title": "Subject URL",
+        "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the subject (org, project, person, etc.)",
+        "type": "string",
+        "maxLength": 2000,
+        "pattern": "^https?://.*"
+      },"object_url": {
         "title": "Object URL",
         "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the object (org, project, person, etc.)",
         "type": "string",
@@ -117,6 +123,6 @@
       "name": "connections",
       "version": "0.0.1"
     },
-    "purpose": "Defines a connection between two entities and quantifies their relationship from the point of view of the subject."
+    "purpose": "Defines a connection between two entities and quantifies their relationship from the point of view of the subject. An optional subject URL enables this field to be used as a standalone instance of a graph edge, or enables the profile subject to make claims about other entities towards an object (e.g., Alice claims that Bob knows Charlie)."
   }
 }
