@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/groups_schema-v0.0.1.json",
+  "title": "Projects Schema",
+  "description": "A schema to add regenerative economy Groups to the Murmurations Index.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json"
+    },
+    "description": {
+      "$ref": "../fields/description.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "image": {
+      "$ref": "../fields/image.json"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json"
+    },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "groups_schema-v0.0.1",
+      "purpose": "To map groups within the regenerative economy.",
+      "url": "https://murmurations.network"
+    }
+  }
+}
