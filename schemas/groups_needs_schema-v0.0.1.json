@@ -16,22 +16,19 @@
     "transaction_type": {
       "title": "Transaction Type",
       "description": "On what basis do you want to receive the good or service?",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "borrow-lend",
-          "rent-lease",
-          "buy-sell",
-          "receive-donate"
-        ],
-        "enumNames": [
-          "Borrow - We want to borrow the item at no cost",
-          "Rent - We want to rent/pay for the item/service",
-          "Buy - We want to buy/pay for the item/service",
-          "Receive - We want to receive the item/service as a donation"
-        ]
-      }
+      "type": "string",
+      "enum": [
+        "borrow-lend",
+        "rent-lease",
+        "buy-sell",
+        "receive-donate"
+      ],
+      "enumNames": [
+        "Borrow - We want to borrow the item at no cost",
+        "Rent - We want to rent/pay for the item/service",
+        "Buy - We want to buy/pay for the item/service",
+        "Receive - We want to receive the item/service as a donation"
+      ]
     },
     "tags": {
       "title": "Tags",
