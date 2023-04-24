@@ -9,28 +9,44 @@
       "$ref": "../fields/linked_schemas.json"
     },
     "name": {
-      "$ref": "../fields/name.json"
+      "$ref": "../fields/name.json",
+      "title": "Group Name",
+      "description": "The name of the group, project, organization, etc."
     },
     "primary_url": {
-      "$ref": "../fields/primary_url.json"
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the group (e.g., our-group.org or many-groups.org/our-group)"
     },
     "description": {
-      "$ref": "../fields/description.json"
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A short description of the group's purpose and activities"
     },
     "locality": {
-      "$ref": "../fields/locality.json"
+      "$ref": "../fields/locality.json",
+      "title": "Locality",
+      "description": "The city or town where the group is located"
     },
     "country_name": {
-      "$ref": "../fields/country_name.json"
+      "$ref": "../fields/country_name.json",
+      "title": "Country",
+      "description": "The country where the group is located"
     },
     "image": {
-      "$ref": "../fields/image.json"
+      "$ref": "../fields/image.json",
+      "title": "Logo",
+      "description": "A logo or other image representing the group (preferably a square image)"
     },
     "tags": {
-      "$ref": "../fields/tags.json"
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "Keywords that describe the group's purpose and activities"
     },
     "geographic_scope": {
-      "$ref": "../fields/geographic_scope.json"
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the group's activities"
     }
   },
   "required": [
