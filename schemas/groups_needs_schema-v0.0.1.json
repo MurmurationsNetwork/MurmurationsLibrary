@@ -9,9 +9,9 @@
       "$ref": "../fields/linked_schemas.json"
     },
     "exchange_type": {
-      "title": "Offering",
+      "title": "Wanting",
       "type": "string",
-      "default": "offer"
+      "default": "want"
     },
     "transaction_type": {
       "title": "Transaction Type",
