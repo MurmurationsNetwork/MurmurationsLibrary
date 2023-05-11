@@ -8,7 +8,7 @@
     "linked_schemas": {
       "$ref": "../fields/linked_schemas.json"
     },
-    "name" : {
+    "name": {
       "$ref": "../fields/name.json"
     },
     "first_name": {
@@ -48,13 +48,61 @@
       "$ref": "../fields/knows_language.json"
     },
     "member_of": {
-      "$ref": "../fields/member_of.json"
+      "title": "Member of",
+      "description": "Names and links of entities of which this entity is a member.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the entity.",
+            "type": "string"
+          },
+          "url": {
+            "title": "URL",
+            "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the entity.",
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https?://.*"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      },
+      "uniqueItems": true
     },
     "knows": {
-      "$ref": "../fields/knows.json"
+      "title": "Knows",
+      "description": "Names and links to people known by this person.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the person.",
+            "type": "string"
+          },
+          "url": {
+            "title": "URL",
+            "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the person.",
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https?://.*"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      },
+      "uniqueItems": true
     }
   },
-  "required": ["linked_schemas"],
+  "required": [
+    "linked_schemas"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
