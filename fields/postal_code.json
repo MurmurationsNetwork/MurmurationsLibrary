@@ -1,0 +1,19 @@
+{
+  "title": "Postal code",
+  "description": "The postcode for the entity's address",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "postal_code",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/postalCode"
+    ],
+    "purpose": "Postal code captures the code used by the local postal system of the entity. This is useful for mapping and other applications where the full address is not required."
+  }
+}

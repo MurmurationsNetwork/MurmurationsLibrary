@@ -1,0 +1,46 @@
+{
+  "title": "Relationships",
+  "description": "A list of relationships between this entity (subject) and various other entities (objects)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "description": {
+        "title": "Description",
+        "description": "A short description of the relationship (e.g. 'is a', 'has a', 'knows', 'trusts', etc.)",
+        "type": "string"
+      },
+      "qualifier": {
+        "title": "Qualifier",
+        "description": "A qualifier for the relationship (e.g. 'is a' could be qualified with 'former member', 'current member', etc.)",
+        "type": "string"
+      },
+      "object_url": {
+        "title": "Object URL",
+        "description": "The URL (starting with http:// or https://) that links to the receiving entity of the described relationship",
+        "type": "string",
+        "maxLength": 2000,
+        "pattern": "^https?://.*"
+      }
+    },
+    "required": [
+      "description",
+      "object_url"
+    ]
+  },
+  "uniqueItems": true,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "relationships",
+      "version": "0.0.1"
+    },
+    "context": [
+      "https://schema.org/InteractAction"
+    ],
+    "purpose": "URLs can be used to link the named entity to its presence on the web. In the case of an item or service, URLs can provide further information."
+  }
+}

@@ -1,9 +1,7 @@
 {
-  "title": "Address",
-  "description": "The physical address of the entity in a single text field",
+  "title": "Full Address",
+  "description": "The complete address of the entity in a single text field as you would write it on an envelope, including the city, postal code, etc.",
   "type": "string",
-  "minLength": 1,
-  "maxLength": 2000,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

@@ -1,6 +1,6 @@
 {
   "title": "Email",
-  "description": "An email address",
+  "description": "An email address at which to contact the entity",
   "type": "string",
   "metadata": {
     "creator": {
