@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-cdn.murmurations.network/schemas/cta_opportunity-v0.1.0.json",
+  "title": "CTA Opportunity Schema",
+  "description": "A schema to add opportunity listings for member organizations and projects of the Collaborative Technology Alliance to the Murmurations Index",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the group (e.g., our-group.org or some-host.org/our-group)"
+    },
+    "exchange_type": {
+      "title": "Opportunity Type",
+      "description": "Are you offering (giving) or wanting (requesting) something?",
+      "type": "string",
+      "enum": [
+        "offer",
+        "want"
+      ],
+      "enumNames": [
+        "Offer - I am offering something to lend, lease, sell or donate",
+        "Want - I am requesting something to borrow, rent, buy or receive"
+      ]
+    },
+    "title": {
+      "title": "Opportunity Title",
+      "description": "A few words describing the good or service you are offering or wanting",
+      "type": "string"
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A longer description (1 to 3 sentences) of the good or service you are offering or wanting"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "Keywords relevant to the good or service you are offering or wanting, searchable in the Murmurations index"
+    },
+    "image": {
+      "$ref": "../fields/image.json",
+      "title": "Image",
+      "description": "An image URL (starting with https:// or http://), preferably a square or 4:3 ratio image"
+    },
+    "details_url": {
+      "title": "Opportunity Details URL",
+      "description": "A webpage (starting with https:// or http://) with further details about the opportunity",
+      "type": "string",
+      "pattern": "^https?://.*"
+    },
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The contact details for the person or organization offering or wanting the opportunity (fill in at least one)",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "You or your group's contact email address",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you or your group/project",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
+    },
+    "starts_at": {
+      "$ref": "../fields/starts_at.json",
+      "title": "Start Date/Time",
+      "description": "The starting date and time for the opportunity (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "ends_at": {
+      "$ref": "../fields/ends_at.json",
+      "title": "End Date/Time",
+      "description": "The ending date and time for the opportunity (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json"
+    },
+    "address": {
+      "$ref": "../fields/address.json"
+    },
+    "street_address": {
+      "$ref": "../fields/street_address.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "postal_code": {
+      "$ref": "../fields/postal_code.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the opportunity"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the opportunity"
+    },
+    "relationships": {
+      "$ref": "../fields/relationships.json"
+    }
+  },
+  "required": [
+    "contact_details",
+    "description",
+    "exchange_type",
+    "linked_schemas",
+    "title",
+    "primary_url",
+    "tags"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "CTA Ecosystem Map Project",
+      "url": "https://collaborative.tech/collabathon-23"
+    },
+    "schema": {
+      "name": "cta_opportunity-v0.1.0",
+      "purpose": "The opportunity schema for members of the Collaborative Technology Alliance",
+      "url": "https://collaborative.tech"
+    }
+  }
+}

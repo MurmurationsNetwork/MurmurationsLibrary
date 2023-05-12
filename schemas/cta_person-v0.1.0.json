@@ -31,7 +31,7 @@
     "image": {
       "$ref": "../fields/image.json",
       "title": "Photo",
-      "description": "A photo or other image of the person (preferably a square image)"
+      "description": "A photo or other image (starting with https:// or http://) of the person, preferably a square image"
     },
     "urls": {
       "$ref": "../fields/urls.json"
@@ -83,8 +83,7 @@
     "linked_schemas",
     "name",
     "primary_url",
-    "tags",
-    "type"
+    "tags"
   ],
   "metadata": {
     "creator": {

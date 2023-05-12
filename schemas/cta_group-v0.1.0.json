@@ -36,7 +36,7 @@
     "image": {
       "$ref": "../fields/image.json",
       "title": "Logo",
-      "description": "A logo or other image representing the group (preferably a square or 4:3 ratio image)"
+      "description": "A logo or other image (starting with https:// or http://) representing the group, preferably a square or 4:3 ratio image"
     },
     "urls": {
       "$ref": "../fields/urls.json"
