@@ -11,7 +11,8 @@
         "type": "string",
         "maxLength": 2000,
         "pattern": "^https?://.*"
-      },"object_url": {
+      },
+      "object_url": {
         "title": "Object URL",
         "description": "The URL (starting with http:// or https://) of the primary URL or Murmurations Profile URL for the object (org, project, person, etc.)",
         "type": "string",
@@ -22,91 +23,92 @@
         "title": "Relationships",
         "description": "Defines one or more relationships between a subject and an object ( (Alice follows Bob, Alice is a programmer, etc.)",
         "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "title": "Relationship Type",
-            "description": "A declaration, action or link that describes the relationship (e.g., is a, has a, trusts, \"follows\", <https://schema.org/knows>, etc.)",
-            "type": "string"
-          },
-          "qualifiers": {
-            "title": "Qualifiers",
-            "description": "Qualifies the relationship (e.g., adjectives (\"is a _good_ programmer\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "title": "Type of Qualifier",
-                  "description": "Adjective, prepositional phrase, other parts of speech",
-                  "type": "string",
-                  "enum": [
-                    "adjective",
-                    "prepositional phrase",
-                    "other"
-                  ]
-                },
-                "condition": {
-                  "title": "Conditions of Qualifier",
-                  "description": "Defines conditions for the qualifier (e.g., \"Bob trusts Alice to hold his keys _until the end of the year_\", \"Bob trusts Alice to return his keys _when locked out of the house_\")",
-                  "type": "array",
-                  "items": {
-                    "type": "string"
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "title": "Relationship Type",
+              "description": "A declaration, action or link that describes the relationship (e.g., is a, has a, trusts, \"follows\", <https://schema.org/knows>, etc.)",
+              "type": "string"
+            },
+            "qualifiers": {
+              "title": "Qualifiers",
+              "description": "Qualifies the relationship (e.g., adjectives (\"is a _good_ programmer\") or prepositional phrases such as \"Alice follows Bob _on Twitter_\" or \"Bob trusts Alice _to hold his keys_\")",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "title": "Type of Qualifier",
+                    "description": "Adjective, prepositional phrase, other parts of speech",
+                    "type": "string",
+                    "enum": [
+                      "adjective",
+                      "prepositional phrase",
+                      "other"
+                    ]
+                  },
+                  "condition": {
+                    "title": "Conditions of Qualifier",
+                    "description": "Defines conditions for the qualifier (e.g., \"Bob trusts Alice to hold his keys _until the end of the year_\", \"Bob trusts Alice to return his keys _when locked out of the house_\")",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
                   }
-                }
-              },
-              "required": [
-                "condition"
-              ]
-            }
-          },
-          "id": {
-            "title": "Unique Identifier",
-            "description": "A unique ID for the subject created by the object (e.g., your member ID in an organization, login name to a website, etc.)",
-            "type": "string"
-          },
-          "respects": {
-            "title": "Respects",
-            "description": "A strength rating on a scale of 0 to 100 about the object on any domain (e.g., programming: 75)",
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "domain": {
-                  "title": "Domain",
-                  "description": "The domain to which a strength rating is being applied",
-                  "type": "string"
                 },
-                "strength": {
-                  "title": "Strength",
-                  "description": "The strength of knowledge, expertise, etc. in the specified domain (scale of 0 to 100)",
-                  "type": "number"
-                }
-              },
-              "required": [
-                "domain",
-                "strength"
-              ]
+                "required": [
+                  "condition"
+                ]
+              }
+            },
+            "id": {
+              "title": "Unique Identifier",
+              "description": "A unique ID for the subject created by the object (e.g., your member ID in an organization, login name to a website, etc.)",
+              "type": "string"
+            },
+            "respects": {
+              "title": "Respects",
+              "description": "A strength rating on a scale of 0 to 100 about the object on any domain (e.g., programming: 75)",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "title": "Domain",
+                    "description": "The domain to which a strength rating is being applied",
+                    "type": "string"
+                  },
+                  "strength": {
+                    "title": "Strength",
+                    "description": "The strength of knowledge, expertise, etc. in the specified domain (scale of 0 to 100)",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "domain",
+                  "strength"
+                ]
+              }
+            },
+            "data": {
+              "title": "Other Data",
+              "description": "Data payload associated with the relationship",
+              "type": "object"
+            },
+            "relationship_url": {
+              "title": "Relationship URL",
+              "description": "The URL (starting with http:// or https://) that further describes the relationship",
+              "type": "string",
+              "maxLength": 2000,
+              "pattern": "^https?://.*"
             }
           },
-          "data": {
-            "title": "Other Data",
-            "description": "Data payload associated with the relationship",
-            "type": "object"
-          },
-          "relationship_url": {
-            "title": "Relationship URL",
-            "description": "The URL (starting with http:// or https://) that further describes the relationship",
-            "type": "string",
-            "maxLength": 2000,
-            "pattern": "^https?://.*"
-          }    
-        },
-        "required": [
-          "type"
-        ]
-      }}
+          "required": [
+            "type"
+          ]
+        }
+      }
     },
     "required": [
       "relationships",
@@ -121,7 +123,7 @@
     },
     "field": {
       "name": "connections",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "purpose": "Defines a connection between two entities and quantifies their relationship from the point of view of the subject. An optional subject URL enables this field to be used as a standalone instance of a graph edge, or enables the profile subject to make claims about other entities towards an object (e.g., Alice claims that Bob knows Charlie)."
   }

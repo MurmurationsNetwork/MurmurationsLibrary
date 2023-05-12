@@ -23,7 +23,7 @@
     },
     "field": {
       "name": "status",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "purpose": "Status defines the current state of a project, organization, event, etc."
   }

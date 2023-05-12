@@ -1,6 +1,6 @@
 {
   "title": "Last Name",
-  "description": "The last name or family name of a person.",
+  "description": "The last name or family name of a person",
   "type": "string",
   "metadata": {
     "creator": {
@@ -9,7 +9,7 @@
     },
     "field": {
       "name": "last_name",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/familyName"

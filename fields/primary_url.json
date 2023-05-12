@@ -10,10 +10,10 @@
     },
     "field": {
       "name": "primary_url",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
-      "https://schema.org/url"
+      "https://schema.org/identifier"
     ],
     "purpose": "The primary URL is used to uniquely identify the entity or item, and is usually represented as a website address or specific web page that is well-known to be linked to the entity. It can be used to link to the entity or item from other entities or items."
   }

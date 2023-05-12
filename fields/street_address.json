@@ -9,7 +9,7 @@
     },
     "field": {
       "name": "street_address",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/street_address"
