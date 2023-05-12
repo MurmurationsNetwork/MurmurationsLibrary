@@ -11,7 +11,7 @@
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
-      "description": "The unique and definitive website address for the group (e.g., our-group.org or some-host.org/our-group)"
+      "description": "The unique and definitive website address for the group or person creating this opportunity"
     },
     "exchange_type": {
       "title": "Opportunity Type",
