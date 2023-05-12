@@ -11,7 +11,7 @@
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
-      "description": "The unique and definitive website address for the group (e.g., our-group.org or many-groups.org/our-group)"
+      "description": "The unique and definitive website address for the group (e.g., our-group.org or some-host.org/our-group)"
     },
     "cta_group_type": {
       "title": "Group Type",
@@ -31,7 +31,7 @@
     "tags": {
       "$ref": "../fields/tags.json",
       "title": "Tags",
-      "description": "Keywords that describe the purpose and activities of the group or project"
+      "description": "Keywords that describe the purpose and activities of the group or project, searchable in the Murmurations index"
     },
     "image": {
       "$ref": "../fields/image.json",
@@ -42,16 +42,27 @@
       "$ref": "../fields/urls.json"
     },
     "status": {
-      "$ref": "../fields/status.json"
+      "$ref": "../fields/status.json",
+      "title": "Status",
+      "description": "The current state of the group or project"
     },
     "starts_at": {
-      "$ref": "../fields/starts_at.json"
+      "$ref": "../fields/starts_at.json",
+      "title": "Start Date/Time",
+      "description": "The starting date and time for the group or project (as a Unix timestamp, e.g., 1651848477)"
     },
     "ends_at": {
-      "$ref": "../fields/ends_at.json"
+      "$ref": "../fields/ends_at.json",
+      "title": "End Date/Time",
+      "description": "The ending date and time for the group or project (as a Unix timestamp, e.g., 1651848477)"
     },
     "email": {
-      "$ref": "../fields/email.json"
+      "$ref": "../fields/email.json",
+      "title": "Contact Email",
+      "description": "An email address at which to contact the group or project"
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json"
     },
     "address": {
       "$ref": "../fields/address.json"
@@ -74,10 +85,12 @@
     "geographic_scope": {
       "$ref": "../fields/geographic_scope.json",
       "title": "Geographic Scope",
-      "description": "The geographic scope of the group's activities"
+      "description": "The geographic scope of the group's or project's activities"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation.json"
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group or project"
     },
     "relationships": {
       "$ref": "../fields/relationships.json"

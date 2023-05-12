@@ -1,18 +1,18 @@
 {
   "title": "Website Addresses/URLs",
-  "description": "URLs for website(s), social media, etc.",
+  "description": "URLs for related website(s), social media, etc.",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "name": {
         "title": "URL Name",
-        "description": "The name of what this URL is for (e.g., the name of the social media provider, website, etc.)",
+        "description": "The name of what this URL is for (e.g., type of website such as work, personal, etc.)",
         "type": "string"
       },
       "url": {
         "title": "URL",
-        "description": "The URL (starting with http:// or https://) that links to the entity or further describes the item",
+        "description": "The URL (starting with http:// or https://) itself",
         "type": "string",
         "maxLength": 2000,
         "pattern": "^https?://.*"
@@ -35,6 +35,6 @@
     "context": [
       "https://schema.org/url"
     ],
-    "purpose": "URLs can be used to link the named entity to its presence on the web. In the case of an item or service, URLs can provide further information."
+    "purpose": "URLs can be used to link the named entity to its presence on the web. For instance a group may link to informational sites and social media related to it. An individual may link to personal and work-related websites. In the case of an item or service, URLs can provide further information about them."
   }
 }

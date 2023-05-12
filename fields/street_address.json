@@ -14,6 +14,6 @@
     "context": [
       "https://schema.org/street_address"
     ],
-    "purpose": "Street address captures the physical address of an entity, without the town/city, postcode, etc. This is useful for mapping and other applications where the full address is not required."
+    "purpose": "Street address captures the physical address of an entity, without the town/city, postal code, country, etc. This is useful for mapping and other applications where the full address is not required."
   }
 }

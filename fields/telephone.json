@@ -1,6 +1,6 @@
 {
   "title": "Telephone Number",
-  "description": "A landline or mobile phone number, specified in international dialing format (e.g., +1 212 555 1212).",
+  "description": "A landline or mobile phone number, specified in international dialing format (e.g., +1 212 555 1212)",
   "type": "string",
   "metadata": {
     "creator": {

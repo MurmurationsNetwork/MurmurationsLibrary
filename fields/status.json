@@ -1,6 +1,6 @@
 {
   "title": "Status",
-  "description": "The current state of the entity.",
+  "description": "The current state of the entity",
   "type": "string",
   "enum": [
     "active",
