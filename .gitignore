@@ -1,7 +1,6 @@
 # Editor-generated files
 .idea
 .vscode
-node_modules
 .env
 
 # OS-generated files
