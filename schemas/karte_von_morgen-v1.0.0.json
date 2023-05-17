@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-library.murmurations.network/schemas/karte_von_morgen-v1.0.0.json",
+  "$id": "https://test-library.murmurations.network/v2/schemas/karte_von_morgen-v1.0.0",
   "title": "Map of Tomorrow / Karte von Morgen",
   "description": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org",
   "type": "object",

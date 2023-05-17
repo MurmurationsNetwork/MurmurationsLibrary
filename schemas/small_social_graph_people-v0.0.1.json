@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-library.murmurations.network/schemas/small_social_graph_people-v0.0.1.json",
+  "$id": "https://test-library.murmurations.network/v2/schemas/small_social_graph_people-v0.0.1",
   "title": "Small Social Graph - People Schema",
   "description": "Represents a unique person",
   "type": "object",

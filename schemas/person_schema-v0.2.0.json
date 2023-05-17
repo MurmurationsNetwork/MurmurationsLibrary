@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-library.murmurations.network/schemas/person_schema-v0.2.0.json",
+  "$id": "https://test-library.murmurations.network/v2/schemas/person_schema-v0.2.0",
   "title": "Personal Profile",
   "description": "A personal profile schema to encourage cross platform and network discovery and synergy",
   "type": "object",
