@@ -1,7 +1,0 @@
-image: ""
-
-env: ""
-
-replicas: 1
-service:
-  port: 8080
