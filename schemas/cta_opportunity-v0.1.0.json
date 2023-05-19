@@ -26,10 +26,10 @@
         "Want - I am requesting something to borrow, rent, buy or receive"
       ]
     },
-    "title": {
-      "title": "Opportunity Title",
-      "description": "A few words describing the good or service you are offering or wanting",
-      "type": "string"
+    "name": {
+      "$ref": "../fields/name.json",
+      "title": "Opportunity Name",
+      "description": "A few words describing the good or service you are offering or wanting"
     },
     "description": {
       "$ref": "../fields/description.json",
@@ -46,11 +46,20 @@
       "title": "Image",
       "description": "An image URL (starting with https:// or http://), preferably a square or 4:3 ratio image"
     },
-    "details_url": {
-      "title": "Opportunity Details URL",
-      "description": "A webpage (starting with https:// or http://) with further details about the opportunity",
-      "type": "string",
-      "pattern": "^https?://.*"
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other Images",
+      "description": "Other images (starting with https:// or http://) for this opportunity"
+    },
+    "url": {
+      "$ref": "../fields/url.json",
+      "title": "Opportunity URL",
+      "description": "A webpage (starting with https:// or http://) with further details about the opportunity"
+    },
+    "urls": {
+      "$ref": "../fields/urls.json",
+      "title": "Other URLs",
+      "description": "Other URLs (starting with https:// or http://) for this opportunity"
     },
     "contact_details": {
       "title": "Contact Details",
@@ -101,15 +110,18 @@
     "country_name": {
       "$ref": "../fields/country_name.json"
     },
-    "geographic_scope": {
-      "$ref": "../fields/geographic_scope.json",
-      "title": "Geographic Scope",
-      "description": "The geographic scope of the opportunity"
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
     },
     "geolocation": {
       "$ref": "../fields/geolocation.json",
       "title": "Geolocation Coordinates",
       "description": "The geo-coordinates (latitude & longitude) of the primary location of the opportunity"
+    },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the opportunity"
     },
     "relationships": {
       "$ref": "../fields/relationships.json"
@@ -120,7 +132,7 @@
     "description",
     "exchange_type",
     "linked_schemas",
-    "title",
+    "name",
     "primary_url",
     "tags"
   ],

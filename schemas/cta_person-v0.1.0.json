@@ -30,8 +30,18 @@
     },
     "image": {
       "$ref": "../fields/image.json",
-      "title": "Photo",
-      "description": "A photo or other image (starting with https:// or http://) of the person, preferably a square image"
+      "title": "Photo/Avatar",
+      "description": "An image URL (starting with https:// or http://), preferably a square"
+    },
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other Images",
+      "description": "Other images (starting with https:// or http://) for this person"
+    },
+    "url": {
+      "$ref": "../fields/url.json",
+      "title": "Opportunity URL",
+      "description": "A webpage (starting with https:// or http://) with further details about the person"
     },
     "urls": {
       "$ref": "../fields/urls.json"
@@ -41,10 +51,23 @@
       "title": "Languages Spoken",
       "description": "The languages a person can read, write and speak"
     },
-    "email": {
-      "title": "Contact Email",
-      "description": "An email address at which to contact the person",
-      "$ref": "../fields/email.json"
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The person's contact details (fill in at least one)",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "The person's contact email address",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the person",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
     },
     "telephone": {
       "$ref": "../fields/telephone.json"
@@ -67,10 +90,8 @@
     "country_name": {
       "$ref": "../fields/country_name.json"
     },
-    "geographic_scope": {
-      "$ref": "../fields/geographic_scope.json",
-      "title": "Geographic Scope",
-      "description": "The geographic scope of the group's activities"
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
     },
     "geolocation": {
       "$ref": "../fields/geolocation.json"

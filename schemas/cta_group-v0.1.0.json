@@ -38,7 +38,7 @@
       "title": "Tags",
       "description": "Keywords that describe the purpose and activities of the group or project, searchable in the Murmurations index"
     },
-    "image_logo": {
+    "image": {
       "$ref": "../fields/image.json",
       "title": "Logo Image",
       "description": "A logo or other image (starting with https:// or http://) representing the group, preferably a square or 4:3 ratio image"
@@ -46,7 +46,7 @@
     "images": {
       "$ref": "../fields/images.json",
       "title": "Other Images",
-      "description": "Other image (starting with https:// or http://) representing the group"
+      "description": "Other images (starting with https:// or http://) representing the group"
     },
     "url": {
       "$ref": "../fields/url.json",
@@ -71,10 +71,23 @@
       "title": "End Date/Time",
       "description": "The ending date and time for the group or project (as a Unix timestamp, e.g., 1651848477)"
     },
-    "email": {
-      "$ref": "../fields/email.json",
-      "title": "Contact Email",
-      "description": "An email address at which to contact the group or project"
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The contact details for the group or project (fill in at least one)",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "The group's or project's contact email address",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the group/project",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
     },
     "telephone": {
       "$ref": "../fields/telephone.json"
