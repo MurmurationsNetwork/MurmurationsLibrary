@@ -1,6 +1,6 @@
 {
   "title": "Full Address",
-  "description": "The complete address of the entity in a single text field as you would write it on an envelope, including the city, postal code, country, etc.",
+  "description": "The complete address of the entity in a single text field as you would write it on an envelope, including the street address, city, postal code, country, etc.",
   "type": "string",
   "metadata": {
     "creator": {
@@ -8,7 +8,7 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "address",
+      "name": "full_address",
       "version": "1.0.0"
     },
     "context": [

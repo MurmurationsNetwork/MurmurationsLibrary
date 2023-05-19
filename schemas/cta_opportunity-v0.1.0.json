@@ -83,8 +83,8 @@
     "telephone": {
       "$ref": "../fields/telephone.json"
     },
-    "address": {
-      "$ref": "../fields/address.json"
+    "full_address": {
+      "$ref": "../fields/full_address.json"
     },
     "street_address": {
       "$ref": "../fields/street_address.json"

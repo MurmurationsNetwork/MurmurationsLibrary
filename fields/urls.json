@@ -1,6 +1,6 @@
 {
   "title": "Website Addresses/URLs",
-  "description": "URLs for related website(s), social media, etc.",
+  "description": "URLs for related website(s), RSS feeds, social media, etc.",
   "type": "array",
   "items": {
     "type": "object",

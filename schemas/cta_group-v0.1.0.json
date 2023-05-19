@@ -13,7 +13,7 @@
       "title": "Primary URL",
       "description": "The unique and definitive website address for the group (e.g., our-group.org or some-host.org/our-group)"
     },
-    "cta_group_type": {
+    "type": {
       "title": "Group Type",
       "description": "The type of group (e.g., organization, project, community, non-profit, etc.)",
       "type": "string"
@@ -22,6 +22,11 @@
       "$ref": "../fields/name.json",
       "title": "Name",
       "description": "The name of the group, project, organization, etc."
+    },
+    "nickname": {
+      "$ref": "../fields/name.json",
+      "title": "Nickname/Abbreviation",
+      "description": "The nickname or abbreviation of the group, project, organization, etc."
     },
     "description": {
       "$ref": "../fields/description.json",
@@ -33,10 +38,20 @@
       "title": "Tags",
       "description": "Keywords that describe the purpose and activities of the group or project, searchable in the Murmurations index"
     },
-    "image": {
+    "image_logo": {
       "$ref": "../fields/image.json",
-      "title": "Logo",
+      "title": "Logo Image",
       "description": "A logo or other image (starting with https:// or http://) representing the group, preferably a square or 4:3 ratio image"
+    },
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other Images",
+      "description": "Other image (starting with https:// or http://) representing the group"
+    },
+    "url": {
+      "$ref": "../fields/url.json",
+      "title": "Main URL",
+      "description": "A URL of the group or project starting with http:// or https://"
     },
     "urls": {
       "$ref": "../fields/urls.json"
@@ -64,8 +79,8 @@
     "telephone": {
       "$ref": "../fields/telephone.json"
     },
-    "address": {
-      "$ref": "../fields/address.json"
+    "full_address": {
+      "$ref": "../fields/full_address.json"
     },
     "street_address": {
       "$ref": "../fields/street_address.json"
@@ -82,22 +97,25 @@
     "country_name": {
       "$ref": "../fields/country_name.json"
     },
-    "geographic_scope": {
-      "$ref": "../fields/geographic_scope.json",
-      "title": "Geographic Scope",
-      "description": "The geographic scope of the group's or project's activities"
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
     },
     "geolocation": {
       "$ref": "../fields/geolocation.json",
       "title": "Geolocation Coordinates",
       "description": "The geo-coordinates (latitude & longitude) of the primary location of the group or project"
     },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the group's or project's activities"
+    },
     "relationships": {
       "$ref": "../fields/relationships.json"
     }
   },
   "required": [
-    "cta_group_type",
+    "type",
     "linked_schemas",
     "name",
     "primary_url",
