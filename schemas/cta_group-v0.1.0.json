@@ -19,14 +19,14 @@
       "type": "string"
     },
     "name": {
+      "$ref": "../fields/name.json",
       "title": "Name",
-      "description": "The name of the group, project, organization, etc.",
-      "type": "string"
+      "description": "The name of the group, project, organization, etc."
     },
     "nickname": {
-      "$ref": "../fields/name.json",
       "title": "Nickname/Abbreviation",
-      "description": "The nickname or abbreviation of the group, project, organization, etc."
+      "description": "The nickname or abbreviation of the group, project, organization, etc.",
+      "type": "string"
     },
     "description": {
       "$ref": "../fields/description.json",
