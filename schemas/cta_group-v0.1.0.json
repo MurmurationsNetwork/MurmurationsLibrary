@@ -19,9 +19,9 @@
       "type": "string"
     },
     "name": {
-      "$ref": "../fields/name.json",
       "title": "Name",
-      "description": "The name of the group, project, organization, etc."
+      "description": "The name of the group, project, organization, etc.",
+      "type": "string"
     },
     "nickname": {
       "$ref": "../fields/name.json",
