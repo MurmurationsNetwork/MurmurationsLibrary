@@ -19,7 +19,7 @@
       },
       "description": {
         "title": "Description",
-        "description": "A short description of the relationship in a full sentence (e.g. 'We (our.org) have known Alice for 10 years.')",
+        "description": "A short description of the relationship in a full sentence (e.g. 'We (our.org) have known Alice (alice.org) for 10 years.')",
         "type": "string"
       }
     },
