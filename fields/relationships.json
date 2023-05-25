@@ -12,14 +12,14 @@
       },
       "object_url": {
         "title": "Object URL",
-        "description": "The URL (starting with http:// or https://) that links to the receiving entity of the relationship described by the predicate, and is ideally its Primary URL",
+        "description": "The URL (ideally the Primary URL) of the object of this relationship (must start with http:// or https://, e.g., https://alice.net)",
         "type": "string",
         "maxLength": 2000,
         "pattern": "^https?://.*"
       },
       "description": {
         "title": "Description",
-        "description": "A short description of the relationship in a full sentence (e.g. 'We (our.org) have known Alice (alice.org) for 10 years.')",
+        "description": "A short description of the relationship in a full sentence (e.g. 'We (our.org) have known Alice (alice.net) for 10 years.')",
         "type": "string"
       }
     },
@@ -41,6 +41,6 @@
     "context": [
       "https://schema.org/InteractAction"
     ],
-    "purpose": "Relationships describe the links between the subject entity (i.e., the entity publishing these relationships within its Murmurations profile) and various other entities, describing the relationships in a human-readable way. The object_url should be the Primary URL of the receiving entity (e.g., https://alice.org), and the predicate should describe the relationship the subject has with that entity (e.g. 'trust Alice to hold a copy of my house keys'). An optional description field can describe the relationship in a complete sentence (e.g., 'I (Bob) trust Alice to hold a copy of my house keys.')."
+    "purpose": "Relationships describe the links between the subject entity (i.e., the entity publishing these relationships within its Murmurations profile) and other entities, describing the relationships in a human-readable way. The object_url should be the Primary URL of the receiving entity (e.g., https://alice.net), and the predicate should describe the relationship the subject has with that entity (e.g. 'trust Alice to hold a copy of my house keys'). An optional description field can describe the relationship in a complete sentence (e.g., 'I (Bob) trust Alice to hold a copy of my house keys.')."
   }
 }
