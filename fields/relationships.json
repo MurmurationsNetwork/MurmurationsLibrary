@@ -5,26 +5,26 @@
   "items": {
     "type": "object",
     "properties": {
-      "description": {
-        "title": "Description",
-        "description": "A short description of the relationship (e.g. 'is a', 'has a', 'knows', 'trusts', etc.)",
-        "type": "string"
-      },
-      "qualifier": {
-        "title": "Qualifier",
-        "description": "A qualifier for the relationship (e.g. 'is a' could be qualified with 'former member', 'current member', etc.)",
+      "predicate": {
+        "title": "Predicate",
+        "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
         "type": "string"
       },
       "object_url": {
         "title": "Object URL",
-        "description": "The URL (starting with http:// or https://) that links to the receiving entity of the described relationship, and is ideally its Primary URL",
+        "description": "The URL (starting with http:// or https://) that links to the receiving entity of the relationship described by the predicate, and is ideally its Primary URL",
         "type": "string",
         "maxLength": 2000,
         "pattern": "^https?://.*"
+      },
+      "description": {
+        "title": "Description",
+        "description": "A short description of the relationship in a full sentence (e.g. 'We (our.org) have known Alice for 10 years.')",
+        "type": "string"
       }
     },
     "required": [
-      "description",
+      "predicate",
       "object_url"
     ]
   },
@@ -41,6 +41,6 @@
     "context": [
       "https://schema.org/InteractAction"
     ],
-    "purpose": "Relationships describe the links between the subject entity and various other entities, describing their relationships in a human-readable way. The object_url should be the Primary URL of the receiving entity, and the description should be a short description of the relationship (e.g. 'is a', 'has a', 'knows', 'trusts', etc.). The qualifier is optional, and can be used to further qualify the relationship (e.g. 'is a' could be qualified with 'former member', 'current member', etc.)."
+    "purpose": "Relationships describe the links between the subject entity (i.e., the entity publishing these relationships within its Murmurations profile) and various other entities, describing the relationships in a human-readable way. The object_url should be the Primary URL of the receiving entity (e.g., https://alice.org), and the predicate should describe the relationship the subject has with that entity (e.g. 'trust Alice to hold a copy of my house keys'). An optional description field can describe the relationship in a complete sentence (e.g., 'I (Bob) trust Alice to hold a copy of my house keys.')."
   }
 }
