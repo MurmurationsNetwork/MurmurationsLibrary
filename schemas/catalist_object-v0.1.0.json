@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-library.murmurations.network/v2/schemas/catalist_object-v0.1.0",
+  "title": "Catalist Object Schema",
+  "description": "A schema to add Catalist Network data to the Murmurations Index",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the group (e.g., our-group.org or some-host.org/our-group)"
+    },
+    "type": {
+      "title": "Group Type",
+      "description": "The type of group (e.g., organization, project, community, non-profit, etc.)",
+      "type": "string"
+    },
+    "name": {
+      "$ref": "../fields/name.json",
+      "title": "Name",
+      "description": "The name of the group, project, organization, etc."
+    },
+    "nickname": {
+      "title": "Nickname/Abbreviation",
+      "description": "The nickname or abbreviation of the group, project, organization, etc.",
+      "type": "string"
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A short description of the purpose and activities of the group or project"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "Keywords that describe the purpose and activities of the group or project, searchable in the Murmurations index"
+    },
+    "image": {
+      "$ref": "../fields/image.json",
+      "title": "Logo Image",
+      "description": "A logo or other image (starting with https:// or http://) representing the group, preferably a square or 4:3 ratio image"
+    },
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other Images",
+      "description": "Other images (starting with https:// or http://) representing the group"
+    },
+    "url": {
+      "$ref": "../fields/url.json",
+      "title": "Main URL",
+      "description": "A URL of the group or project starting with http:// or https://"
+    },
+    "urls": {
+      "$ref": "../fields/urls.json"
+    },
+    "status": {
+      "$ref": "../fields/status.json",
+      "title": "Status",
+      "description": "The current state of the group or project"
+    },
+    "starts_at": {
+      "$ref": "../fields/starts_at.json",
+      "title": "Start Date/Time",
+      "description": "The starting date and time for the group or project (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "ends_at": {
+      "$ref": "../fields/ends_at.json",
+      "title": "End Date/Time",
+      "description": "The ending date and time for the group or project (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The contact details for the group or project (fill in at least one)",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "The group's or project's contact email address",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the group/project",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json"
+    },
+    "full_address": {
+      "$ref": "../fields/full_address.json"
+    },
+    "street_address": {
+      "$ref": "../fields/street_address.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "postal_code": {
+      "$ref": "../fields/postal_code.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group or project"
+    },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the group's or project's activities"
+    },
+    "relationships": {
+      "$ref": "../fields/relationships.json"
+    },
+    "knows_language": {
+      "$ref": "../fields/knows_language.json",
+      "title": "Languages Spoken",
+      "description": "The languages a person can read, write and speak"
+    },
+    "exchange_type": {
+      "title": "Exchange Type",
+      "description": "Are you offering ('selling') or wanting ('buying') something?",
+      "type": "string",
+      "enum": ["offer", "want"],
+      "enumNames": [
+        "Offer - I have something to lend, lease, sell or donate",
+        "Want - I want to borrow, rent, buy or receive something"
+      ]
+    },
+    "transaction_type": {
+      "title": "Transaction Type",
+      "description": "On what basis do you want to exchange the item?",
+      "type": "string",
+      "enum": ["borrow-lend", "rent-lease", "buy-sell", "receive-donate"],
+      "enumNames": [
+        "Borrow/Lend - I want to borrow or lend the item",
+        "Rent/Lease - I want to rent or lease the item",
+        "Buy/Sell - I want to buy or sell the item",
+        "Receive/Donate - I want to receive or donate the item"
+      ]
+    },
+    "title": {
+      "title": "Title",
+      "description": "The name of the group, project, organization, etc.",
+      "type": "string"
+    },
+    "job_title": {
+      "$ref": "../fields/job_title.json"
+    },
+    "mission": {
+      "$ref": "../fields/mission.json"
+    },
+    "expires_at": {
+      "title": "Expires At",
+      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when this offer or want expires.",
+      "type": "number"
+    },
+    "rss": {
+      "$ref": "../fields/rss.json"
+    }
+  },
+  "required": ["type", "linked_schemas", "name", "primary_url", "tags"],
+  "metadata": {
+    "creator": {
+      "name": "Catalist Network",
+      "url": "https://catalist.network"
+    },
+    "schema": {
+      "name": "catalist_object-v0.1.0",
+      "purpose": "A general object schema for Catalist Network",
+      "url": "https://catalist.network"
+    }
+  }
+}
