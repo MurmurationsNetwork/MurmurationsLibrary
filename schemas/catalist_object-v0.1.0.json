@@ -40,8 +40,18 @@
     },
     "image": {
       "$ref": "../fields/image.json",
-      "title": "Logo Image",
+      "title": "Image",
       "description": "A logo or other image (starting with https:// or http://) representing the group, preferably a square or 4:3 ratio image"
+    },
+    "image_logo": {
+      "$ref": "../fields/image.json",
+      "title": "Logo Image",
+      "description": "A logo (starting with https:// or http://) representing the group, preferably a square or 4:3 ratio image"
+    },
+    "image_cover": {
+      "$ref": "../fields/image.json",
+      "title": "Cover Image",
+      "description": "A cover (starting with https:// or http://) representing the group"
     },
     "images": {
       "$ref": "../fields/images.json",
@@ -164,16 +174,61 @@
     "mission": {
       "$ref": "../fields/mission.json"
     },
-    "expires_at": {
-      "title": "Expires At",
-      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when this offer or want expires.",
-      "type": "number"
-    },
     "rss": {
       "$ref": "../fields/rss.json"
     }
   },
-  "required": ["type", "linked_schemas", "name", "primary_url", "tags"],
+  "page_html": {
+    "title": "Page HTML",
+    "description": "An HTML representation of the group or project",
+    "type": "string"
+  },
+  "page_markdown": {
+    "title": "Page Markdown",
+    "description": "A Markdown representation of the group or project",
+    "type": "string"
+  },
+  "page_bbcode": {
+    "title": "Page BBCode",
+    "description": "A BBCode representation of the group or project",
+    "type": "string"
+  },
+  "attributes": {
+    "title": "Attributes",
+    "description": "A list of attributes for the group or project",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Attribute Title",
+          "description": "Name of the attribute",
+          "type": "string"
+        },
+        "url": {
+          "title": "URL",
+          "description": "A URL for a description of the attribute starting with http:// or https://",
+          "type": "string",
+          "maxLength": 2000,
+          "pattern": "^https?://.*"
+        }
+      },
+      "required": [
+        "title", "url"
+      ]
+    }
+  },  
+  "object_id": {
+    "title": "Catalist Object ID",
+    "description": "The Catalist Object ID for the group or project",
+    "type": "string"
+  },
+  "youtube_video_id": {
+    "title": "Youtube Video ID",
+    "description": "The Youtube Video ID for the group or project",
+    "type": "string"
+  },
+"required": ["type", "linked_schemas", "name", "primary_url", "tags"],
   "metadata": {
     "creator": {
       "name": "Catalist Network",
