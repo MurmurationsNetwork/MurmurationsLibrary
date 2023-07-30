@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-library.murmurations.network/v2/schemas/people_schema-v0.1.0",
+  "title": "People Schema",
+  "description": "A schema to add individuals in the regenerative economy to the Murmurations Index",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json",
+      "title": "Full Name",
+      "description": "The full name of the person"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the person (e.g., alice.net or some-host.net/alice)"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "Keywords that describe the person, searchable in the Murmurations index"
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Description/Bio",
+      "description": "A short description or biography of the person"
+    },
+    "image": {
+      "$ref": "../fields/image.json",
+      "title": "Photo/Avatar",
+      "description": "An image URL (starting with https:// or http://), preferably a square"
+    },
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other Images",
+      "description": "Other images (starting with https:// or http://) for this person"
+    },
+    "urls": {
+      "$ref": "../fields/urls.json"
+    },
+    "knows_language": {
+      "$ref": "../fields/knows_language.json",
+      "title": "Languages Spoken",
+      "description": "The languages a person can read, write and speak"
+    },
+    "contact_details": {
+      "title": "Contact Details",
+      "description": "The person's contact details (fill in at least one)",
+      "type": "object",
+      "properties": {
+        "email": {
+          "title": "Email Address",
+          "description": "The person's contact email address",
+          "type": "string"
+        },
+        "contact_form": {
+          "title": "Contact Form",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the person",
+          "type": "string",
+          "pattern": "^https?://.*"
+        }
+      }
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json"
+    },
+    "street_address": {
+      "$ref": "../fields/street_address.json"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "postal_code": {
+      "$ref": "../fields/postal_code.json"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json"
+    },
+    "relationships": {
+      "title": "Relationships",
+      "description": "A list of relationships between this person (subject) and various other entities (objects)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "predicate": {
+            "title": "Predicate",
+            "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
+            "type": "string"
+          },
+          "object_url": {
+            "title": "Object URL",
+            "description": "The URL (ideally the Primary URL) of the object of this relationship (must start with http:// or https://, e.g., https://alice.net)",
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https?://.*"
+          }
+        },
+        "required": ["predicate", "object_url"]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": ["linked_schemas", "name", "primary_url", "tags"],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "people_schema-v0.1.0",
+      "purpose": "To map people within the regenerative economy",
+      "url": "https://murmurations.network"
+    }
+  }
+}

@@ -2,26 +2,34 @@
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://test-library.murmurations.network/v2/schemas/organizations_schema-v1.0.0",
   "title": "Organizations Schema",
-  "description": "A schema to add regenerative economy organizations to the Murmurations Index.",
+  "description": "A schema to add regenerative economy organizations to the Murmurations Index",
   "type": "object",
   "properties": {
     "linked_schemas": {
       "$ref": "../fields/linked_schemas.json"
     },
     "name": {
-      "$ref": "../fields/name.json"
+      "$ref": "../fields/name.json",
+      "title": "Organization Name",
+      "description": "The complete name of the organization"
     },
     "primary_url": {
-      "$ref": "../fields/primary_url.json"
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the organization (e.g., my-org.org or some-host.net/my-org)"
     },
     "urls": {
       "$ref": "../fields/urls.json"
     },
     "description": {
-      "$ref": "../fields/description.json"
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A short description of the organization"
     },
     "mission": {
-      "$ref": "../fields/mission.json"
+      "$ref": "../fields/mission.json",
+      "title": "Mission/Purpose",
+      "description": "A short statement of why the organization exists and its goals"
     },
     "locality": {
       "$ref": "../fields/locality.json"
@@ -33,28 +41,52 @@
       "$ref": "../fields/country_name.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation.json"
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the organization"
     },
     "email": {
-      "$ref": "../fields/email.json"
-    },
+      "$ref": "../fields/email.json",
+      "title": "Contact Email",
+      "description": "An email address at which to contact the organization"    },
     "image": {
-      "$ref": "../fields/image.json"
-    },
+      "$ref": "../fields/image.json",
+      "title": "Image/Logo",
+      "description": "An image URL (starting with https:// or http://), preferably a square"    },
     "rss": {
       "$ref": "../fields/rss.json"
     },
     "tags": {
       "$ref": "../fields/tags.json",
       "title": "Org Type - freeform tags",
-      "description": "What type of Organisation is this? e.g. Private limited company, School, Co-op, etc."
+      "description": "Keywords that describe the organization, searchable in the Murmurations index"
+    },
+    "relationships": {
+      "title": "Relationships",
+      "description": "A list of relationships between this organization (subject) and various other entities (objects)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "predicate": {
+            "title": "Predicate",
+            "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
+            "type": "string"
+          },
+          "object_url": {
+            "title": "Object URL",
+            "description": "The URL (ideally the Primary URL) of the object of this relationship (must start with http:// or https://, e.g., https://alice.net)",
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https?://.*"
+          }
+        },
+        "required": ["predicate", "object_url"]
+      },
+      "uniqueItems": true
     }
   },
-  "required": [
-    "linked_schemas",
-    "name",
-    "primary_url"
-  ],
+  "required": ["linked_schemas", "name", "primary_url"],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
@@ -62,7 +94,7 @@
     },
     "schema": {
       "name": "organizations_schema-v1.0.0",
-      "purpose": "To map organizations within the regenerative economy.",
+      "purpose": "To map organizations within the regenerative economy",
       "url": "https://murmurations.network"
     }
   }
