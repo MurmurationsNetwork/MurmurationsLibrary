@@ -86,7 +86,9 @@
       "$ref": "../fields/country_iso_3166.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation.json"
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the person"
     },
     "relationships": {
       "title": "Relationships",
