@@ -1,6 +1,6 @@
 {
   "title": "Primary URL",
-  "description": "The primary URL of the entity or item (i.e., its unique website address)",
+  "description": "The main URL of the entity or item (i.e., its website address)",
   "type": "string",
   "maxLength": 2000,
   "pattern": "^https?://.*",
@@ -14,8 +14,8 @@
       "version": "0.0.1"
     },
     "context": [
-      "https://schema.org/url"
+      "https://schema.org/identifier"
     ],
-    "purpose": "The primary URL is used to uniquely identify the entity or item, and is usually represented as a website address or specific web page that is well-known to be linked to the entity. It can be used to link to the entity or item from other entities or items."
+    "purpose": "The primary URL is used to identify the entity or item, and is usually its main website address or, if the entity doesn't have a website it can be a web page that is well-known to be linked to the entity (e.g. a Facebook page)."
   }
 }
