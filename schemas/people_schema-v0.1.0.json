@@ -20,7 +20,7 @@
     },
     "tags": {
       "$ref": "../fields/tags.json",
-      "title": "Tags",
+      "title": "Tags / Skills",
       "description": "Keywords that describe the person, searchable in the Murmurations index"
     },
     "description": {
@@ -53,7 +53,7 @@
       "properties": {
         "email": {
           "title": "Email Address",
-          "description": "The person's contact email address",
+          "description": "The person's contact email address (public)",
           "type": "string"
         },
         "contact_form": {
@@ -91,29 +91,9 @@
       "description": "The geo-coordinates (latitude & longitude) of the primary location of the person"
     },
     "relationships": {
+      "$ref": "../fields/relationships.json",
       "title": "Relationships",
       "description": "A list of relationships between this person (subject) and various other entities (objects)",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "predicate": {
-            "title": "Predicate",
-            "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
-            "type": "string"
-          },
-          "object_url": {
-            "title": "Object URL",
-            "description": "The URL (ideally the Primary URL) of the object of this relationship (must start with http:// or https://, e.g., https://alice.net)",
-            "type": "string",
-            "maxLength": 2000,
-            "pattern": "^https?://.*"
-          }
-        },
-        "required": ["predicate", "object_url"]
-      },
-      "uniqueItems": true
-    }
   },
   "required": ["linked_schemas", "name", "primary_url", "tags"],
   "metadata": {
