@@ -1,14 +1,16 @@
 {
   "title": "Relationships",
-  "description": "A list of relationships between this entity (subject) and various other entities (objects)",
+  "description": "A list of relationships between this entity (the subject) and various other entities (objects)",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
-      "predicate": {
-        "title": "Predicate",
-        "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
-        "type": "string"
+      "predicate_url": {
+        "title": "Predicate URL",
+        "description": "A URL defining the predicate of the relationship (e.g. https://schema.org/memberOf or https://schema.org/member or https://schema.org/knows or https://schema.org/Offer or https://schema.org/seeks)",
+        "type": "string",
+        "maxLength": 2000,
+        "pattern": "^https?://.*"
       },
       "object_url": {
         "title": "Object URL",
@@ -17,12 +19,6 @@
         "maxLength": 2000,
         "pattern": "^https?://.*"
       },
-      "description": {
-        "title": "Description",
-        "description": "A short description of the relationship in a full sentence (e.g. 'We (our.org) have known Alice (alice.net) for 10 years.')",
-        "type": "string"
-      }
-    },
     "required": [
       "predicate",
       "object_url"
@@ -41,6 +37,6 @@
     "context": [
       "https://schema.org/InteractAction"
     ],
-    "purpose": "Relationships describe the links between the subject entity (i.e., the entity publishing these relationships within its Murmurations profile) and other entities, describing the relationships in a human-readable way. The object_url should be the Primary URL of the receiving entity (e.g., https://alice.net), and the predicate should describe the relationship the subject has with that entity (e.g. 'trust Alice to hold a copy of my house keys'). An optional description field can describe the relationship in a complete sentence (e.g., 'I (Bob) trust Alice to hold a copy of my house keys.')."
+    "purpose": "Relationships describe the links between a Subject and an Object. In a Murmurations profile the entity publishing these relationships is the Subject. The object_url should be the Primary URL of the receiving entity (e.g., https://alice.net), and the predicate should be a URL which defines the relationship the subject has with the object (e.g. https://schema.org/memberOf)."
   }
 }
