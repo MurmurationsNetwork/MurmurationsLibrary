@@ -1,6 +1,6 @@
 {
   "title": "Nickname",
-  "description": "A familiar name given to a person or thing instead of or as well as the real name.",
+  "description": "A familiar name given to a person or thing as well as the real name (e.g., an abbreviation)",
   "type": "string",
   "metadata": {
     "creator": {
@@ -11,6 +11,6 @@
       "name": "nickname",
       "version": "1.0.0"
     },
-    "purpose": "The familiar name that is generally used to refer to the entity, organization, project, or item."
+    "purpose": "The familiar name that is generally used to refer to the entity, organization, project or item."
   }
 }
