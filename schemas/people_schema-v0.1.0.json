@@ -13,6 +13,11 @@
       "title": "Full Name",
       "description": "The full name of the person"
     },
+    "nickname": {
+      "$ref": "../fields/nickname.json",
+      "title": "Nickname",
+      "description": "The familiar name of the person"
+    },
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
@@ -20,7 +25,7 @@
     },
     "tags": {
       "$ref": "../fields/tags.json",
-      "title": "Tags",
+      "title": "Tags / Skills",
       "description": "Keywords that describe the person, searchable in the Murmurations index"
     },
     "description": {
@@ -49,20 +54,7 @@
     "contact_details": {
       "title": "Contact Details",
       "description": "The person's contact details (fill in at least one)",
-      "type": "object",
-      "properties": {
-        "email": {
-          "title": "Email Address",
-          "description": "The person's contact email address",
-          "type": "string"
-        },
-        "contact_form": {
-          "title": "Contact Form",
-          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the person",
-          "type": "string",
-          "pattern": "^https?://.*"
-        }
-      }
+      "$ref": "../fields/contact_details.json"
     },
     "telephone": {
       "$ref": "../fields/telephone.json"
@@ -91,28 +83,9 @@
       "description": "The geo-coordinates (latitude & longitude) of the primary location of the person"
     },
     "relationships": {
+      "$ref": "../fields/relationships.json",
       "title": "Relationships",
-      "description": "A list of relationships between this person (subject) and various other entities (objects)",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "predicate": {
-            "title": "Predicate",
-            "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
-            "type": "string"
-          },
-          "object_url": {
-            "title": "Object URL",
-            "description": "The URL (ideally the Primary URL) of the object of this relationship (must start with http:// or https://, e.g., https://alice.net)",
-            "type": "string",
-            "maxLength": 2000,
-            "pattern": "^https?://.*"
-          }
-        },
-        "required": ["predicate", "object_url"]
-      },
-      "uniqueItems": true
+      "description": "A list of relationships between this person (subject) and various other entities (objects)"
     }
   },
   "required": ["linked_schemas", "name", "primary_url", "tags"],
