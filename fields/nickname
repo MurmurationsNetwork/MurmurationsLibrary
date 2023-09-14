@@ -1,0 +1,16 @@
+{
+  "title": "Nickname",
+  "description": "A familiar name given to a person or thing instead of or as well as the real name.",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "nickname",
+      "version": "1.0.0"
+    },
+    "purpose": "The familiar name that is generally used to refer to the entity, organization, project, or item."
+  }
+}
