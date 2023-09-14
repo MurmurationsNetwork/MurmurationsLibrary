@@ -91,11 +91,13 @@
     },
     "starts_at": {
       "$ref": "../fields/starts_at.json",
-      "title": "Start date / time"
+      "title": "Start Date/Time",
+      "description": "The date and time the group was created (as a Unix timestamp, e.g., 1651848477)"
     },
     "ends_at": {
       "$ref": "../fields/ends_at.json",
-      "title": "End date / time"
+      "title": "End Date/Time",
+      "description": "The date and time the group ceased to exist (as a Unix timestamp, e.g., 1651848477)"
     },
     "contact_details": {
       "$ref": "../fields/contact_details.json",
