@@ -24,7 +24,7 @@
       "description": "The unique and definitive website address for the Group (e.g., my-group.org or some-host.net/my-org)"
     },
     "urls": {
-      "$ref": "../fields/urls.json"
+      "$ref": "../fields/urls.json",
       "title": "Other URLs",
       "description": "URLs for the Group's other websites, social media, etc."
     },
@@ -77,7 +77,7 @@
       "description": "URLs for other images (starting with https:// or http://)"
     },
     "rss": {
-      "$ref": "../fields/rss.json"
+      "$ref": "../fields/rss.json",
       "title": "RSS URL",
       "description": "A URL (starting with https:// or http://) for the Really Simple Syndication feed for this Group. Usually found at a URL such as https://my-group.org/feed"
     },
@@ -87,28 +87,29 @@
       "description": "Keywords that describe the organization, searchable in the Murmurations index"
     },
     "relationships": {
-       "$ref": "../fields/relationships.json",
+      "$ref": "../fields/relationships.json"
     },
     "starts_at": {
-       "$ref": "../fields/starts_at.json",
-      "title": "Start date / time",
+      "$ref": "../fields/starts_at.json",
+      "title": "Start date / time"
     },
     "ends_at": {
-       "$ref": "../fields/ends_at.json",
-      "title": "End date / time",
+      "$ref": "../fields/ends_at.json",
+      "title": "End date / time"
     },
     "contact_details": {
-       "$ref": "../fields/contact_details.json",
-      "title": "Contact details",
+      "$ref": "../fields/contact_details.json",
+      "title": "Contact details"
     },
     "telephone": {
-       "$ref": "../fields/telephone.json",
-      "title": "Telephone number",
+      "$ref": "../fields/telephone.json",
+      "title": "Telephone number"
     },
     "geographic_scope": {
-       "$ref": "../fields/geographic_scope.json",
-      "title": "Geographic scope",
-    },
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic scope"
+    }
+  },
   "required": ["linked_schemas", "name", "primary_url"],
   "metadata": {
     "creator": {
