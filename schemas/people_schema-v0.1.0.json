@@ -13,6 +13,11 @@
       "title": "Full Name",
       "description": "The full name of the person"
     },
+    "nickname": {
+      "$ref": "../fields/nickname.json",
+      "title": "Nickname",
+      "description": "The familiar name of the person"
+    },
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
@@ -49,20 +54,7 @@
     "contact_details": {
       "title": "Contact Details",
       "description": "The person's contact details (fill in at least one)",
-      "type": "object",
-      "properties": {
-        "email": {
-          "title": "Email Address",
-          "description": "The person's contact email address (public)",
-          "type": "string"
-        },
-        "contact_form": {
-          "title": "Contact Form",
-          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the person",
-          "type": "string",
-          "pattern": "^https?://.*"
-        }
-      }
+      "$ref": "../fields/contact_details.json"
     },
     "telephone": {
       "$ref": "../fields/telephone.json"
@@ -93,7 +85,8 @@
     "relationships": {
       "$ref": "../fields/relationships.json",
       "title": "Relationships",
-      "description": "A list of relationships between this person (subject) and various other entities (objects)",
+      "description": "A list of relationships between this person (subject) and various other entities (objects)"
+    }
   },
   "required": ["linked_schemas", "name", "primary_url", "tags"],
   "metadata": {
