@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://test-library.murmurations.network/v2/schemas/organizations_schema-v1.0.0",
-  "title": "Organizations Schema",
-  "description": "A schema to add regenerative economy organizations to the Murmurations Index",
+  "title": "Group/Project/Org Schema",
+  "description": "A schema to add regenerative economy Groups, Projects and Organizations to the Murmurations Index",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -10,26 +10,44 @@
     },
     "name": {
       "$ref": "../fields/name.json",
-      "title": "Organization Name",
-      "description": "The complete name of the organization"
+      "title": "Group/Project/Org Name",
+      "description": "The full name of the Group/Project/Org"
+    },
+    "nickname": {
+      "$ref": "../fields/nickname.json",
+      "title": "Nickname",
+      "description": "The familiar name of the Group/Project/Org"
     },
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
-      "description": "The unique and definitive website address for the organization (e.g., my-org.org or some-host.net/my-org)"
+      "description": "The unique and definitive website address for the Group (e.g., my-group.org or some-host.net/my-org)"
     },
     "urls": {
-      "$ref": "../fields/urls.json"
+      "$ref": "../fields/urls.json",
+      "title": "Other URLs",
+      "description": "URLs for the Group's other websites, social media, etc."
     },
     "description": {
       "$ref": "../fields/description.json",
       "title": "Description",
-      "description": "A short description of the organization"
+      "description": "A short description of the Group"
     },
     "mission": {
       "$ref": "../fields/mission.json",
       "title": "Mission/Purpose",
-      "description": "A short statement of why the organization exists and its goals"
+      "description": "A short statement of why the Group exists and its goals"
+    },
+    "status": {
+      "$ref": "../fields/status.json",
+      "title": "Status",
+      "description": "The current status of the Group"
+    },
+    "full_address": {
+      "$ref": "../fields/full_address.json"
+    },
+    "street_address": {
+      "$ref": "../fields/street_address.json"
     },
     "locality": {
       "$ref": "../fields/locality.json"
@@ -40,50 +58,58 @@
     "country_name": {
       "$ref": "../fields/country_name.json"
     },
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json"
+    },
     "geolocation": {
       "$ref": "../fields/geolocation.json",
       "title": "Geolocation Coordinates",
-      "description": "The geo-coordinates (latitude & longitude) of the primary location of the organization"
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the Group"
     },
-    "email": {
-      "$ref": "../fields/email.json",
-      "title": "Contact Email",
-      "description": "An email address at which to contact the organization"    },
     "image": {
       "$ref": "../fields/image.json",
       "title": "Image/Logo",
-      "description": "An image URL (starting with https:// or http://), preferably a square"    },
+      "description": "An image URL (starting with https:// or http://), preferably a square"
+    },
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other images",
+      "description": "URLs for other images (starting with https:// or http://)"
+    },
     "rss": {
-      "$ref": "../fields/rss.json"
+      "$ref": "../fields/rss.json",
+      "title": "RSS URL",
+      "description": "A URL (starting with https:// or http://) for the Really Simple Syndication feed for this Group. Usually found at a URL such as https://my-group.org/feed"
     },
     "tags": {
       "$ref": "../fields/tags.json",
-      "title": "Org Type - freeform tags",
+      "title": "Tags",
       "description": "Keywords that describe the organization, searchable in the Murmurations index"
     },
     "relationships": {
-      "title": "Relationships",
-      "description": "A list of relationships between this organization (subject) and various other entities (objects)",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "predicate": {
-            "title": "Predicate",
-            "description": "The predicate of the relationship (e.g. 'is a member of ___', 'has a selection of ___', 'knows ___ for 10 years', 'trust ___ to hold a copy of my keys', etc.)",
-            "type": "string"
-          },
-          "object_url": {
-            "title": "Object URL",
-            "description": "The URL (ideally the Primary URL) of the object of this relationship (must start with http:// or https://, e.g., https://alice.net)",
-            "type": "string",
-            "maxLength": 2000,
-            "pattern": "^https?://.*"
-          }
-        },
-        "required": ["predicate", "object_url"]
-      },
-      "uniqueItems": true
+      "$ref": "../fields/relationships.json"
+    },
+    "starts_at": {
+      "$ref": "../fields/starts_at.json",
+      "title": "Start Date/Time",
+      "description": "The date and time the group was created (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "ends_at": {
+      "$ref": "../fields/ends_at.json",
+      "title": "End Date/Time",
+      "description": "The date and time the group ceased to exist (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "contact_details": {
+      "$ref": "../fields/contact_details.json",
+      "title": "Contact details"
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json",
+      "title": "Telephone number"
+    },
+    "geographic_scope": {
+      "$ref": "../fields/geographic_scope.json",
+      "title": "Geographic scope"
     }
   },
   "required": ["linked_schemas", "name", "primary_url"],
@@ -94,7 +120,7 @@
     },
     "schema": {
       "name": "organizations_schema-v1.0.0",
-      "purpose": "To map organizations within the regenerative economy",
+      "purpose": "To map Groups, Projects and Organizations within the regenerative economy",
       "url": "https://murmurations.network"
     }
   }
