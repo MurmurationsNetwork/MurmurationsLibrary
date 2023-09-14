@@ -1,0 +1,29 @@
+{
+  "title": "Contact Details",
+  "description": "The contact details for the group needing the item (fill in at least one)",
+  "type": "object",
+  "properties": {
+    "email": {
+      "title": "Email Address",
+      "description": "Your group's email address",
+      "type": "string"
+    },
+    "contact_form": {
+      "title": "Contact Form",
+      "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach your group",
+      "type": "string",
+      "pattern": "^https?://.*"
+    }
+  },
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "contact_details",
+      "version": "1.0.0"
+    },
+    "purpose": "Provides a contact method for an entity."
+  }
+}
