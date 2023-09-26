@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://test-library.murmurations.network/v2/schemas/organizations_schema-v1.0.0",
-  "title": "Group/Project/Org Schema",
+  "title": "Group/Project/Organization Schema",
   "description": "A schema to add regenerative economy Groups, Projects and Organizations to the Murmurations Index",
   "type": "object",
   "properties": {
@@ -10,66 +10,63 @@
     },
     "name": {
       "$ref": "../fields/name.json",
-      "title": "Group/Project/Org Name",
-      "description": "The full name of the Group/Project/Org"
+      "title": "Group/Project/Organization Name",
+      "description": "The full name of the group, project or organization"
     },
     "nickname": {
       "$ref": "../fields/nickname.json",
       "title": "Nickname",
-      "description": "The familiar name of the Group/Project/Org"
+      "description": "The familiar name of the group, project or organization"
     },
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
-      "description": "The unique and definitive website address for the Group (e.g., my-group.org or some-host.net/my-org)"
+      "description": "The unique and definitive website address for the group (e.g., my-group.org or some-host.net/my-org)"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags/Type",
+      "description": "Keywords that describe the group such as its type, searchable in the Murmurations index"
     },
     "urls": {
       "$ref": "../fields/urls.json",
       "title": "Other URLs",
-      "description": "URLs for the Group's other websites, social media, etc."
+      "description": "URLs for the group's other websites, social media, etc."
     },
     "description": {
       "$ref": "../fields/description.json",
       "title": "Description",
-      "description": "A short description of the Group"
+      "description": "A short description of the group"
     },
     "mission": {
       "$ref": "../fields/mission.json",
       "title": "Mission/Purpose",
-      "description": "A short statement of why the Group exists and its goals"
+      "description": "A short statement of why the group exists and its goals"
     },
     "status": {
       "$ref": "../fields/status.json",
       "title": "Status",
-      "description": "The current status of the Group"
+      "description": "The current status of the group"
     },
     "full_address": {
-      "$ref": "../fields/full_address.json"
-    },
-    "street_address": {
-      "$ref": "../fields/street_address.json"
-    },
-    "locality": {
-      "$ref": "../fields/locality.json"
-    },
-    "region": {
-      "$ref": "../fields/region.json"
-    },
-    "country_name": {
-      "$ref": "../fields/country_name.json"
+      "$ref": "../fields/full_address.json",
+      "title": "Full Address",
+      "description": "The complete address of the group in a single text field as you would write it on an envelope, including the street address, city, postal code, country, etc."
     },
     "country_iso_3166": {
-      "$ref": "../fields/country_iso_3166.json"
+      "$ref": "../fields/country_iso_3166.json",
+      "title": "Country (2 letters)",
+      "description": "The two-letter country code according to the ISO 3166-1 standard where the group is located"
     },
     "geolocation": {
       "$ref": "../fields/geolocation.json",
       "title": "Geolocation Coordinates",
-      "description": "The geo-coordinates (latitude & longitude) of the primary location of the Group"
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group"
     },
     "image": {
       "$ref": "../fields/image.json",
       "title": "Image/Logo",
-      "description": "An image URL (starting with https:// or http://), preferably a square"
+      "description": "An image URL (starting with https:// or http://) for the group's logo, preferably a square"
     },
     "images": {
       "$ref": "../fields/images.json",
@@ -79,15 +76,12 @@
     "rss": {
       "$ref": "../fields/rss.json",
       "title": "RSS URL",
-      "description": "A URL (starting with https:// or http://) for the Really Simple Syndication feed for this Group. Usually found at a URL such as https://my-group.org/feed"
-    },
-    "tags": {
-      "$ref": "../fields/tags.json",
-      "title": "Tags",
-      "description": "Keywords that describe the organization, searchable in the Murmurations index"
+      "description": "A URL (starting with https:// or http://) for the Really Simple Syndication feed for the group (usually found at a URL such as https://my-group.org/feed)"
     },
     "relationships": {
-      "$ref": "../fields/relationships.json"
+      "$ref": "../fields/relationships.json",
+      "title": "Relationships",
+      "description": "A list of relationships between this group (the subject) and various other entities (objects)"
     },
     "starts_at": {
       "$ref": "../fields/starts_at.json",
@@ -101,18 +95,23 @@
     },
     "contact_details": {
       "$ref": "../fields/contact_details.json",
-      "title": "Contact details"
+      "title": "Contact Details",
+      "description": "The contact details for the group"
     },
     "telephone": {
-      "$ref": "../fields/telephone.json",
-      "title": "Telephone number"
+      "$ref": "../fields/telephone.json"
     },
     "geographic_scope": {
       "$ref": "../fields/geographic_scope.json",
-      "title": "Geographic scope"
+      "title": "Geographic Scope",
+      "description": "The geographic scope of the group is defined by the sphere of the group's activities"
     }
   },
-  "required": ["linked_schemas", "name", "primary_url"],
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url"
+  ],
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
