@@ -10,7 +10,7 @@
     },
     "contact_form": {
       "title": "Contact Form",
-      "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach the entity",
+      "description": "A webpage (starting with https:// or http://) with a contact form",
       "type": "string",
       "pattern": "^https?://.*"
     }
