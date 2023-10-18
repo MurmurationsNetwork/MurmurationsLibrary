@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-library.murmurations.network/v2/schemas/ecovillage_schema-v1.0.0",
+  "title": "Ecovillage Schema",
+  "description": "A schema to add Ecovillages to the Murmurations Index and GEN maps",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "name": {
+      "$ref": "../fields/name.json",
+      "title": "Ecovillage Name",
+      "description": "The full name of the ecovillage"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the ecovillage (e.g., my-ecovillage.org or some-host.net/my-ecovillage)"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags/Network Memberships",
+      "description": "Keywords that describe the ecovillage and GEN Memberships e.g. GEN National Network, GEN Region, GEN Transnational Network, Partner Network."
+    },
+    "community_type": {
+      "title": "Community type",
+      "description": "How does your community identify itself? (Select up to 5 options or select “Unspecified, Other” if none apply)",
+      "type": "string",
+      "enum": [
+        "religious_or_spiritual",
+        "network_of_ecovillages",
+        "permaculture_project",
+        "ecovillage",
+        "green_school",
+        "intentional",
+        "eco_city",
+        "learning_centre",
+        "traditional",
+        "eco_community",
+        "restoration_site",
+        "eco_project",
+        "eco_tourism_site",
+        "eco_farm",
+        "youth_led_project",
+        "holistic_center",
+        "transition_town",
+        "cohousing",
+        "indigenous",
+        "shared_housing",
+        "unspecified_other"
+      ],
+      "enumNames": [
+        "Religious or Spiritual",
+        "Network of Ecovillages",
+        "Permaculture Project",
+        "Ecovillage",
+        "Green School",
+        "Intentional",
+        "Eco City",
+        "Learning Centre",
+        "Traditional",
+        "Eco Community",
+        "Restoration Site",
+        "Eco Project",
+        "Eco Tourism Site",
+        "Eco Farm",
+        "Youth-led Project",
+        "Holistic Center",
+        "Transition Town",
+        "Cohousing",
+        "Indigenous",
+        "Shared Housing",
+        "Unspecified, Other"
+      ],
+    },
+    "community_setting": {
+      "title": "Community setting",
+      "description": "Is your community's location primarily:",
+      "type": "string",
+      "enum": [
+        "nomadic",
+        "rural",
+        "urban"
+      ],
+      "enumNames": [
+        "Nomadic",
+        "Rural",
+        "Urban"
+      ],
+    },
+    "terms": {
+      "title": "Terms",
+      "description": "To list your ecovillage you must agree to the following terms by checking the box below: All data given is, to the best of my knowledge, correct and up to date. Apart from private contact data, I consent to GEN listing this information on its website and sharing it with third parties. GEN, at it's sole discretion, may amend or remove this listing. I will use reasonable efforts to keep this data up to date.",
+      "type": "string",
+      "enum": [
+        "i_agree"
+        ],
+        "enumNames": [
+          "I agree"
+        ],
+    },
+    "urls": {
+      "$ref": "../fields/urls.json",
+      "title": "Other URLs",
+      "description": "URLs for the ecovillage's other websites, social media, etc."
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A short description of the ecovillage"
+    },
+    "mission": {
+      "$ref": "../fields/mission.json",
+      "title": "Mission/Purpose",
+      "description": "A short statement of why the ecovillage exists and its goals"
+    },
+    "status": {
+      "$ref": "../fields/status.json",
+      "title": "Status",
+      "description": "The current status of the ecovillage"
+    },
+    "full_address": {
+      "$ref": "../fields/full_address.json",
+      "title": "Full Address",
+      "description": "The complete address of the ecovillage in a single text field as you would write it on an envelope, including the street address, city, postal code, country, etc."
+    },
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json",
+      "title": "Country (2 letters)",
+      "description": "The two-letter country code according to the ISO 3166-1 standard where the ecovillage is located"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the ecovillage"
+    },
+    "image": {
+      "$ref": "../fields/image.json",
+      "title": "Image/Logo",
+      "description": "An image URL (starting with https:// or http://) preferably a square - will display at the top of your listing."
+    },
+    "images": {
+      "$ref": "../fields/images.json",
+      "title": "Other images",
+      "description": "URLs for other images (starting with https:// or http://) e.g. a header image (2000px wide x 1000px tall) and gallery images showing what life is like at your community."
+    },
+    "rss": {
+      "$ref": "../fields/rss.json",
+      "title": "RSS URL",
+      "description": "A URL (starting with https:// or http://) for the Really Simple Syndication feed for the ecovillage (usually found at a URL such as https://my-ecovillage.org/feed)"
+    },
+    "contact_details": {
+      "$ref": "../fields/contact_details.json",
+      "title": "Contact Details",
+      "description": "The contact details for the ecovillage"
+    },
+    "telephone": {
+      "$ref": "../fields/telephone.json"
+    },
+  },
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Global Ecovillage Network",
+      "url": "https://ecovillage.org"
+    },
+    "schema": {
+      "name": "ecovillage_schema-v1.0.0",
+      "purpose": "To map ecovillages",
+      "url": "https://ecovillage.org/"
+    }
+  }
+}
