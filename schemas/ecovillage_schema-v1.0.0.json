@@ -21,7 +21,7 @@
     "tags": {
       "$ref": "../fields/tags.json",
       "title": "Tags/Network Memberships",
-      "description": "Keywords that describe the ecovillage and GEN Memberships e.g. GEN National Network, GEN Region, GEN Transnational Network, Partner Network."
+      "description": "Keywords that describe the ecovillage and GEN Memberships (e.g., GEN National Network, GEN Region, GEN Transnational Network, Partner Network)"
     },
     "community_type": {
       "title": "Community type",
@@ -72,7 +72,7 @@
         "Indigenous",
         "Shared Housing",
         "Unspecified, Other"
-      ],
+      ]
     },
     "community_setting": {
       "title": "Community setting",
@@ -87,18 +87,18 @@
         "Nomadic",
         "Rural",
         "Urban"
-      ],
+      ]
     },
     "terms": {
       "title": "Terms",
-      "description": "To list your ecovillage you must agree to the following terms by checking the box below: All data given is, to the best of my knowledge, correct and up to date. Apart from private contact data, I consent to GEN listing this information on its website and sharing it with third parties. GEN, at it's sole discretion, may amend or remove this listing. I will use reasonable efforts to keep this data up to date.",
+      "description": "To list your ecovillage you must agree to the following terms by selecting 'I agree' in the related box. All data given is, to the best of my knowledge, correct and up to date. I consent to GEN listing this information on its website and sharing it with third parties. GEN, at it's sole discretion, may amend or remove this listing. I will use reasonable efforts to keep this data up to date.",
       "type": "string",
       "enum": [
         "i_agree"
         ],
         "enumNames": [
           "I agree"
-        ],
+        ]
     },
     "urls": {
       "$ref": "../fields/urls.json",
@@ -157,12 +157,13 @@
     },
     "telephone": {
       "$ref": "../fields/telephone.json"
-    },
+    }
   },
   "required": [
     "linked_schemas",
     "name",
-    "primary_url"
+    "primary_url",
+    "terms"
   ],
   "metadata": {
     "creator": {
