@@ -1,13 +1,13 @@
 {
   "title": "Images",
-  "description": "A URL for an image of the item, a logo, etc.",
+  "description": "A URL for an image of an item, a logo, a picture, etc.",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "name": {
         "title": "Image Name",
-        "description": "Describe the image",
+        "description": "Description of the image",
         "type": "string",
         "minLength": 1,
         "maxLength": 100
@@ -31,7 +31,7 @@
     },
     "field": {
       "name": "images",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/image"

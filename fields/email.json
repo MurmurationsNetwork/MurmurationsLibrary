@@ -1,6 +1,6 @@
 {
-  "title": "Email",
-  "description": "An email address",
+  "title": "Contact Email",
+  "description": "An email address at which to contact the entity",
   "type": "string",
   "metadata": {
     "creator": {
@@ -9,11 +9,11 @@
     },
     "field": {
       "name": "email",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/email"
     ],
-    "purpose": "To provide a contact email address for an entity. It is a free form text field without validation so that an email can be entered in a less machine-readable format (e.g., 'myname at somedomain dot org')."
+    "purpose": "Provides a contact email address for an entity. It is a free form text field without validation so that an email can be entered in a less machine-readable format (e.g., 'myname at somedomain dot org')."
   }
 }

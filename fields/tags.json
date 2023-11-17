@@ -1,6 +1,6 @@
 {
   "title": "Tags",
-  "description": "Keywords relevant to this entity and its activities or attributes",
+  "description": "Keywords relevant to this entity and its activities or attributes, searchable in the Murmurations index",
   "type": "array",
   "items": {
     "type": "string"
@@ -13,7 +13,7 @@
     },
     "field": {
       "name": "tags",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/keywords"
