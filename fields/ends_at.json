@@ -1,0 +1,19 @@
+{
+  "title": "End Date/Time",
+  "description": "An ending date and time for an entity, event, etc. (as a Unix timestamp, e.g., 1651848477)",
+  "type": "number",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "ends_at",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://schema.org/endDate"
+    ],
+    "purpose": "An ending date and time for an entity (closing date, death), event, etc. To specify just the year, assume a date of 1 January at the beginning of the day (e.g., 1672531200 for Sun 01 Jan 2023 00:00:00 GMT+0000)."
+  }
+}

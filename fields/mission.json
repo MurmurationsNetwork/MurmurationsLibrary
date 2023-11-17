@@ -9,7 +9,7 @@
     },
     "field": {
       "name": "mission",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://en.wikipedia.org/wiki/Mission_statement"

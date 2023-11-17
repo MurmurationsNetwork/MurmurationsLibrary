@@ -11,11 +11,11 @@
     },
     "field": {
       "name": "image",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/image"
     ],
-    "purpose": "An image that is generally used to refer to the entity, organization, project, etc."
+    "purpose": "An image that is generally used to refer to the entity, organization, project, item, etc."
   }
 }

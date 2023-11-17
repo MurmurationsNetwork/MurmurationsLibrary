@@ -21,7 +21,7 @@
     },
     "field": {
       "name": "geographic_scope",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "purpose": "An entity will generally have a scope in which it operates from a local up to a global range. An item will generally be available within a specific scope as well. For example, perishable food will be available in a local or possibly regional market, but not in a national or international market."
   }

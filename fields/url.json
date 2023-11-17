@@ -11,7 +11,7 @@
     },
     "field": {
       "name": "url",
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "context": [
       "https://schema.org/url"
