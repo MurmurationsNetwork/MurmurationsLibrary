@@ -21,7 +21,7 @@
     "primary_url": {
       "$ref": "../fields/primary_url.json",
       "title": "Primary URL",
-      "description": "The unique and definitive website address for the group (e.g., my-group.org or some-host.net/my-org)"
+      "description": "The unique and definitive website address for the group (e.g., https://my-group.org or https://some-host.net/my-org)"
     },
     "tags": {
       "$ref": "../fields/tags.json",
