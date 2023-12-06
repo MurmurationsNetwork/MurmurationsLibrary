@@ -1,0 +1,73 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "https://test-library.murmurations.network/v2/schemas/localloop_schema-v0.0.1",
+    "title": "Local Loop Map Schema",
+    "description": "A test schema to add businesses to the Murmurations Index for Local Loop",
+    "type": "object",
+    "properties": {
+      "linked_schemas": {
+        "$ref": "../fields/linked_schemas.json"
+      },
+      "name": {
+        "$ref": "../fields/name.json",
+        "title": "Business Name",
+        "description": "The full name of the business"
+      },
+      "nickname": {
+        "$ref": "../fields/nickname.json",
+        "title": "Nickname",
+        "description": "The familiar name of the business"
+      },
+      "primary_url": {
+        "$ref": "../fields/primary_url.json"
+      },
+      "tags": {
+        "$ref": "../fields/tags.json",
+        "title": "Tags/Type",
+        "description": "Use these for the business sector SIC code so the map can be filtered"
+      },
+      "description": {
+        "$ref": "../fields/description.json",
+        "title": "Description",
+        "description": "A short description of the business"
+      },
+      "status": {
+        "$ref": "../fields/status.json",
+        "title": "Status",
+        "description": "The current status of the business"
+      },
+      "full_address": {
+        "$ref": "../fields/full_address.json",
+        "title": "Full Address",
+        "description": "The complete address of the business in a single text field as you would write it on an envelope, including the street address, city, postal code, country, etc."
+      },
+      "geolocation": {
+        "$ref": "../fields/geolocation.json",
+        "title": "Geolocation Coordinates",
+        "description": "The geo-coordinates (latitude & longitude) of the primary location of the business"
+      },
+      "image": {
+        "$ref": "../fields/image.json",
+        "title": "Image/Logo",
+        "description": "An image URL (starting with https:// or http://) for the business's logo, preferably a square"
+      }
+    },
+    "required": [
+      "geolocation",
+      "linked_schemas",
+      "name",
+      "primary_url"
+    ],
+    "metadata": {
+      "creator": {
+        "name": "Mutual Credit Services",
+        "url": "https://mutualcredit.services/"
+      },
+      "schema": {
+        "name": "localloop_schema-v0.0.1",
+        "purpose": "A test schema to add businesses to the Murmurations Index for Local Loop",
+        "url": "https://murmurations.network"
+      }
+    }
+  }
+  
