@@ -19,9 +19,7 @@
         "description": "The familiar name of the business"
       },
       "primary_url": {
-        "$ref": "../fields/primary_url.json",
-        "title": "Local Loop URL",
-        "description": "A URL assigned by local loop in the form https://localoop-merseyside.co.uk/<uuid> - where uuid is a programmatically assigned UUID"
+        "$ref": "../fields/primary_url.json"
       },
       "tags": {
         "$ref": "../fields/tags.json",
