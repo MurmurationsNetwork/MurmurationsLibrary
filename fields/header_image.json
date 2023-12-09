@@ -1,0 +1,21 @@
+{
+  "title": "Header image",
+  "description": "The URL of a header image (normally 1500px wide and 500px high) starting with http:// or https://",
+  "type": "string",
+  "maxLength": 2000,
+  "pattern": "^https?://.*",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "header_image",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://schema.org/image"
+    ],
+    "purpose": "An image used in the background of a header section for an organization, project, item, etc."
+  }
+}
