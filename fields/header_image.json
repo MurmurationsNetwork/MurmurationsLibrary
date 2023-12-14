@@ -1,5 +1,5 @@
 {
-  "title": "Header image",
+  "title": "Header Image",
   "description": "The URL of a header image (normally 1500px wide and 500px high) starting with http:// or https://",
   "type": "string",
   "maxLength": 2000,
