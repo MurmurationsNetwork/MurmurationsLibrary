@@ -68,6 +68,9 @@
       "title": "Image/Logo",
       "description": "An image URL (starting with https:// or http://) for the group's logo, preferably a square"
     },
+    "header_image": {
+      "$ref": "../fields/header_image.json"
+    },
     "images": {
       "$ref": "../fields/images.json",
       "title": "Other images",
