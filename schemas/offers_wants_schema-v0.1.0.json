@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://library.murmurations.network/v2/schemas/offers_wants_prototype-v0.0.2",
-  "title": "Offers/Wants Prototype",
-  "description": "",
+  "$id": "https://library.murmurations.network/v2/schemas/offers_wants_schema-v0.1.0",
+  "title": "Offers & Wants Schema",
+  "description": "A schema to add regenerative economy participants' offers and wants to the Murmurations Index",
   "type": "object",
   "properties": {
     "linked_schemas": {
@@ -56,7 +56,7 @@
     },
     "tags": {
       "title": "Tags",
-      "description": "Keywords relevant to the good or service you are offering or wanting.",
+      "description": "Keywords relevant to the good or service you are offering or wanting, searchable in the Murmurations index",
       "type": "array",
       "items": {
         "type": "string"
@@ -65,52 +65,34 @@
     },
     "title": {
       "title": "Title",
-      "description": "A few words describing the good or service you are offering or wanting.",
+      "description": "A few words describing the good or service you are offering or wanting",
       "type": "string"
     },
     "description": {
       "title": "Description",
-      "description": "A longer description (1 to 3 sentences) of the good or service you are offering or wanting.",
+      "description": "A longer description (1 to 3 sentences) of the good or service you are offering or wanting",
       "type": "string"
     },
     "image": {
       "title": "Image",
-      "description": "An image URL (starting with https:// or http://)",
+      "description": "An image URL (starting with https:// or http://) of the good or service",
       "type": "string",
       "pattern": "^https?://.*"
     },
     "details_url": {
       "title": "Item Details URL",
-      "description": "A webpage (starting with https:// or http://) with further details about the item you are offering or wanting.",
+      "description": "A webpage (starting with https:// or http://) with further details about the item you are offering or wanting",
       "type": "string",
       "pattern": "^https?://.*"
     },
     "geolocation": {
       "title": "Geolocation",
-      "description": "The geo-coordinates (in decimal format) where the item is available or wanted.",
-      "type": "object",
-      "properties": {
-        "lat": {
-          "title": "Latitude",
-          "type": "number",
-          "minimum": -90,
-          "maximum": 90
-        },
-        "lon": {
-          "title": "Longitude",
-          "type": "number",
-          "minimum": -180,
-          "maximum": 180
-        }
-      },
-      "required": [
-        "lat",
-        "lon"
-      ]
+      "description": "The geo-coordinates (in decimal format) where the item is available or wanted",
+      "$ref": "../fields/geolocation.json"
     },
     "geographic_scope": {
       "title": "Geographic Scope",
-      "description": "The geographic scope of the avalability of or wish for the item.",
+      "description": "The geographic scope of the avalability of or wish for the item",
       "type": "string",
       "enum": [
         "local",
@@ -127,17 +109,17 @@
     },
     "contact_details": {
       "title": "Contact Details",
-      "description": "The contact details for the person or organization offering or wanting the item (fill in at least one).",
+      "description": "The contact details for the person or organization offering or wanting the item (fill in at least one)",
       "type": "object",
       "properties": {
         "email": {
           "title": "Email Address",
-          "description": "Your email address.",
+          "description": "Your email address",
           "type": "string"
         },
         "contact_form": {
           "title": "Contact Form",
-          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you.",
+          "description": "A webpage (starting with https:// or http://) with a contact form that can be used to reach you",
           "type": "string",
           "pattern": "^https?://.*"
         }
@@ -145,7 +127,7 @@
     },
     "expires_at": {
       "title": "Expires At",
-      "description": "The date and time (a Unix timestamp, e.g., 1651848477) when this offer or want expires.",
+      "description": "The date and time (e.g., 1651848477, convert dates at <https://www.unixtimestamp.com>) when this offer or want expires",
       "type": "number"
     }
   },
@@ -156,13 +138,18 @@
     "tags",
     "title",
     "description",
-    "geolocation",
     "geographic_scope",
     "contact_details"
   ],
   "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
     "schema": {
-      "name": "offers_wants_prototype-v0.0.2"
+      "name": "offers_wants_schema-v0.1.0",
+      "purpose": "To map offers and wants within the regenerative economy",
+      "url": "https://murmurations.network/"
     }
   }
 }
