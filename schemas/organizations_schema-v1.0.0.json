@@ -108,12 +108,14 @@
       "$ref": "../fields/geographic_scope.json",
       "title": "Geographic Scope",
       "description": "The geographic scope of the group is defined by the sphere of the group's activities"
+    },
+    "unique_id": {
+      "$ref": "../fields/unique_id.json"
     }
   },
   "required": [
     "linked_schemas",
-    "name",
-    "primary_url"
+    "name"
   ],
   "metadata": {
     "creator": {
