@@ -1,0 +1,19 @@
+{
+    "title": "Unique ID",
+    "description": "The unique identifier of the entity, optionally defined by the group recording/tracking the entity",
+    "type": "string",
+    "metadata": {
+        "creator": {
+            "name": "Murmurations Network",
+            "url": "https://murmurations.network"
+        },
+        "field": {
+            "name": "unique_id",
+            "version": "1.0.0"
+        },
+        "context": [
+            "https://schema.org/identifier"
+        ],
+        "purpose": "The unique ID is an identifier applied to an entity by a group that wishes to keep track of the entity. For example, an association of businesses will apply a unique ID to each member business in order to identify them for internal purposes."
+    }
+}
