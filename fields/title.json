@@ -1,0 +1,19 @@
+{
+  "title": "Title",
+  "description": "The title of the media element.",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "title",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://schema.org/name"
+    ],
+    "purpose": "Title of a media article - book, movie, press release, photograph etc."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://library.murmurations.network/v2/schemas/media_schema-v1.0.0",
+  "title": "Media Element Schema",
+  "description": "A schema to add media elements to the Murmurations Index",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "title": {
+      "$ref": "../fields/title.json",
+      "title": "Group/Project/Organization Name",
+      "description": "The full name of the group, project or organization"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the group (e.g., https://my-group.org or https://some-host.net/my-org)"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags/Type",
+      "description": "Keywords that describe the group such as its type, searchable in the Murmurations index"
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A short description of the group"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "name",
+    "primary_url"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "media_schema-v1.0.0",
+      "purpose": "To map media elements",
+      "url": "https://murmurations.network"
+    }
+  }
+}
