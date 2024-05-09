@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-library.murmurations.network/v2/schemas/media_schema-v0.1.0",
+  "title": "Media Object Schema",
+  "description": "A schema to add media objects to the Murmurations Index, such as an article, video, audio or other creative work",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "title": {
+      "$ref": "../fields/name.json",
+      "title": "Media Title",
+      "description": "The title of the media object"
+    },
+    "media_url": {
+      "$ref": "../fields/url.json",
+      "title": "Media URL",
+      "description": "URL of the media object"
+    },
+    "author": {
+      "$ref": "../fields/name.json",
+      "title": "Author",
+      "description": "Author or creator of the media object"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags",
+      "description": "Keywords that describe the media object"
+    },
+    "description": {
+      "$ref": "../fields/description.json",
+      "title": "Description",
+      "description": "A short description of the media object"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json",
+      "title": "Media Object Location",
+      "description": "Geolocation of the place that the media object describes or represents"
+    }
+  },
+  "required": [
+    "linked_schemas",
+    "title",
+    "media_url"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Mateusz Adamczak"
+    },
+    "schema": {
+      "name": "media_schema-v0.1.0",
+      "purpose": "To map media objects"
+    }
+  }
+}
