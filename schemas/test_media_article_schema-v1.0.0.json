@@ -9,40 +9,44 @@
       "$ref": "../fields/linked_schemas.json"
     },
     "title": {
-      "$ref": "../fields/title.json",
-      "title": "Group/Project/Organization Name",
-      "description": "The full name of the group, project or organization"
+      "$ref": "../fields/name.json",
+      "title": "Article Title",
+      "description": "The title of the article"
     },
-    "primary_url": {
-      "$ref": "../fields/primary_url.json",
-      "title": "Primary URL",
-      "description": "The unique and definitive website address for the group (e.g., https://my-group.org or https://some-host.net/my-org)"
+    "article_url": {
+      "$ref": "../fields/url.json",
+      "title": "Article URL",
+      "description": "URL of the article"
+    },
+    "author": {
+      "$ref": "../fields/name.json",
+      "title": "Author",
+      "description": "Author of an article"
     },
     "tags": {
       "$ref": "../fields/tags.json",
       "title": "Tags/Type",
-      "description": "Keywords that describe the group such as its type, searchable in the Murmurations index"
+      "description": "Keywords that describe the article"
     },
     "description": {
       "$ref": "../fields/description.json",
       "title": "Description",
-      "description": "A short description of the group"
+      "description": "A short description of the article"
     },
     "geolocation": {
       "$ref": "../fields/geolocation.json",
-      "title": "Geolocation Coordinates",
-      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group"
+      "title": "Article location",
+      "description": "Geolocation of the place that the article describes"
     }
   },
   "required": [
     "linked_schemas",
-    "name",
-    "primary_url"
+    "title",
+    "article_url"
   ],
   "metadata": {
     "creator": {
-      "name": "Murmurations Network",
-      "url": "https://murmurations.network/"
+      "name": "Mateusz Adamczak"
     },
     "schema": {
       "name": "media_schema-v1.0.0",
