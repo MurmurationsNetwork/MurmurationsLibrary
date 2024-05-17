@@ -1,0 +1,19 @@
+{
+  "title": "Purpose",
+  "description": "The purpose of the item, entity, organization, project, etc.",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "purpose",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://murmurations.network"
+    ],
+    "purpose": "The purpose field can be used to provided a description of why the item, entity, organization, project, etc exists."
+  }
+}
