@@ -12,7 +12,7 @@
       "url": "https://murmurations.network"
     },
     "field": {
-      "name": "org-type",
+      "name": "org_type",
       "version": "1.0.0"
     },
     "context": [
