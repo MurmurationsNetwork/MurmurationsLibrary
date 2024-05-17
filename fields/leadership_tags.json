@@ -1,0 +1,23 @@
+{
+  "title": "Leadership tags",
+  "description": "Keywords which describe the network leadership work done by this Organisation.",
+  "type": "array",
+  "items": {
+    "type": "string"
+  },
+  "uniqueItems": true,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "leadership_tags",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://schema.org/keywords"
+    ],
+    "purpose": "As an additional field alongside Tags, this field you be used for a list of unique keywords that describe the network leadership work done by this Organisation."
+  }
+}
