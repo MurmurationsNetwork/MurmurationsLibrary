@@ -1,0 +1,19 @@
+{
+  "title": "Date added",
+  "description": "The date the entity was added (as a Unix timestamp, e.g., 1651848477)",
+  "type": "number",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "date_added",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://schema.org/startDate"
+    ],
+    "purpose": "The date an entity, event, etc, was added to the listings. To specify just the year, assume a date of 1 January at the beginning of the day (e.g., 1672531200 for Sun 01 Jan 2023 00:00:00 GMT+0000)."
+  }
+}
