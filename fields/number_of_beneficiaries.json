@@ -1,0 +1,18 @@
+{
+    "title": "Number of beneficiaries",
+    "description": "The number of people / organisations that have directly benefitted from this organisation's work in the past year.",
+    "type": "string",
+    "metadata": {
+        "creator": {
+            "name": "Murmurations Network",
+            "url": "https://murmurations.network"
+        },
+        "field": {
+            "name": "number_of_beneficiaries",
+            "version": "1.0.0"
+        },
+        "context": [
+            "https://murmurations.network"
+        ],
+        "purpose": "A number describing how many people / organisations that have directly benefitted from this organisation's work in the past year."
+    }
