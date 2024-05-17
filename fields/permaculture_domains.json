@@ -18,6 +18,6 @@
     "context": [
       "https://schema.org/keywords"
     ],
-    "purpose": "As an additional field alongside Tags, this field you be used for a list of unique keywords that describe the permaculture domains worked on by this organisation."
+    "purpose": "As an additional field alongside Tags, this field can be used for a list of unique keywords that describe the permaculture domains worked on by this organisation."
   }
 }
