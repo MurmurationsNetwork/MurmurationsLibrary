@@ -1,0 +1,19 @@
+{
+  "title": "Geographic scope description",
+  "description": "A description of the geographic scope of the item, entity, organization, project, etc.",
+  "type": "string",
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "geographic_scope_description",
+      "version": "1.0.0"
+    },
+    "context": [
+      "http://schema.org/description"
+    ],
+    "purpose": "The Geographic scope description field can be used alongside the Geographic scope enumerated list to provided a description of the geographic scope of the item, entity, organization, project, etc. in your own words."
+  }
+}

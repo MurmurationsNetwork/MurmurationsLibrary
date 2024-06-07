@@ -1,0 +1,23 @@
+{
+  "title": "Ways to get involved",
+  "description": "Keywords which describe the ways to get involved with this group/project/organisation.",
+  "type": "array",
+  "items": {
+    "type": "string"
+  },
+  "uniqueItems": true,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "ways_to_get_involved",
+      "version": "1.0.0"
+    },
+    "context": [
+      "https://schema.org/keywords"
+    ],
+    "purpose": "As an additional field alongside Tags, this field can be used for a list of unique keywords that describe the ways to get involved with this group/project/organisation."
+  }
+}

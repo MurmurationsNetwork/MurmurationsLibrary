@@ -1,0 +1,19 @@
+{
+    "title": "Number of members",
+    "description": "The number of members of the entity.",
+    "type": "number",
+    "metadata": {
+        "creator": {
+            "name": "Murmurations Network",
+            "url": "https://murmurations.network"
+        },
+        "field": {
+            "name": "number_of_members",
+            "version": "1.0.0"
+        },
+        "context": [
+            "https://murmurations.network"
+        ],
+        "purpose": "A number describing how many members belong to a specific entity, group or organisation."
+    }
+}
