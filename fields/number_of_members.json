@@ -1,7 +1,7 @@
 {
     "title": "Number of members",
     "description": "The number of members of the entity.",
-    "type": "string",
+    "type": "number",
     "metadata": {
         "creator": {
             "name": "Murmurations Network",

@@ -52,7 +52,7 @@
       "$ref": "../fields/ways_to_get_involved.json",
       "title": "Ways to get involved",
       "description": "Keywords which describe the ways to get involved with this group/project/organisation."
-    },
+    }
   },
   "required": [
     "linked_schemas"

@@ -1,7 +1,7 @@
 {
     "title": "Number of beneficiaries",
     "description": "The number of people / organisations that have directly benefitted from this organisation's work in the past year.",
-    "type": "string",
+    "type": "number",
     "metadata": {
         "creator": {
             "name": "Murmurations Network",
@@ -16,3 +16,4 @@
         ],
         "purpose": "A number describing how many people / organisations that have directly benefitted from this organisation's work in the past year."
     }
+}
