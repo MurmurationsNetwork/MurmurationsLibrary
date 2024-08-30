@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://library.murmurations.network/v2/schemas/permaculture_addon_schema-v1.0.0",
+  "title": "Permaculture addon schema",
+  "description": "An addon schema providing specific fields for permaculture projects, in addition to those in the Organizations schema.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "purpose": {
+      "$ref": "../fields/purpose.json",
+      "title": "Purpose",
+      "description": "The purpose of the item, entity, organization, project, etc."
+    },
+    "date_added": {
+      "$ref": "../fields/date_added.json",
+      "title": "Date added",
+      "description": "The date the entity was added (as a Unix timestamp, e.g., 1651848477)"
+    },
+    "org_type": {
+      "$ref": "../fields/org_type.json",
+      "title": "Type of Organisation",
+      "description": "Keywords which describe the Organisations and its activities or attributes."
+    },
+    "number_of_members": {
+      "$ref": "../fields/number_of_members.json",
+      "title": "Number of members",
+      "description": "The number of members of the entity."
+    },
+    "number_of_beneficiaries": {
+      "$ref": "../fields/number_of_beneficiaries.json",
+      "title": "Number of beneficiaries",
+      "description": "The number of people / organisations that have directly benefitted from this organisation's work in the past year."
+    },
+    "geographic_scope_description": {
+      "$ref": "../fields/geographic_scope_description.json",
+      "title": "Geographic scope description",
+      "description": "A description of the geographic scope of the item, entity, organization, project, etc."
+    },
+    "leadership_tags": {
+      "$ref": "../fields/leadership_tags.json",
+      "title": "Leadership Tags",
+      "description": "Keywords which describe the network leadership work done by this Organisation."
+    },
+    "permaculture_domains": {
+      "$ref": "../fields/permaculture_domains.json",
+      "title": "Permaculture domains",
+      "description": "Keywords which describe the permaculture domains worked on by this organisation."
+    },
+    "ways_to_get_involved": {
+      "$ref": "../fields/ways_to_get_involved.json",
+      "title": "Ways to get involved",
+      "description": "Keywords which describe the ways to get involved with this group/project/organisation."
+    }
+  },
+  "required": [
+    "linked_schemas"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network/"
+    },
+    "schema": {
+      "name": "permaculture_addon_schema-v1.0.0",
+      "purpose": "To record specific data on permaculture projects, in addition to the Organizations schema.",
+      "url": "https://murmurations.network"
+    }
+  }
+}
