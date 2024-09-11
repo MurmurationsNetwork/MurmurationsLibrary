@@ -19,7 +19,6 @@
       "description": "The date the entity was added (as a Unix timestamp, e.g., 1651848477)"
     },
     "org_type": {
-      "$ref": "../fields/org_type.json",
       "title": "Type of Organisation",
       "description": "Keywords which describe the Organisations and its activities or attributes.",
       "type": "array",
@@ -57,7 +56,6 @@
       "description": "Keywords which describe the network leadership work done by this Organisation."
     },
     "permaculture_domains": {
-      "$ref": "../fields/permaculture_domains.json",
       "title": "Permaculture domains",
       "description": "Keywords which describe the permaculture domains worked on by this organisation.",
       "type": "array",
@@ -75,7 +73,6 @@
       }
     },
     "ways_to_get_involved": {
-      "$ref": "../fields/ways_to_get_involved.json",
       "title": "Ways to get involved",
       "description": "Keywords which describe the ways to get involved with this group/project/organisation.",
       "type": "array",
