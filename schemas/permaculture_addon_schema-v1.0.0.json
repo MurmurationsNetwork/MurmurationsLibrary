@@ -19,9 +19,21 @@
       "description": "The date the entity was added (as a Unix timestamp, e.g., 1651848477)"
     },
     "org_type": {
-      "$ref": "../fields/org_type.json",
       "title": "Type of Organisation",
-      "description": "Keywords which describe the Organisations and its activities or attributes."
+      "description": "Keywords which describe the Organisations and its activities or attributes.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Association",
+          "Network",
+          "Group",
+          "Project",
+          "Permaculture school or academy",
+          "Permaculture designers' organisation or cooperative",
+          "Other organisation"
+        ]
+      }
     },
     "number_of_members": {
       "$ref": "../fields/number_of_members.json",
@@ -44,14 +56,38 @@
       "description": "Keywords which describe the network leadership work done by this Organisation."
     },
     "permaculture_domains": {
-      "$ref": "../fields/permaculture_domains.json",
       "title": "Permaculture domains",
-      "description": "Keywords which describe the permaculture domains worked on by this organisation."
+      "description": "Keywords which describe the permaculture domains worked on by this organisation.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Built Environment",
+          "Culture and Education",
+          "Health and Wellbeing",
+          "Finance and Economics",
+          "Land and Nature Stewardship",
+          "Land Tenure and Community Governance",
+          "Tools and Technology"
+        ]
+      }
     },
     "ways_to_get_involved": {
-      "$ref": "../fields/ways_to_get_involved.json",
       "title": "Ways to get involved",
-      "description": "Keywords which describe the ways to get involved with this group/project/organisation."
+      "description": "Keywords which describe the ways to get involved with this group/project/organisation.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Join as a member",
+          "Volunteer",
+          "Donate",
+          "Visit us",
+          "Buy our products or services",
+          "Enrol in our activities",
+          "Other - see our website or social media for details"
+        ]
+      }
     }
   },
   "required": [
