@@ -10,6 +10,40 @@
   "properties": {
     "linked_schemas": {
       "$ref": "../fields/linked_schemas.json"
+    },
+    "country_iso_3166": {
+      "$ref": "../fields/country_iso_3166.json",
+      "title": "Country (2 letters)",
+      "description": "The two-letter country code according to the ISO 3166-1 standard where the group is located"
+    },
+    "country_name": {
+      "$ref": "../fields/country_name.json"
+    },
+    "geolocation": {
+      "$ref": "../fields/geolocation.json",
+      "title": "Geolocation Coordinates",
+      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group"
+    },
+    "locality": {
+      "$ref": "../fields/locality.json",
+      "title": "Locality",
+      "description": "The city or town where the group is located"
+    },
+    "name": {
+      "$ref": "../fields/name.json"
+    },
+    "primary_url": {
+      "$ref": "../fields/primary_url.json",
+      "title": "Primary URL",
+      "description": "The unique and definitive website address for the group or person creating this opportunity"
+    },
+    "region": {
+      "$ref": "../fields/region.json"
+    },
+    "tags": {
+      "$ref": "../fields/tags.json",
+      "title": "Tags/Type",
+      "description": "Use these for the business sector SIC code so the map can be filtered"
     }
   },
   "required": [

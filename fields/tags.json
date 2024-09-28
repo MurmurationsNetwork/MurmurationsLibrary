@@ -6,6 +6,7 @@
     "type": "string"
   },
   "uniqueItems": true,
+  "maxItems": 100,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
