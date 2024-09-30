@@ -44,6 +44,26 @@
       "$ref": "../fields/tags.json",
       "title": "Tags/Type",
       "description": "Use these for the business sector SIC code so the map can be filtered"
+    },
+    "latitude": {
+      "$ref": "../fields/latitude.json"
+    },
+    "longitude": {
+      "$ref": "../fields/longitude.json"
+    }
+  },
+  "if": {
+    "required": ["latitude"]
+  },
+  "then": {
+    "required": ["longitude"]
+  },
+  "else": {
+    "if": {
+      "required": ["longitude"]
+    },
+    "then": {
+      "required": ["latitude"]
     }
   },
   "required": [
