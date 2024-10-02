@@ -2,7 +2,6 @@
   "title": "Country name",
   "description": "The name of country where the entity is based",
   "type": "string",
-  "minLength": 1,
   "maxLength": 100,
   "metadata": {
     "creator": {

@@ -9,7 +9,6 @@
         "title": "Image Name",
         "description": "Description of the image",
         "type": "string",
-        "minLength": 1,
         "maxLength": 100
       },
       "url": {
