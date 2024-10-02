@@ -2,6 +2,7 @@
   "title": "Region",
   "description": "The region (state, county, province, etc.) where the entity is located",
   "type": "string",
+  "maxLength": 100,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
