@@ -2,6 +2,7 @@
   "title": "Name",
   "description": "The name of the entity, organization, project, item, etc.",
   "type": "string",
+  "maxLength": 200,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
