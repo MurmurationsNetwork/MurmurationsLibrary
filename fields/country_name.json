@@ -2,6 +2,7 @@
   "title": "Country name",
   "description": "The name of country where the entity is based",
   "type": "string",
+  "maxLength": 100,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

@@ -3,9 +3,12 @@
   "description": "Keywords relevant to this entity and its activities or attributes, searchable in the Murmurations index",
   "type": "array",
   "items": {
-    "type": "string"
+    "type": "string",
+    "maxLength": 100
   },
   "uniqueItems": true,
+  "minItems": 1,
+  "maxItems": 100,
   "metadata": {
     "creator": {
       "name": "Murmurations Network",

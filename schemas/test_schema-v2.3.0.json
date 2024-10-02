@@ -95,11 +95,14 @@
             "title": "Image Name (alt tag)",
             "description": "Describe the image",
             "type": "string",
-            "minLength": 1,
             "maxLength": 100
           },
           "url": {
-            "$ref": "../fields/url.json"
+            "title": "URL",
+            "description": "A URL of the entity or item starting with http:// or https://",
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https?://.*"
           }
         },
         "required": [
