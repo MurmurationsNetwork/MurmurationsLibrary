@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://test-library.murmurations.network/v2/schemas/default-v3.0.0",
+  "$id": "https://test-library.murmurations.network/v2/schemas/default-v2.1.0",
   "title": "Default Schema",
   "description": "The default schema used for initial validation of a profile by the Murmurations Index.",
   "type": "object",
@@ -81,7 +81,7 @@
       "url": "https://murmurations.network"
     },
     "schema": {
-      "name": "default-v3.0.0",
+      "name": "default-v2.1.0",
       "url": "https://murmurations.network/schemas/default_schema"
     }
   }
