@@ -52,10 +52,7 @@
       "$ref": "../fields/longitude.json"
     },
     "expires": {
-      "type": "integer",
-      "description": "UNIX timestamp representing the expiration time",
-      "minimum": 1000000000,
-      "maximum": 9999999999
+      "$ref": "../fields/expires.json"
     }
   },
   "if": {

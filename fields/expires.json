@@ -1,0 +1,19 @@
+{
+  "title": "Expires",
+  "description": "An expiration date for the profile (as a Unix timestamp, e.g., 1651848477)",
+  "type": "integer",
+  "minimum": 1000000000,
+  "maximum": 9999999999,
+  "metadata": {
+    "creator": {
+      "name": "Murmurations Network",
+      "url": "https://murmurations.network"
+    },
+    "field": {
+      "name": "expires",
+      "version": "1.0.0"
+    },
+    "context": ["https://schema.org/expires"],
+    "purpose": "A profile can be automatically removed from the index after a given date/time. When the expiration time is reached the profile will be marked as deleted in the index, and eventually removed entirely."
+  }
+}
