@@ -1,7 +1,7 @@
 {
   "title": "Date added",
   "description": "The date the entity was added (as a Unix timestamp, e.g., 1651848477)",
-  "type": "number",
+  "type": "integer",
   "metadata": {
     "creator": {
       "name": "Murmurations Network",
