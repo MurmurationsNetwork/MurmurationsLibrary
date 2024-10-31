@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://test-library.murmurations.network/v2/schemas/default-v2.1.0",
   "title": "Default Schema",
-  "description": "The default schema used for initial validation of a profile by the Murmurations Index.",
+  "description": "The default schema used for initial validation of a profile by the index service. All fields that are indexed must be included in this schema.",
   "type": "object",
   "propertyNames": {
     "pattern": "^[a-z@][a-z0-9_]{0,97}[a-z0-9]$"
@@ -78,8 +78,7 @@
       "url": "https://murmurations.network"
     },
     "schema": {
-      "name": "default-v2.1.0",
-      "url": "https://murmurations.network/schemas/default_schema"
+      "name": "default-v2.1.0"
     }
   }
 }
