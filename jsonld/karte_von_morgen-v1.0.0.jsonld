@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "murm": "https://murmurations.network/ns/",
+    "linked_schemas": "murm:linkedSchemas",
+    "name": "name",
+    "primary_url": "identifier",
+    "description": "description",
+    "latitude": "latitude",
+    "longitude": "longitude",
+    "locality": "addressLocality",
+    "region": "addressRegion",
+    "country_name": "addressCountry",
+    "email": "email",
+    "image": "image",
+    "kvm_category": "murm:kvmCategory",
+    "tags": "keywords"
+  }
+}
