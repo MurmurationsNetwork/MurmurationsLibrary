@@ -5,6 +5,20 @@
   "description": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org",
   "type": "object",
   "properties": {
+    "@context": {
+      "$ref": "../fields/context.json"
+    },
+    "@id": {
+      "type": "string",
+      "description": "required: The ID of the entity"
+    },
+    "@type": {
+      "name": "The resource type",
+      "type": "string",
+      "description": "required: Organization",
+      "format": "regex",
+      "pattern": "Organization"
+    },
     "linked_schemas": {
       "$ref": "../fields/linked_schemas.json"
     },
@@ -64,6 +78,8 @@
     "schema": {
       "name": "karte_von_morgen-v1.0.0",
       "purpose": "Entries (Initiatives, Organisations, Companies) from Kartevonmorgen.org"
-    }
+    },
+    "@type": "Organization",
+    "@context": "https://ns.murmurations.network/contexts/karte_von_morgen-v1.0.0.jsonld"
   }
 }

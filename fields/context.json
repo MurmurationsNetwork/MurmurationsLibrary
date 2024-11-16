@@ -1,0 +1,17 @@
+{
+    "name": "JSON Schema for @context using ns.murmurations.network as base",
+    "description": "ns.murmurations.network is @base namespace",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "@vocab"
+    ],
+    "properties": {
+      "@vocab": {
+        "type": "string",
+        "format": "regex",
+        "pattern": "https://ns.murmurations.network/",
+        "description": "required: ns.murmurations.network is base ns"
+      }
+    }
+  }
