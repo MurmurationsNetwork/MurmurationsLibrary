@@ -8,11 +8,7 @@
     "@context": {
       "$ref": "../fields/context.json"
     },
-    "@id": {
-      "type": "string",
-      "description": "required: The ID of the entity"
-    },
-    "@type": {
+   "@type": {
       "name": "The resource type",
       "type": "string",
       "description": "required: Organization",
