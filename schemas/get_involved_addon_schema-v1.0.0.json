@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://test-library.murmurations.network/v2/schemas/get_involved_addon_schema-v1.0.0",
+  "title": "Get involved addon schema",
+  "description": "An addon schema describing the ways people can get involved with a group, project or organisation.",
+  "type": "object",
+  "properties": {
+    "linked_schemas": {
+      "$ref": "../fields/linked_schemas.json"
+    },
+    "ways_to_get_involved": {
+      "title": "Ways to get involved",
+      "description": "Keywords which describe the ways people can get involved with this group, project or organisation.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Join as a member",
+          "Volunteer",
+          "Donate",
+          "Attend events",
+          "Buy our products or services",
+          "Subscribe to our social media or newsletter",
+          "Organise this in my area",
+          "Invest",
+          "Become a supporter",
+          "Other - see our website or social media for details"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "linked_schemas"
+  ],
+  "metadata": {
+    "creator": {
+      "name": "South Bristol Climate Hub",
+      "url": "https://southbristolclimatehub.org.uk/"
+    },
+    "schema": {
+      "name": "get_involved_addon_schema-v1.0.0",
+      "purpose": "To record the ways people can get involved with a group, project or organisation.",
+      "url": "https://southbristolclimatehub.org.uk/"
+    }
+  }
+}
