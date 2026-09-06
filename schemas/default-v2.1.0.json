@@ -2,48 +2,38 @@
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://test-library.murmurations.network/v2/schemas/default-v2.1.0",
   "title": "Default Schema",
-  "description": "The default schema used for initial validation of a profile by the Murmurations Index.",
+  "description": "The default schema used for initial validation of a profile by the index service. All fields that are indexed must be included in this schema.",
   "type": "object",
   "propertyNames": {
-    "pattern": "^[a-z][a-z0-9_]{0,97}[a-z0-9]$"
+    "pattern": "^[a-z@][a-z0-9_]{0,97}[a-z0-9]$"
   },
   "properties": {
     "linked_schemas": {
       "$ref": "../fields/linked_schemas.json"
     },
     "country_iso_3166": {
-      "$ref": "../fields/country_iso_3166.json",
-      "title": "Country (2 letters)",
-      "description": "The two-letter country code according to the ISO 3166-1 standard where the group is located"
+      "$ref": "../fields/country_iso_3166.json"
     },
     "country_name": {
       "$ref": "../fields/country_name.json"
     },
     "geolocation": {
-      "$ref": "../fields/geolocation.json",
-      "title": "Geolocation Coordinates",
-      "description": "The geo-coordinates (latitude & longitude) of the primary location of the group"
+      "$ref": "../fields/geolocation.json"
     },
     "locality": {
-      "$ref": "../fields/locality.json",
-      "title": "Locality",
-      "description": "The city or town where the group is located"
+      "$ref": "../fields/locality.json"
     },
     "name": {
       "$ref": "../fields/name.json"
     },
     "primary_url": {
-      "$ref": "../fields/primary_url.json",
-      "title": "Primary URL",
-      "description": "The unique and definitive website address for the group or person creating this opportunity"
+      "$ref": "../fields/primary_url.json"
     },
     "region": {
       "$ref": "../fields/region.json"
     },
     "tags": {
-      "$ref": "../fields/tags.json",
-      "title": "Tags/Type",
-      "description": "Use these for the business sector SIC code so the map can be filtered"
+      "$ref": "../fields/tags.json"
     },
     "latitude": {
       "$ref": "../fields/latitude.json"
@@ -52,10 +42,7 @@
       "$ref": "../fields/longitude.json"
     },
     "expires": {
-      "type": "integer",
-      "description": "UNIX timestamp representing the expiration time",
-      "minimum": 1000000000,
-      "maximum": 9999999999
+      "$ref": "../fields/expires.json"
     }
   },
   "if": {
@@ -81,8 +68,7 @@
       "url": "https://murmurations.network"
     },
     "schema": {
-      "name": "default-v2.1.0",
-      "url": "https://murmurations.network/schemas/default_schema"
+      "name": "default-v2.1.0"
     }
   }
 }
