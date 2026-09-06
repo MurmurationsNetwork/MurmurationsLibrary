@@ -1,0 +1,17 @@
+{
+  "name": "JSON Schema for @context using schema.org as base",
+  "description": "schema.org is @base namespace",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "@vocab"
+  ],
+  "properties": {
+    "@vocab": {
+      "type": "string",
+      "format": "regex",
+      "pattern": "https://schema.org/",
+      "description": "required: schema.org is base ns"
+    }
+  }
+}
